@@ -251,11 +251,6 @@ function tre() {
 
 ### ADDITIONS
 
-# Include Drush completion.
-# if [ -f "/Users/ivan/.drush/drush.complete.sh" ] ; then
-#   source /Users/ivan/.drush/drush.complete.sh
-# fi
-
 # Dereference links in current path
 deref () { cd $(pwd -P); }
 
