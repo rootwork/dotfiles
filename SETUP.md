@@ -25,7 +25,7 @@
 * `sudo nano /etc/apache2/apache2.conf` and at end:
 ```apacheconf
 # Custom docroot directory
-<Directory /your/new/dir>
+<Directory /home/ivan/public>
 Options Indexes FollowSymLinks
 AllowOverride None
 Require all granted
