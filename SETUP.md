@@ -22,6 +22,15 @@
 ### Finish web setup
 
 * `mkdir public`
+* `sudo nano /etc/apache2/apache2.conf` and at end:
+```apacheconf
+# Custom docroot directory
+<Directory /your/new/dir>
+Options Indexes FollowSymLinks
+AllowOverride None
+Require all granted
+</Directory>
+```
 * Complete with Apache tutorial above, remembering docroot is `/home/ivan/public`.
 * `nano ~/.aliases`
 
