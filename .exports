@@ -1,0 +1,79 @@
+#
+## EXPORTS
+#
+
+WINHOME=${WINHOME:-"C:/Users/ivan"}
+HOME=${HOME:-"/home/ivan"}
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='subl -w'
+else
+  export EDITOR='subl -w'
+fi
+
+# ssh
+export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# Larger bash history (allow 32³ entries; default is 500)
+export HISTSIZE=32768;
+export HISTFILESIZE=$HISTSIZE;
+export HISTCONTROL=ignoredups;
+# Make some commands not show up in history
+export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help";
+
+# Prefer US English and use UTF-8
+export LANG="en_US.UTF-8";
+export LC_ALL="en_US.UTF-8";
+
+# Highlight section titles in manual pages
+export LESS_TERMCAP_md="${yellow}";
+
+# Don’t clear the screen after quitting a manual page
+export MANPAGER="less -X";
+
+# Always enable colored `grep` output
+export GREP_OPTIONS="--color=auto";
+
+# Link Homebrew casks in `/Applications` rather than `~/Applications`
+# export HOMEBREW_CASK_OPTS="--appdir=/Applications";
+
+# Composer
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+
+# PHP 7.1
+# https://jason.pureconcepts.net/2016/09/upgrade-php-mac-os-x/
+# export PATH=/usr/local/php5/bin:$PATH
+
+# the fuck
+# https://github.com/nvbn/thefuck
+# eval "$(thefuck --alias)"
+# eval "$(thefuck --alias f)"
+
+# NVM (Node Version Manager)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
+# Platform.sh CLI
+# export PATH="/Users/ivan/.platformsh/bin:$PATH"
+# . '/Users/ivan/.platformsh/shell-config.rc' 2>/dev/null
+
+# Node path, for linters.
+# See: http://sublimelinter.readthedocs.io/en/latest/troubleshooting.html#finding-a-linter-executable
+export PATH="$NVM_DIR/versions/node/v5.10.0/bin":$PATH
+
+# Git Flow Completion is loaded in .zshrc with plugins(), but sourcing it here
+# adds some useful information to Powerline.
+source ~/.oh-my-zsh/custom/plugins/git-flow-completion/git-flow-completion.zsh
+
+# PHP
+export PATH="C:/Program Files/PHP/v7.1/":$PATH
+
+# Platform.sh CLI configuration
+export PATH="$HOME/"".platformsh/bin":"$PATH"
+if [ -f "$HOME/"".platformsh/shell-config.rc" ]; then . "$HOME/"".platformsh/shell-config.rc"; fi
