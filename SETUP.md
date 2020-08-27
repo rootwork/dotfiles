@@ -11,7 +11,7 @@
 ### Web setup
 
 * Apache Web Server: https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04
-  * Set docroot as `/home/ivan/public`
+  * Set docroot as `/home/ivan/[domain]/public`
 * Install LetsEncrypt? (should be automatic with DigitalOcean DNS hosting, but...): https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04
 
 ### Check web access
@@ -25,7 +25,7 @@
 * `sudo nano /etc/apache2/apache2.conf` and at end:
 ```apacheconf
 # Custom docroot directory
-<Directory /home/ivan/public>
+<Directory /home/[domain]/ivan/public>
 Options Indexes FollowSymLinks
 AllowOverride None
 Require all granted
