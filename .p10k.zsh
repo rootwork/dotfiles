@@ -32,7 +32,10 @@
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     # =========================[ Line #1 ]=========================
     # os_icon               # os identifier
+    ssh
+    context
     dir                     # current directory
+    dir_writable
     vcs                     # git status
     # =========================[ Line #2 ]=========================
     newline                 # \n
@@ -46,6 +49,7 @@
   typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
     # =========================[ Line #1 ]=========================
     status                  # exit code of the last command
+    root_indicator
     command_execution_time  # duration of the last command
     background_jobs         # presence of background jobs
     direnv                  # direnv status (https://direnv.net/)
@@ -105,6 +109,13 @@
     # wifi                  # wifi speed
     # example               # example user-defined segment (see prompt_example function below)
   )
+
+  # Custom carry-overs from Powerlevel9k (rootwork).
+  # @todo Check and possibly remove these.
+  typeset -g POWERLEVEL9K_DIR_HOME_FOREGROUND='white'
+  typeset -g POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='white'
+  typeset -g POWERLEVEL9K_SHOW_CHANGESET=true
+  typeset -g POWERLEVEL9K_CHANGESET_HASH_LENGTH=6
 
   # Defines character set used by powerlevel10k. It's best to let `p10k configure` set it for you.
   typeset -g POWERLEVEL9K_MODE=ascii
