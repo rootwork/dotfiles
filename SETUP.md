@@ -47,6 +47,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mys
 * `git clone https://gist.github.com/475ee7768efc03727f21.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/git-auto-status`
 * `git clone https://github.com/supercrabtree/k ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/k`
 * `source .zshrc`
+* Copy over dotfiles as needed: https://github.com/rootwork/dotfiles/tree/hosted
 
 ## Hugo
 
