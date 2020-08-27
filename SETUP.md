@@ -25,7 +25,7 @@
 * `nano ~/.aliases`
 
 ```bash
-# Enable aliases to be sudo’d
+# Enable aliases to be sudo'd
 alias sudo='sudo '
 # Untar to current directory
 alias untar='tar --strip-components=1 -zxvf'
