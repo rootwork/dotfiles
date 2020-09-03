@@ -5,7 +5,7 @@
 
 [push]
 
-	default = matching
+  default = matching
 
 [core]
 
@@ -17,7 +17,7 @@
   # [default] trailing-space: looks for spaces at the end of a line
   # [default] space-before-tab: looks for spaces before tabs at the beginning of a line
   whitespace = trailing-space,space-before-tab
-	trustctime = false
+  trustctime = false
   editor = nano
   filemode = false
   pager = diff-so-fancy | less --tabs=4 -RFX
@@ -58,7 +58,7 @@
 
 [credential]
 
-	helper = cache --timeout=3600
+  helper = cache --timeout=3600
 
 [diff]
 
