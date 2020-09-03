@@ -18,7 +18,7 @@
   # [default] space-before-tab: looks for spaces before tabs at the beginning of a line
   whitespace = trailing-space,space-before-tab
   trustctime = false
-  editor = nano
+  editor = subl
   filemode = false
   pager = diff-so-fancy | less --tabs=4 -RFX
 
