@@ -32,17 +32,6 @@ Require all granted
 </Directory>
 ```
 * Complete with Apache tutorial above, remembering docroot is `/home/ivan/public`.
-* `nano ~/.aliases`
-
-```bash
-# Enable aliases to be sudo'd
-alias sudo='sudo '
-# Untar to current directory
-alias untar='tar --strip-components=1 -zxvf'
-# git aliases
-alias pushit='git push -u origin $(git symbolic-ref --short -q HEAD)'
-alias recent='git branch --sort=-committerdate'
-```
 
 ### Optional: Add full LAMP stack
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04
