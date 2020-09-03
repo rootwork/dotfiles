@@ -64,6 +64,9 @@
 
   renames = copies
 
+  # Include any submodules in diff logs
+  submodule = log
+
 [help]
 
   # Automatically correct and execute mistyped commands
@@ -76,7 +79,10 @@
   # `git config --global push.default simple`. See http://git.io/mMah-w.
   default = simple
 
-# URL shorthands
+[status]
+
+  # Show status of any submodules on git status
+  submoduleSummary = true
 
 [url "git@github.com:"]
 
