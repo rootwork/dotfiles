@@ -38,6 +38,11 @@ https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mys
 
 ## Server add-ons
 
+* Copy over dotfiles: https://github.com/rootwork/dotfiles/tree/hosted
+* (Next three steps contingent on [this release](https://github.com/so-fancy/diff-so-fancy/issues/383); if not possible then modify dotfiles.)
+* `sudo add-apt-repository ppa:aos1/diff-so-fancy`
+* `sudo apt update`
+* `sudo apt install diff-so-fancy`
 * oh-my-zsh (skip Powerline font installation): https://kifarunix.com/install-and-setup-zsh-and-oh-my-zsh-on-ubuntu-20-04/
 * `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
 * `git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions`
@@ -46,7 +51,6 @@ https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mys
 * `git clone https://gist.github.com/475ee7768efc03727f21.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/git-auto-status`
 * `git clone https://github.com/supercrabtree/k ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/k`
 * `source .zshrc`
-* Copy over dotfiles as needed: https://github.com/rootwork/dotfiles/tree/hosted
 
 ## Hugo
 
