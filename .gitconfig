@@ -4,7 +4,9 @@
   whitespace = fix
 
 [push]
+
 	default = matching
+
 [core]
 
   # Use custom `.gitignore` and `.gitattributes`
@@ -19,6 +21,7 @@
   editor = nano
   filemode = false
   pager = diff-so-fancy | less --tabs=4 -RFX
+
 [color]
 
   # Use colors in Git commands that are capable of colored output when
@@ -54,36 +57,17 @@
   untracked = cyan
 
 [credential]
-	helper = cache --timeout=3600
 
+	helper = cache --timeout=3600
 
 [diff]
 
-  tool = sublimerge
   renames = copies
-
-[difftool "sublimerge"]
-  cmd = subl -n --wait \"$REMOTE\" \"$LOCAL\" --command \"sublimerge_diff_views {\\\"left_read_only\\\": true, \\\"right_read_only\\\": true}\"
-
-  # Detect copies as well as renames
-  renames = copies
-  compactionHeuristic = true
 
 [help]
 
   # Automatically correct and execute mistyped commands
   autocorrect = 1
-
-[merge]
-
-  tool = sublimerge
-
-[mergetool "sublimerge"]
-cmd = subl -n --wait \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\" --command \"sublimerge_diff_views\"
-trustExitCode = false
-
-  # Include summaries of merged commits in newly created merge commit messages
-  log = true
 
 [push]
 
@@ -203,14 +187,20 @@ trustExitCode = false
     fi \
   }; f"
   staged = diff --staged
-[user]
-  name = Ivan Boothe
-  email = ivan@rootwork.org
+
 [filter "media"]
+
   clean = git media clean %f
   smudge = git media smudge %f
   required = true
+
 [filter "lfs"]
+
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f
   required = true
+
+[user]
+
+  name = Ivan Boothe
+  email = ivan@rootwork.org
