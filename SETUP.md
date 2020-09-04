@@ -22,16 +22,9 @@
 ### Finish web setup
 
 * `mkdir public`
-* `sudo nano /etc/apache2/apache2.conf` and at end:
-```apacheconf
-# Custom docroot directory
-<Directory /home/[domain]/ivan/public>
-Options Indexes FollowSymLinks
-AllowOverride None
-Require all granted
-</Directory>
-```
-* Complete with Apache tutorial above, remembering docroot is `/home/ivan/public`.
+* `sudo nano /etc/apache2/apache2.conf` and find `<Directory /var/www/>`. Change that line to `<Directory /home/[domain]/ivan/public>`
+* `sudo systemctl restart apache2`
+* Complete with Apache tutorial above, remembering docroot is `/home/ivan/[domain]/public`.
 
 ### Optional: Add full LAMP stack
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04
