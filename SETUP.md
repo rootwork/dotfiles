@@ -48,6 +48,12 @@
 * Open `.thunderbird` in home directory
 * Copy over extensions, preferences, etc from previous profile directory into new `*.default-release` directory
 
+## Filezilla
+
+* Edit > Preferences > File editing
+* Use custom editor: `/usr/bin/subl`
+* OK (bottom left)
+
 ## Manual downloads
 
 * Google Chrome
@@ -100,6 +106,13 @@
 * `cp .gitignore ~/`
 * `cp .zshrc ~/`
 * `cp .p10k.zsh ~/`
+* `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+* `git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions`
+* `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+* `git clone https://github.com/bobthecow/git-flow-completion ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/git-flow-completion`
+* `git clone https://gist.github.com/475ee7768efc03727f21.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/git-auto-status`
+* `git clone https://github.com/supercrabtree/k ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/k`
+* `cp .git-completion ~/`
 * `source ~/.zshrc`
 
 # Things to investigate
