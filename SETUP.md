@@ -56,7 +56,26 @@
 
 ## Installations
 
+* `sudo add-apt-repository ppa:aos1/diff-so-fancy`
+* `sudo apt update`
+* `sudo apt install diff-so-fancy`
 * `sudo apt-get install xclip`
+* `sudo apt install zsh`
+
+## Setup Zsh/Oh My Zsh/Powerline
+* `sudo usermod -s $(which zsh) ivan`
+* logout/login
+* open Terminal and choose option 2
+* `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+* `cd $HOME/Downloads`
+* `wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf`
+* `wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf`
+* `wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf`
+* `wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf`
+* Navigate to `Downloads` and double-click on each font to install it
+* Right click Terminal window and choose Preferences
+* On the selected profile, under Profiles, check Custom font under Text Appearance and select MesloLGS NF Regular, size 12
+* `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k`
 
 ## Create SSH keys
 
@@ -70,6 +89,22 @@
 
 * `xclip -sel clip < ~/.ssh/id_rsa.pub`
 * https://github.com/settings/ssh/new
+
+# Dotfile time
+
+* `cd ~`
+* `git clone git@github.com:rootwork/dotfiles.git`
+* `cd dotfiles`
+* `git checkout local-nix`
+* `cp .gitconfig ~/`
+* `cp .gitignore ~/`
+* `cp .zshrc ~/`
+* `cp .p10k.zsh ~/`
+* `source ~/.zshrc`
+
+# Things to investigate
+
+* version of Mac CLI `open .`
 
 # Backup!
 
