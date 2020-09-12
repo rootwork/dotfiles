@@ -67,6 +67,7 @@
 * `sudo apt install diff-so-fancy`
 * `sudo apt-get install xclip`
 * `sudo apt install zsh`
+* `sudo apt install python`
 
 ## Setup Zsh/Oh My Zsh/Powerline
 * `sudo usermod -s $(which zsh) ivan`
@@ -102,17 +103,13 @@
 * `git clone git@github.com:rootwork/dotfiles.git`
 * `cd dotfiles`
 * `git checkout local-nix`
-* `cp .gitconfig ~/`
-* `cp .gitignore ~/`
-* `cp .zshrc ~/`
-* `cp .p10k.zsh ~/`
+* `cp .* ~/`
 * `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
 * `git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions`
 * `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
 * `git clone https://github.com/bobthecow/git-flow-completion ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/git-flow-completion`
 * `git clone https://gist.github.com/475ee7768efc03727f21.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/git-auto-status`
 * `git clone https://github.com/supercrabtree/k ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/k`
-* `cp .git-completion ~/`
 * `source ~/.zshrc`
 
 # Things to investigate
