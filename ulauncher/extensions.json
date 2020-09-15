@@ -1,1 +1,72 @@
-{}
+{
+    "com.github.katacarbix.ulauncher-dict-en": {
+        "id": "com.github.katacarbix.ulauncher-dict-en",
+        "url": "https://github.com/katacarbix/ulauncher-dict-en",
+        "updated_at": "2020-09-15T15:02:12.805914",
+        "last_commit": "c43645a803d3ebaf0a3d54bb2aeefe6660542e52",
+        "last_commit_time": "2020-07-07T16:31:50"
+    },
+    "com.github.elken.terminal-runner": {
+        "id": "com.github.elken.terminal-runner",
+        "url": "https://github.com/elken/Terminal-Runner",
+        "updated_at": "2020-09-15T15:03:13.775906",
+        "last_commit": "6807ebe6047462bcce6063c63228eddcb8c6b481",
+        "last_commit_time": "2020-02-22T23:04:04"
+    },
+    "com.github.pwnyprod.ulauncher-ipcopy": {
+        "id": "com.github.pwnyprod.ulauncher-ipcopy",
+        "url": "https://github.com/pwnyprod/ulauncher-ipcopy",
+        "updated_at": "2020-09-15T15:03:40.067733",
+        "last_commit": "cb9dccda390d2c4d1299148491c65c177066ad14",
+        "last_commit_time": "2020-01-19T13:42:10"
+    },
+    "com.github.rkarami.ulauncher-npms": {
+        "id": "com.github.rkarami.ulauncher-npms",
+        "url": "https://github.com/rkarami/ulauncher-npms",
+        "updated_at": "2020-09-15T15:04:03.986947",
+        "last_commit": "0848812c649ba05fc8ae80bfd254b6da3e9d8d1f",
+        "last_commit_time": "2019-09-26T13:36:17"
+    },
+    "com.github.brpaz.ulauncher-encoder": {
+        "id": "com.github.brpaz.ulauncher-encoder",
+        "url": "https://github.com/brpaz/ulauncher-encoder",
+        "updated_at": "2020-09-15T15:05:55.409864",
+        "last_commit": "89c96c7ae8f5965a7a5dd01a87cb7eadf34bc611",
+        "last_commit_time": "2019-12-03T20:18:35"
+    },
+    "com.github.iboyperson.ulauncher-system": {
+        "id": "com.github.iboyperson.ulauncher-system",
+        "url": "https://github.com/iboyperson/ulauncher-system",
+        "updated_at": "2020-09-15T15:09:58.691179",
+        "last_commit": "8c30af5f99ee28bff8ae623c3ed0ff08110f26b4",
+        "last_commit_time": "2020-06-19T16:28:40"
+    },
+    "com.github.ruudjelinssen.ulauncher-imdb": {
+        "id": "com.github.ruudjelinssen.ulauncher-imdb",
+        "url": "https://github.com/ruudjelinssen/ulauncher-imdb",
+        "updated_at": "2020-09-15T15:10:33.908486",
+        "last_commit": "308c0d9c27f29185708e11c5e44f405b68a04dbd",
+        "last_commit_time": "2019-12-07T20:24:49"
+    },
+    "com.github.brpaz.ulauncher-github": {
+        "id": "com.github.brpaz.ulauncher-github",
+        "url": "https://github.com/brpaz/ulauncher-github",
+        "updated_at": "2020-09-15T15:16:47.425998",
+        "last_commit": "cf75ed7bc1071eb5c12376b66a25ba6c47fcffad",
+        "last_commit_time": "2020-05-31T16:20:09"
+    },
+    "com.github.ulauncher.ulauncher-emoji": {
+        "id": "com.github.ulauncher.ulauncher-emoji",
+        "url": "https://github.com/Ulauncher/ulauncher-emoji",
+        "updated_at": "2020-09-15T15:20:32.081705",
+        "last_commit": "4734455e255a401ff7507192386ed62361cb3748",
+        "last_commit_time": "2019-05-20T18:00:00"
+    },
+    "com.github.ulauncher.ulauncher-timer": {
+        "id": "com.github.ulauncher.ulauncher-timer",
+        "url": "https://github.com/ulauncher/ulauncher-timer",
+        "updated_at": "2020-09-15T15:21:21.113989",
+        "last_commit": "698b72785da8fd60f22faeacfb020d2e30c93cb0",
+        "last_commit_time": "2020-06-17T04:05:12"
+    }
+}

@@ -6,5 +6,5 @@
     "show-indicator-icon": true,
     "show-recent-apps": "5",
     "terminal-command": "",
-    "theme-name": "light"
+    "theme-name": "dracula"
 }

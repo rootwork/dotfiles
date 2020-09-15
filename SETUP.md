@@ -71,6 +71,8 @@
 * `sudo apt-get install xclip`
 * `sudo apt install zsh`
 * `sudo apt install python`
+* `sudo apt install python3-pip`
+* `pip3 install pygithub`
 * `sudo apt-get install guake`
 * `sudo apt install ulauncher`
 * Right-click the big "U" Ulauncher icon in the system tray and exit
