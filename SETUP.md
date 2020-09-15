@@ -67,14 +67,8 @@
 * `sudo add-apt-repository ppa:aos1/diff-so-fancy`
 * `sudo add-apt-repository ppa:agornostal/ulauncher`
 * `sudo apt update`
-* `sudo apt install diff-so-fancy`
-* `sudo apt-get install xclip`
-* `sudo apt install zsh`
-* `sudo apt install python`
-* `sudo apt install python3-pip`
+* `sudo apt install diff-so-fancy xclip zsh python python3-pip guake ulauncher`
 * `pip3 install pygithub`
-* `sudo apt-get install guake`
-* `sudo apt install ulauncher`
 * Right-click the big "U" Ulauncher icon in the system tray and exit
 
 ## Fixing xdg-open error messages from Nautilus
