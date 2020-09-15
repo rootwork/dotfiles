@@ -65,12 +65,15 @@
 ## Installations
 
 * `sudo add-apt-repository ppa:aos1/diff-so-fancy`
+* `sudo add-apt-repository ppa:agornostal/ulauncher`
 * `sudo apt update`
 * `sudo apt install diff-so-fancy`
 * `sudo apt-get install xclip`
 * `sudo apt install zsh`
 * `sudo apt install python`
 * `sudo apt-get install guake`
+* `sudo apt install ulauncher`
+* Right-click the big "U" Ulauncher icon in the system tray and exit
 
 ## Fixing xdg-open error messages from Nautilus
 * `sudo mkdir -p /var/lib/samba/usershares/`
@@ -110,6 +113,7 @@
 * `git clone git@github.com:rootwork/dotfiles.git`
 * `cd dotfiles`
 * `git checkout local-nix`
+* `cp ulauncher/* ~/.config/ulauncher`
 * `cp .* ~/`
 * `cd ~`
 * `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
@@ -120,6 +124,12 @@
 * `git clone https://github.com/supercrabtree/k ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/k`
 * `source ~/.zshrc`
 * `guake --restore-preferences .guake`
+* `ulauncher`
+
+# Startup files
+
+* Startup Applications
+* Add Ulauncher
 
 # Backup!
 
