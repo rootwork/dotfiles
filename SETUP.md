@@ -67,7 +67,7 @@
 * `sudo add-apt-repository ppa:aos1/diff-so-fancy`
 * `sudo add-apt-repository ppa:agornostal/ulauncher`
 * `sudo apt update`
-* `sudo apt install diff-so-fancy xclip zsh python python3-pip guake ulauncher`
+* `sudo apt install diff-so-fancy xclip zsh python python3-pip rar guake ulauncher`
 * `pip3 install pygithub`
 * Right-click the big "U" Ulauncher icon in the system tray and exit
 
