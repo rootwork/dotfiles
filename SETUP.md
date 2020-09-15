@@ -72,6 +72,10 @@
 * `sudo apt install python`
 * `sudo apt-get install guake`
 
+## Fixing xdg-open error messages from Nautilus
+* `sudo mkdir -p /var/lib/samba/usershares/`
+* `sudo chmod go+rwx /var/lib/samba/usershare`
+
 ## Setup Zsh/Oh My Zsh/Powerline
 * `sudo usermod -s $(which zsh) ivan`
 * logout/login
@@ -116,10 +120,6 @@
 * `git clone https://github.com/supercrabtree/k ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/k`
 * `source ~/.zshrc`
 * `guake --restore-preferences .guake`
-
-# Things to investigate
-
-* version of Mac CLI `open .`
 
 # Backup!
 
