@@ -6,6 +6,8 @@
 * Ctrl position
 * Swap Left Win with Left Ctrl
 * Swap Right Win with Right Ctrl
+* Go to Shortcuts > General
+* Set command/alt shortcuts for the four "cycle" shortcuts
 
 ## Autoconnect trusted Bluetooth devices
 
