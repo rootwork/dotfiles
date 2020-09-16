@@ -59,6 +59,7 @@
 ## Manual downloads
 
 * Google Chrome
+* [Autokey](https://github.com/autokey/autokey/wiki/Installing#debian-and-derivatives)
 
 # CLI fun
 
