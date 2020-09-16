@@ -1,17 +1,17 @@
 {
     "type": "phrase",
-    "description": "Home Address",
+    "description": "Work Address",
     "modes": [
         1
     ],
-    "usageCount": 5,
+    "usageCount": 0,
     "prompt": false,
     "omitTrigger": false,
     "matchCase": false,
     "showInTrayMenu": false,
     "abbreviation": {
         "abbreviations": [
-            "aadr"
+            "wwadr"
         ],
         "backspace": true,
         "ignoreCase": false,
