@@ -123,12 +123,12 @@
 * `git clone https://github.com/supercrabtree/k ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/k`
 * `source ~/.zshrc`
 * `guake --restore-preferences .guake`
-* `ulauncher`
 
-# Startup files
+# Startup
 
 * Startup Applications
 * Add Ulauncher
+* Launch Guake, Ulauncher, Autokey (these will start up automatically from now on)
 
 # Backup!
 
