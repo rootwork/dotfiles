@@ -109,7 +109,7 @@
 * `git clone git@github.com:rootwork/dotfiles.git`
 * `cd dotfiles`
 * `git checkout local-nix`
-* `cp ulauncher/* ~/.config/ulauncher`
+* `cp .config/ulauncher/* ~/.config/ulauncher`
 * `cp .* ~/`
 * `cd ~`
 * `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
