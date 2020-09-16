@@ -71,6 +71,7 @@
 * `sudo apt install diff-so-fancy xclip zsh python python3-pip rar guake ulauncher whois`
 * `pip3 install pygithub`
 * Right-click the big "U" Ulauncher icon in the system tray and exit
+* Right-click the big "A" autokey icon in the system tray and quit
 
 ## Fixing xdg-open error messages from Nautilus
 * `sudo mkdir -p /var/lib/samba/usershares/`
@@ -111,6 +112,7 @@
 * `cd dotfiles`
 * `git checkout local-nix`
 * `cp .config/ulauncher/* ~/.config/ulauncher`
+* `cp -r .config/autokey ~/.config/`
 * `cp .* ~/`
 * `cd ~`
 * `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
