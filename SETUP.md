@@ -118,7 +118,8 @@ This was created using Linux Mint. Other Debian-based distros should work just a
 ## Grab private config settings
 * `cd ~`
 * `git clone git@github.com:rootwork/config-repo.git`
-* `cp -rf config-repo/* ~/.config`
+* `sudo cp -rf config-repo/* ~/.config`
+* `rm ~/.config/README.md && m ~/.config/SETUP.md`
 
 ## Now finish setting up
 
