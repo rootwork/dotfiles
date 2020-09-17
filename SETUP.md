@@ -1,3 +1,5 @@
+This was created using Linux Mint. Other Debian-based distros should work just as well, though the directions to parts of the UI will be different.
+
 # Hardware
 
 ## Keybinding
