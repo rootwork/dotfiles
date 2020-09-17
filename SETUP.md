@@ -115,7 +115,7 @@
 ## We're going to copy config settings one at a time so we remember what we're doing!
 
 * `cp -r .config/ulauncher ~/.config`
-* `cp -r .config/autokey ~/.config/`
+* `cp -r .config/autokey ~/.config`
 
 ## Now copy all the dotfiles
 
