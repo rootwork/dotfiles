@@ -58,7 +58,7 @@
 
 ## Manual downloads
 
-* Google Chrome
+* [Google Chrome](https://www.google.com/chrome/)
 * [Autokey](https://github.com/autokey/autokey/wiki/Installing#debian-and-derivatives)
 
 # CLI fun
@@ -111,9 +111,18 @@
 * `git clone git@github.com:rootwork/dotfiles.git`
 * `cd dotfiles`
 * `git checkout local-nix`
-* `cp .config/ulauncher/* ~/.config/ulauncher`
+
+## We're going to copy config settings one at a time so we remember what we're doing!
+
+* `cp -r .config/ulauncher ~/.config`
 * `cp -r .config/autokey ~/.config/`
+
+## Now copy all the dotfiles
+
 * `cp .* ~/`
+
+## Now finish setting up
+
 * `cd ~`
 * `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
 * `git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions`
