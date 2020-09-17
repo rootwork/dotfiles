@@ -129,6 +129,7 @@
 * `git clone https://github.com/supercrabtree/k ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/k`
 * `source ~/.zshrc`
 * `guake --restore-preferences .guake`
+* Run Update Manager and install anything new
 
 # Startup
 
