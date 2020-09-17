@@ -120,7 +120,7 @@ This was created using Linux Mint. Other Debian-based distros should work just a
 * `cd ~`
 * `git clone git@github.com:rootwork/config-repo.git`
 * `sudo cp -rf config-repo/* ~/.config`
-* `rm ~/.config/README.md && rm ~/.config/SETUP.md`
+* `rm ~/.config/README.md`
 
 ## Now finish setting up
 
