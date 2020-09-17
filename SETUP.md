@@ -111,15 +111,12 @@
 * `git clone git@github.com:rootwork/dotfiles.git`
 * `cd dotfiles`
 * `git checkout local-nix`
-
-## We're going to copy config settings one at a time so we remember what we're doing!
-
-* `cp -r .config/ulauncher ~/.config`
-* `cp -r .config/autokey ~/.config`
-
-## Now copy all the dotfiles
-
 * `cp .* ~/`
+
+## Grab private config settings
+* `cd ~`
+* `git clone git@github.com:rootwork/config-repo.git`
+* `cp -rf config-repo/* ~/.config`
 
 ## Now finish setting up
 
@@ -138,6 +135,7 @@
 * Startup Applications
 * Add Ulauncher
 * Launch Guake, Ulauncher, Autokey (these will start up automatically from now on)
+* Log out, then log back in
 
 # Backup!
 
