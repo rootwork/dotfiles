@@ -15,6 +15,7 @@ This was created using Linux Mint. Other Debian-based distros should work just a
 
 * [Google Chrome](https://www.google.com/chrome/)
 * [Autokey](https://github.com/autokey/autokey/wiki/Installing#debian-and-derivatives)
+* [Zoom](https://zoom.us/download#client_4meeting)
 
 ## Firefox
 
