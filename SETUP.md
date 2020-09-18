@@ -139,6 +139,7 @@ This was created using Linux Mint. Other Debian-based distros should work just a
 
 * Startup Applications
 * Add Ulauncher
+* Add Guake if it's not listed already
 * Launch Guake, Ulauncher, Autokey (these will start up automatically from now on)
 * Log out, then log back in
 
