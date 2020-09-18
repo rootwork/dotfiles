@@ -29,12 +29,6 @@ This was created using Linux Mint. Other Debian-based distros should work just a
 * Open `.thunderbird` in home directory
 * Copy over extensions, preferences, etc from previous profile directory into new `*.default-release` directory
 
-## Filezilla
-
-* Edit > Preferences > File editing
-* Use custom editor: `/usr/bin/subl`
-* OK (bottom left)
-
 # CLI fun
 
 ## Installations
