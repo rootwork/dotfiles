@@ -1,30 +1,5 @@
 This was created using Linux Mint. Other Debian-based distros should work just as well, though the directions to parts of the UI will be different.
 
-# Hardware
-
-## Keybinding
-
-* Keyboard > Layouts > Options...
-* Ctrl position
-* Swap Left Win with Left Ctrl
-* Swap Right Win with Right Ctrl
-* Go to Shortcuts > General
-* Set command/alt shortcuts for the four "cycle" shortcuts
-
-## Autoconnect trusted Bluetooth devices
-
-* Pair all devices using Bluetooth GUI
-* `bluetoothctl devices`
-* By default paired devices will be trusted
-* `bluetoothctl untrust [device_id]` for each device you do NOT want to autoconnect
-* `git clone https://github.com/jrouleau/bluetooth-autoconnect.git`
-* `sudo cp bluetooth-autoconnect/bluetooth-autoconnect.service /etc/systemd/system/`
-* `sudo cp '/home/ivan/bluetooth-autoconnect/bluetooth-autoconnect' /usr/bin/`
-* `sudo systemctl enable bluetooth-autoconnect.service`
-* `sudo systemctl start bluetooth-autoconnect.service`
-* Reboot, making sure any wired mice are not connected (they'll prevent Bluetooth mice from registering clicks)
-* Note you'll get a warning about no keyboard on startup if you use a Bluetooth keyboard; no worries, it'll kick in on the login screen
-
 # Program setup
 
 ## Software manager
@@ -32,14 +7,14 @@ This was created using Linux Mint. Other Debian-based distros should work just a
 * Filezilla
 * Gimp
 * Git
+* Skype
 * Sublime Text
 * VirtualBox
 
-## File manager
+## Manual downloads
 
-* Edit > Preferences
-* View new folders using: List View
-* In any folder, <kbd>ctrl-h</kbd> to show hidden (dot) files
+* [Google Chrome](https://www.google.com/chrome/)
+* [Autokey](https://github.com/autokey/autokey/wiki/Installing#debian-and-derivatives)
 
 ## Firefox
 
@@ -58,11 +33,6 @@ This was created using Linux Mint. Other Debian-based distros should work just a
 * Use custom editor: `/usr/bin/subl`
 * OK (bottom left)
 
-## Manual downloads
-
-* [Google Chrome](https://www.google.com/chrome/)
-* [Autokey](https://github.com/autokey/autokey/wiki/Installing#debian-and-derivatives)
-
 # CLI fun
 
 ## Installations
@@ -70,14 +40,10 @@ This was created using Linux Mint. Other Debian-based distros should work just a
 * `sudo add-apt-repository ppa:aos1/diff-so-fancy`
 * `sudo add-apt-repository ppa:agornostal/ulauncher`
 * `sudo apt update`
-* `sudo apt install diff-so-fancy xclip zsh python python3-pip rar guake ulauncher whois`
+* `sudo apt install diff-so-fancy xclip zsh python python3-pip rar guake ulauncher whois dconf-editor arc-theme`
 * `pip3 install pygithub`
 * Right-click the big "U" Ulauncher icon in the system tray and exit
 * Right-click the big "A" autokey icon in the system tray and quit
-
-## Fixing xdg-open error messages from Nautilus
-* `sudo mkdir -p /var/lib/samba/usershares/`
-* `sudo chmod go+rwx /var/lib/samba/usershare`
 
 ## Setup Zsh/Oh My Zsh/Powerline
 * `sudo usermod -s $(which zsh) ivan`
@@ -135,9 +101,28 @@ This was created using Linux Mint. Other Debian-based distros should work just a
 * `source ~/.zshrc`
 * Run Update Manager and install anything new
 
-# Startup
+# Bits and bobs
 
-* Startup Applications
+## Autoconnect trusted Bluetooth devices
+
+* Pair all devices using Bluetooth GUI
+* `bluetoothctl devices`
+* By default paired devices will be trusted
+* `bluetoothctl untrust [device_id]` for each device you do NOT want to autoconnect
+* `git clone https://github.com/jrouleau/bluetooth-autoconnect.git`
+* `sudo cp bluetooth-autoconnect/bluetooth-autoconnect.service /etc/systemd/system/`
+* `sudo cp '/home/ivan/bluetooth-autoconnect/bluetooth-autoconnect' /usr/bin/`
+* `sudo systemctl enable bluetooth-autoconnect.service`
+* `sudo systemctl start bluetooth-autoconnect.service`
+* Reboot, making sure any wired mice are not connected (they'll prevent Bluetooth mice from registering clicks)
+* Note you'll get a warning about no keyboard on startup if you use a Bluetooth keyboard; no worries, it'll kick in on the login screen
+
+## Fixing xdg-open error messages from Nautilus
+* `sudo mkdir -p /var/lib/samba/usershares/`
+* `sudo chmod go+rwx /var/lib/samba/usershare`
+
+# Startup applications
+
 * Add Ulauncher
 * Add Guake if it's not listed already
 * Launch Guake, Ulauncher, Autokey (these will start up automatically from now on)
