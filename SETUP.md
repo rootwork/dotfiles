@@ -12,6 +12,10 @@ This was created using Linux Mint. Other Debian-based distros should work just a
 * Sublime Text
 * VirtualBox
 
+## Applets
+
+* Weather [weather-mockturtl]
+
 ## Manual downloads
 
 * [Google Chrome](https://www.google.com/chrome/)
