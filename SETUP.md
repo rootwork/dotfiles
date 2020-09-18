@@ -5,6 +5,7 @@ This was created using Linux Mint. Other Debian-based distros should work just a
 ## Software manager
 
 * Filezilla
+* Franz
 * Gimp
 * Git
 * Skype
@@ -124,9 +125,7 @@ This was created using Linux Mint. Other Debian-based distros should work just a
 
 # Startup applications
 
-* Add Ulauncher
-* Add Guake if it's not listed already
-* Launch Guake, Ulauncher, Autokey (these will start up automatically from now on)
+* Confirm the following are listed: Guake, Ulauncher, Autokey, Franz
 * Log out, then log back in
 
 # Backup!
