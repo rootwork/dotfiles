@@ -115,11 +115,12 @@ This was created using Linux Mint. Other Debian-based distros should work just a
 * `git checkout local-nix`
 * `cp .* ~/`
 
-## Grab private config settings
+## Grab private config settings and load them
 
 * `cd ~`
 * `git clone git@github.com:rootwork/config-repo.git`
 * `sudo cp -rf config-repo/* ~/.config`
+* `dconf load / < ~/.config/config.conf`
 * `rm ~/.config/README.md`
 
 ## Now finish setting up
