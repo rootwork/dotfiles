@@ -133,7 +133,6 @@ This was created using Linux Mint. Other Debian-based distros should work just a
 * `git clone https://gist.github.com/475ee7768efc03727f21.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/git-auto-status`
 * `git clone https://github.com/supercrabtree/k ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/k`
 * `source ~/.zshrc`
-* `guake --restore-preferences .guake`
 * Run Update Manager and install anything new
 
 # Startup
