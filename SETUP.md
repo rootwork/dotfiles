@@ -5,7 +5,6 @@ This was created using Linux Mint. Other Debian-based distros should work just a
 ## Software manager
 
 * Filezilla
-* Franz
 * Gimp
 * Git
 * Skype
@@ -21,6 +20,7 @@ This was created using Linux Mint. Other Debian-based distros should work just a
 * [Google Chrome](https://www.google.com/chrome/)
 * [Autokey](https://github.com/autokey/autokey/wiki/Installing#debian-and-derivatives)
 * [Zoom](https://zoom.us/download#client_4meeting)
+* [Rambox](https://github.com/ramboxapp/community-edition/releases) (get the most recent `-linux-amd64.deb` file)
 
 ## Firefox
 
@@ -123,7 +123,7 @@ This was created using Linux Mint. Other Debian-based distros should work just a
 
 # Startup applications
 
-* Confirm the following are listed: Guake, Ulauncher, Autokey, Franz
+* Confirm the following are listed: Guake, Ulauncher, Autokey, Rambox, Mullvad (if used)
 * Log out, then log back in
 
 # Backup!
