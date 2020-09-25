@@ -40,7 +40,7 @@ This was created using Linux Mint. Other Debian-based distros should work just a
 * `sudo add-apt-repository ppa:aos1/diff-so-fancy`
 * `sudo add-apt-repository ppa:agornostal/ulauncher`
 * `sudo apt update`
-* `sudo apt install diff-so-fancy xclip zsh python python3-pip rar guake ulauncher whois dconf-editor arc-theme`
+* `sudo apt install diff-so-fancy xclip zsh python python3-pip rar guake ulauncher whois dconf-editor arc-theme apache2 mysql-server php libapache2-mod-php php-mysql`
 * `pip3 install pygithub`
 * Right-click the big "U" Ulauncher icon in the system tray and exit
 * Right-click the big "A" autokey icon in the system tray and quit
