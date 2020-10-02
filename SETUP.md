@@ -14,6 +14,7 @@ This was created using Linux Mint. Other Debian-based distros should work just a
 ## Applets
 
 * Weather [weather-mockturtl]
+* Color Picker
 
 ## Manual downloads
 
