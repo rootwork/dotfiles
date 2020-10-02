@@ -86,7 +86,7 @@ This was created using Linux Mint. Other Debian-based distros should work just a
 ## Grab private config settings and load them
 
 * `cd ~`
-* `git clone git@github.com:rootwork/config-repo.git`
+* `git clone git@github.com:rootwork/config-repo.git repos/config-repo`
 * `sudo cp -rf config-repo/* ~/.config`
 * `dconf load / < ~/.config/config.conf`
 * `rm ~/.config/README.md`
@@ -111,9 +111,9 @@ This was created using Linux Mint. Other Debian-based distros should work just a
 * `bluetoothctl devices`
 * By default paired devices will be trusted
 * `bluetoothctl untrust [device_id]` for each device you do NOT want to autoconnect
-* `git clone https://github.com/jrouleau/bluetooth-autoconnect.git`
-* `sudo cp bluetooth-autoconnect/bluetooth-autoconnect.service /etc/systemd/system/`
-* `sudo cp '/home/ivan/bluetooth-autoconnect/bluetooth-autoconnect' /usr/bin/`
+* `git clone https://github.com/jrouleau/bluetooth-autoconnect.git repos/bluetooth-autoconnect`
+* `sudo cp repos/bluetooth-autoconnect/bluetooth-autoconnect.service /etc/systemd/system/`
+* `sudo cp '/home/ivan/repos/bluetooth-autoconnect/bluetooth-autoconnect' /usr/bin/`
 * `sudo systemctl enable bluetooth-autoconnect.service`
 * `sudo systemctl start bluetooth-autoconnect.service`
 * Reboot, making sure any wired mice are not connected (they'll prevent Bluetooth mice from registering clicks)
