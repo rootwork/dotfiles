@@ -145,6 +145,9 @@ sudo fwupdmgr update
 * `sudo mkdir -p /var/lib/samba/usershares/`
 * `sudo chmod go+rwx /var/lib/samba/usershare`
 
+## Install M$ fonts
+* `sudo apt install -y ttf-mscorefonts-installer`
+
 # Startup applications
 
 * Confirm the following are listed: Guake, Ulauncher, Autokey, Rambox, Mullvad (if used)
