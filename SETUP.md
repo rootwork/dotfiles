@@ -140,7 +140,7 @@ sudo fwupdmgr update
 * Reboot, making sure any wired mice are not connected (they'll prevent Bluetooth mice from registering clicks)
 * Note you'll get a warning about no keyboard on startup if you use a Bluetooth keyboard; no worries, it'll kick in on the login screen
 
-## Fixing xdg-open error messages from Nemo
+## Fix xdg-open error messages from Nemo
 * `sudo mkdir -p /var/lib/samba/usershares/`
 * `sudo chmod go+rwx /var/lib/samba/usershare`
 
