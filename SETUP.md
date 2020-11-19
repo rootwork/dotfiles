@@ -37,7 +37,6 @@ sudo fwupdmgr update
 
 ## Manual downloads
 
-* [Google Chrome](https://www.google.com/chrome/)
 * [Autokey](https://github.com/autokey/autokey/wiki/Installing#debian-and-derivatives)
 * [Zoom](https://zoom.us/download#client_4meeting)
 * [Rambox](https://github.com/ramboxapp/community-edition/releases) (get the most recent `-linux-amd64.deb` file)
@@ -64,7 +63,7 @@ sudo fwupdmgr update
 * `sudo add-apt-repository ppa:font-manager/staging`
 * `sudo add-apt-repository ppa:jonaski/strawberry`
 * `sudo apt update`
-* `sudo apt install diff-so-fancy xclip zsh python python3-pip rar guake ulauncher whois dconf-editor arc-theme apache2 mysql-server php libapache2-mod-php php-mysql php7.4-xml libpam-yubico yubikey-manager font-manager nemo-font-manager nemo-image-converter strawberry`
+* `sudo apt install diff-so-fancy xclip zsh python python3-pip rar guake ulauncher whois dconf-editor arc-theme apache2 mysql-server php libapache2-mod-php php-mysql php7.4-xml libpam-yubico yubikey-manager font-manager nemo-font-manager nemo-image-converter strawberry chromium`
 * `pip3 install pygithub`
 * Right-click the big "U" Ulauncher icon in the system tray and exit
 * Right-click the big "A" autokey icon in the system tray and quit
