@@ -29,7 +29,6 @@ sudo fwupdmgr update
 * Git
 * Skype
 * Sublime Text
-* VirtualBox
 
 ## Applets
 
@@ -42,6 +41,7 @@ sudo fwupdmgr update
 * [Autokey](https://github.com/autokey/autokey/wiki/Installing#debian-and-derivatives)
 * [Zoom](https://zoom.us/download#client_4meeting)
 * [Rambox](https://github.com/ramboxapp/community-edition/releases) (get the most recent `-linux-amd64.deb` file)
+* [QuickEmu](https://github.com/wmutschl/quickemu), in lieu of VirtualBox, if needed
 
 ## Firefox
 
