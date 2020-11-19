@@ -147,6 +147,10 @@ sudo fwupdmgr update
 ## Install M$ fonts
 * `sudo apt install -y ttf-mscorefonts-installer`
 
+## Extras
+* [Install Anbox for running Android apps](https://www.how2shout.com/linux/how-to-install-anbox-on-ubuntu-20-04-lts-focal-fossa/)
+* [Install Signal without a smartphone (or Android emulator)](https://ctrl.alt.coop/en/post/signal-without-a-smartphone/)
+
 # Startup applications
 
 * Confirm the following are listed: Guake, Ulauncher, Autokey, Rambox, Mullvad (if used)
