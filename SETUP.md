@@ -1,5 +1,25 @@
 This was created using Linux Mint. Other Debian-based distros should work just as well, though the directions to parts of the UI will be different.
 
+# First-run OS and computer setup
+
+Update all the things!
+
+```
+sudo apt update
+sudo apt upgrade
+sudo apt dist-upgrade
+sudo apt autoremove
+sudo apt autoclean
+```
+
+If this is a reinstall rather than a brand-new machine, skip to the next step.
+
+```
+sudo fwupdmgr get-devices
+sudo fwupdmgr get-updates
+sudo fwupdmgr update
+```
+
 # Program setup
 
 ## Software manager
