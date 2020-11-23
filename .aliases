@@ -122,4 +122,5 @@ _npm_install_completion () {
 complete -o default -F _npm_install_completion npm
 
 # easier to remember alias for viewing OS version, build, kernel etc.
-alias os='cat /etc/os-release'
+# appended by ZSH version
+alias os='cat /etc/os-release && zsh --version'
