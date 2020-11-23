@@ -6,9 +6,13 @@ HOME=${HOME:-"/home/ivan"}
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='subl -w'
+  # Nano, with wordwrap disabled, for remote
+  export EDITOR='nano -w'
+  export VISUAL='nano -w'
 else
-  export EDITOR='subl -w'
+  # Sublime Text for local
+  export EDITOR='subl'
+  export VISUAL='subl'
 fi
 
 # ssh
