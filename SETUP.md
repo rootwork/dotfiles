@@ -134,6 +134,15 @@ sudo fwupdmgr update
 * Reboot, making sure any wired mice are not connected (they'll prevent Bluetooth mice from registering clicks)
 * Note you'll get a warning about no keyboard on startup if you use a Bluetooth keyboard; no worries, it'll kick in on the login screen
 
+## Set Sublime Text as editor for `sudo` commands
+`sudo`-edit `/etc/environment` and add the following:
+
+```
+# Use Sublime for editing even within sudo
+export EDITOR='/usr/bin/subl -w'
+export VISUAL='/usr/bin/subl -w'
+```
+
 ## Fix xdg-open error messages from Nemo
 * `sudo mkdir -p /var/lib/samba/usershares/`
 * `sudo chmod go+rwx /var/lib/samba/usershare`
