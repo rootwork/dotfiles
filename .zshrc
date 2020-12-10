@@ -94,6 +94,7 @@ plugins=(
   composer
   jira
   npm
+  sudo
   urltools
   vagrant
   web-search
