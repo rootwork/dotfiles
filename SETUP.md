@@ -57,7 +57,7 @@ sudo fwupdmgr update
 * `sudo add-apt-repository ppa:font-manager/staging`
 * `sudo add-apt-repository ppa:jonaski/strawberry`
 * `sudo apt update`
-* `sudo apt install -y git diff-so-fancy xclip zsh python python3-pip rar guake ulauncher whois dconf-editor arc-theme apache2 mysql-server php libapache2-mod-php php-mysql php7.4-xml libpam-yubico yubikey-manager sublime-text font-manager nemo-font-manager nemo-image-converter strawberry chromium filezilla gimp skypeforlinux vlc`
+* `sudo apt install -y git diff-so-fancy xclip zsh python python3-pip rar guake ulauncher whois dconf-editor arc-theme apache2 mysql-server php libapache2-mod-php php-mysql php7.4-xml libpam-yubico yubikey-manager sublime-text font-manager nemo-font-manager nemo-image-converter strawberry chromium filezilla gimp skypeforlinux vlc libncurses5-dev`
 * `pip3 install pygithub`
 * Right-click the big "U" Ulauncher icon in the system tray and exit
 * Right-click the big "A" autokey icon in the system tray and quit
@@ -115,6 +115,7 @@ sudo fwupdmgr update
 * `git clone https://github.com/bobthecow/git-flow-completion ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/git-flow-completion`
 * `git clone https://gist.github.com/475ee7768efc03727f21.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/git-auto-status`
 * `git clone https://github.com/supercrabtree/k ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/k`
+* `git clone https://github.com/Xfennec/progress.git ~/progress && cd ~/progress && make && sudo make install && cd ~ && rm -rf ~/progress`
 * `source ~/.zshrc`
 * Run Update Manager and install anything new
 
