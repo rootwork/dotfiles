@@ -253,6 +253,3 @@ search () { grep -rHinC0 "$*" .; }
 HOME=${HOME:-'/home/ivan'}
 export PATH="$HOME/"'.platformsh/bin':"$PATH"
 if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/shell-config.rc'; fi # END SNIPPET
-
-#  Pantheon Terminus autocomplete
-eval "$(terminus autocomplete)"
