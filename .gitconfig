@@ -1,11 +1,7 @@
-[apply]
+[user]
 
-  # Detect whitespace errors when applying a patch
-  whitespace = fix
-
-[push]
-
-  default = matching
+  name = Ivan Boothe
+  email = ivan@rootwork.org
 
 [core]
 
@@ -21,6 +17,11 @@
   editor = subl
   filemode = false
   pager = diff-so-fancy | less --tabs=4 -RFX
+
+[apply]
+
+  # Detect whitespace errors when applying a patch
+  whitespace = fix
 
 [color]
 
@@ -76,6 +77,18 @@
   renames = copies
   compactionHeuristic = true
 
+[filter "media"]
+
+  clean = git media clean %f
+  smudge = git media smudge %f
+  required = true
+
+[filter "lfs"]
+
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
+
 [help]
 
   # Automatically correct and execute mistyped commands
@@ -83,10 +96,7 @@
 
 [push]
 
-  # Use the Git 1.x.x default to avoid errors on machines with old Git
-  # installations. To use `simple` instead, add this to your `~/.extra` file:
-  # `git config --global push.default simple`. See http://git.io/mMah-w.
-  default = simple
+  default = matching
 
 [status]
 
@@ -201,21 +211,6 @@
       git commit --amend -m \"$(git log -1 --pretty=%B)\n\nCloses #$1.\"; \
     fi \
   }; f"
+
+  # Show the diffs of all staged files
   staged = diff --staged
-
-[filter "media"]
-
-  clean = git media clean %f
-  smudge = git media smudge %f
-  required = true
-
-[filter "lfs"]
-
-  clean = git-lfs clean %f
-  smudge = git-lfs smudge %f
-  required = true
-
-[user]
-
-  name = Ivan Boothe
-  email = ivan@rootwork.org
