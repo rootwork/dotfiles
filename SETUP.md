@@ -49,7 +49,7 @@ sudo fwupdmgr update
 
 # CLI fun
 
-## Installations
+## General installations
 
 * `sudo add-apt-repository ppa:aos1/diff-so-fancy`
 * `sudo add-apt-repository ppa:agornostal/ulauncher`
@@ -63,6 +63,7 @@ sudo fwupdmgr update
 * Right-click the big "A" autokey icon in the system tray and quit
 
 ## Setup Zsh/Oh My Zsh/Powerline
+
 * `sudo usermod -s $(which zsh) ivan`
 * logout/login
 * open Terminal and choose option 2
@@ -76,6 +77,13 @@ sudo fwupdmgr update
 * Right click Terminal window and choose Preferences
 * On the selected profile, under Profiles, check Custom font under Text Appearance and select MesloLGS NF Regular, size 12
 * `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k`
+
+## Setup [LastPass CLI](https://github.com/lastpass/lastpass-cli)
+
+* `sudo apt-get --no-install-recommends -yqq install bash-completion build-essential cmake libcurl4 libcurl4-openssl-dev libssl-dev libxml2 libxml2-dev libssl1.1 pkg-config ca-certificates xclip`
+* `git clone git@github.com:lastpass/lastpass-cli.git`
+* `cd lastpass-cli && make`
+* `sudo make install`
 
 ## Create SSH keys
 
