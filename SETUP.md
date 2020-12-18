@@ -78,6 +78,17 @@ sudo fwupdmgr update
 * On the selected profile, under Profiles, check Custom font under Text Appearance and select MesloLGS NF Regular, size 12
 * `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k`
 
+## Setup [Docker](https://techviewleo.com/how-to-install-and-use-docker-in-linux-mint/) and [Lando](https://docs.lando.dev/basics/installation.html#linux)
+* Turn off VPNs! Installation may fail with them on, sadly.
+* `sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common`
+* `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
+* `sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(. /etc/os-release; echo "$UBUNTU_CODENAME") stable"`
+* `sudo apt-get update`
+* `sudo apt-get -y install docker-ce`
+* `sudo usermod -aG docker $USER`
+* `wget https://files.devwithlando.io/lando-stable.deb`
+* `sudo dpkg -i lando-stable.deb`
+
 ## Setup [LastPass CLI](https://github.com/lastpass/lastpass-cli)
 
 * `sudo apt-get --no-install-recommends -yqq install bash-completion build-essential cmake libcurl4 libcurl4-openssl-dev libssl-dev libxml2 libxml2-dev libssl1.1 pkg-config ca-certificates xclip`
