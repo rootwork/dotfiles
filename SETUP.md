@@ -57,7 +57,7 @@ sudo fwupdmgr update
 * `sudo add-apt-repository ppa:font-manager/staging`
 * `sudo add-apt-repository ppa:jonaski/strawberry`
 * `sudo apt update`
-* `sudo apt install -y git diff-so-fancy xclip zsh python python3-pip rar guake ulauncher whois dconf-editor arc-theme apache2 mysql-server php libapache2-mod-php php-mysql php7.4-xml libpam-yubico yubikey-manager sublime-text font-manager nemo-font-manager nemo-image-converter strawberry chromium filezilla gimp skypeforlinux vlc libncurses5-dev`
+* `sudo apt install -y git diff-so-fancy xclip zsh python python3-pip rar guake ulauncher whois dconf-editor arc-theme apache2 mysql-server php libapache2-mod-php php-mysql php7.4-xml libpam-yubico yubikey-manager sublime-text font-manager nemo-font-manager imagemagick webp jpegoptim optipng nemo-image-converter strawberry chromium filezilla gimp skypeforlinux vlc libncurses5-dev `
 * `pip3 install pygithub`
 * Right-click the big "U" Ulauncher icon in the system tray and exit
 * Right-click the big "A" autokey icon in the system tray and quit
