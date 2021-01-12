@@ -131,3 +131,9 @@ complete -o default -F _npm_install_completion npm
 # easier to remember alias for viewing OS version, build, kernel etc.
 # appended by ZSH version
 alias os='cat /etc/os-release && zsh --version'
+
+# Easier-to-remember aliases to kill processes
+# search-kill: usage 'skill | grep PROCNAME'
+alias skill="ps -e"
+# kill-kill: usage 'kkill PROCID'
+alias kkill="kill -9"
