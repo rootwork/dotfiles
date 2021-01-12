@@ -133,7 +133,7 @@ complete -o default -F _npm_install_completion npm
 alias os='cat /etc/os-release && zsh --version'
 
 # Easier-to-remember aliases to kill processes
-# search-kill: usage 'skill | grep PROCNAME'
-alias skill="ps -e"
-# kill-kill: usage 'kkill PROCID'
+# search-kill
+alias skill="procsearch"
+# kill-kill
 alias kkill="kill -9"

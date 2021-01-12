@@ -252,4 +252,9 @@ search () { grep -rHinC0 "$*" .; }
 # Platform.sh CLI configuration
 HOME=${HOME:-'/home/ivan'}
 export PATH="$HOME/"'.platformsh/bin':"$PATH"
-if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/shell-config.rc'; fi # END SNIPPET
+if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/shell-config.rc'; fi
+
+# Process searching the easy way
+function procsearch {
+   command ps -e | grep "$@"
+}
