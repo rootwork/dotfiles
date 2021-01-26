@@ -3,7 +3,7 @@ name: Link checker
 on:
   push:
     branches:
-      - *
+      - '**'
   schedule:
     # Every Monday at 2:00 AM.
     - cron: '0 2 * * MON'
@@ -20,7 +20,7 @@ jobs:
         uses: urlstechie/urlchecker-action@0.2.1
         with:
           # A comma-separated list of file types to cover in the URL checks
-          file_types: *
+          # file_types:
           # The timeout seconds to provide to requests, defaults to 5 seconds
           timeout: 30
           # How many times to retry a failed request (each is logged, defaults to 1)
