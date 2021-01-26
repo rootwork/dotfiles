@@ -19,8 +19,8 @@ jobs:
         run: |
           curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc -o gh-md-toc
           chmod a+x gh-md-toc
-          ./gh-md-tocc --insert --no-backup ./README.md
-          ./gh-md-tocc --insert --no-backup ./SETUP.md
+          ./gh-md-tocc --insert --no-backup README.md
+          ./gh-md-tocc --insert --no-backup SETUP.md
           rm ./gh-md-toc
       - name: Autocommit the changes
         uses: stefanzweifel/git-auto-commit-action@v4
