@@ -57,4 +57,4 @@ https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mys
 Two options:
 
 * On servers (e.g. Ubuntu) with Snap already installed, run `snap install hugo --channel=extended`
-* Otherwise, get the `hugo_extended_VERSION_Linux-64bit.deb` [package from GitHub releases](https://github.com/gohugoio/hugo/releases)
+* Otherwise, get the `hugo_extended_VERSION_Linux-64bit.deb` [package from GitHub releases](https://github.com/gohugoio/hugo/releases).
