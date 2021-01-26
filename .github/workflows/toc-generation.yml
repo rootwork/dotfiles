@@ -19,15 +19,10 @@ jobs:
         run: |
           curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc -o gh-md-toc
           chmod a+x gh-md-toc
-          ./gh-md-tocc --insert --no-backup \
-          README.md \
-          SETUP.md
+          ./gh-md-tocc --insert --no-backup ./README.md
+          ./gh-md-tocc --insert --no-backup ./SETUP.md
           rm ./gh-md-toc
-  commit:
-    needs: [build]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Autocommit the change
+      - name: Autocommit the changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Automated Markdown TOC update

@@ -1,5 +1,5 @@
-Setup process. Make sure you're looking at
-[the correct branch](https://github.com/rootwork/dotfiles/branches)!
+Setup process. Make sure you're looking at [the correct
+branch](https://github.com/rootwork/dotfiles/branches)!
 
 <!-- The following section, from "ts" to "te", is an automatically-generated
   table of contents, updated whenever this file changes. Do not edit within
