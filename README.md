@@ -13,6 +13,6 @@ setup instructions.
 
 No guarantees to anyone that these work, are safe, will be maintained, etc.
 
-# Instructions for use
+# Instructions
 
 See [the setup file](SETUP.md) for the good stuff.

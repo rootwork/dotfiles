@@ -1,4 +1,4 @@
-Setup process. Make sure you are looking at [the correct
+Setup process. Make sure you're looking at [the correct
 branch](https://github.com/rootwork/dotfiles/branches)!
 
 <!-- The following section, from "ts" to "te", is an automatically-generated
