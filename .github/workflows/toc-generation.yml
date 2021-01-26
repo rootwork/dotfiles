@@ -2,7 +2,7 @@ name: Markdown table of contents generator
 
 on:
   push:
-    # Control the branches this applies to.
+    # Control the branches on which this will run.
     push:
       branches: [ local-nix ]
     pull_request:
