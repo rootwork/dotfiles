@@ -2,11 +2,6 @@ name: Markdown table of contents generator
 
 on:
   push:
-    # Control the branches on which this will run.
-    push:
-      branches: [ local-nix ]
-    pull_request:
-      branches: [ local-nix ]
     # Note the files also need to be explicitly set in 'run', further down.
     paths: ['README.md', 'SETUP.md']
 
