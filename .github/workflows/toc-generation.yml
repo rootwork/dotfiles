@@ -2,6 +2,11 @@ name: Markdown table of contents generator
 
 on:
   push:
+    # Control the branches this applies to.
+    push:
+      branches: [ local-nix ]
+    pull_request:
+      branches: [ local-nix ]
     # Note the files also need to be explicitly set in 'run', further down.
     paths: ['README.md', 'SETUP.md']
 
@@ -13,6 +18,7 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@v2
       - name: Update the table of contents
+        # Specify files here.
         run: |
           curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc -o gh-md-toc
           chmod a+x gh-md-toc
