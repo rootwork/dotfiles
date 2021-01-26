@@ -170,6 +170,20 @@ export VISUAL='/usr/bin/subl -w'
 ## Install M$ fonts
 * `sudo apt install -y ttf-mscorefonts-installer`
 
+## Setup logiops for Logitech devices
+
+Configuration is located at `~/.logid.cfg` (included here). We're using a
+[forked version](https://github.com/abraha2d/logiops) of
+[the original](https://github.com/PixlOne/logiops) until
+[this PR](https://github.com/PixlOne/logiops/pull/161) is committed.
+
+* `sudo apt install cmake libevdev-dev libudev-dev libconfig++-dev build-essential`
+* `git clone https://github.com/abraha2d/logiops.git`
+* `cd logiops && mkdir build && cd build && cmake .. && make`
+* `sudo make install`
+* `sudo rm -rf /etc/logid.cfg && sudo ln -s /home/ivan/.logid.cfg /etc/logid.cfg`
+* `sudo systemctl enable --now logid`
+
 ## Extras
 * [Install Anbox for running Android apps](https://www.how2shout.com/linux/how-to-install-anbox-on-ubuntu-20-04-lts-focal-fossa/)
 * [Install Signal without a smartphone (or Android emulator)](https://ctrl.alt.coop/en/post/signal-without-a-smartphone/)
