@@ -6,6 +6,18 @@ branch](https://github.com/rootwork/dotfiles/branches)!
   this section. -->
 
 <!--ts-->
+   * [Hosted setup](#hosted-setup)
+      * [Initial configuration](#initial-configuration)
+      * [Web hosting configuration](#web-hosting-configuration)
+         * [Web setup](#web-setup)
+         * [Check web access](#check-web-access)
+         * [Finish web setup](#finish-web-setup)
+         * [Optional: Add full LAMP stack](#optional-add-full-lamp-stack)
+      * [Server add-ons](#server-add-ons)
+      * [Hugo](#hugo)
+
+<!-- Added by: runner, at: Tue Jan 26 21:58:06 UTC 2021 -->
+
 <!--te-->
 
 # Hosted setup
