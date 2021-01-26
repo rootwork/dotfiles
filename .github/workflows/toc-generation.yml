@@ -3,7 +3,9 @@ name: Markdown table of contents generator
 on:
   push:
     # Note the files also need to be explicitly set in 'run', further down.
-    paths: ['README.md', 'SETUP.md']
+    paths:
+    - 'README.md'
+    - 'SETUP.md'
 
 jobs:
   build:
