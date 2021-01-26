@@ -5,7 +5,8 @@
 <!--ts-->
 <!--te-->
 
-This was created using Linux Mint. Other Debian-based distros should work just as well, though the directions to parts of the UI will be different.
+This was created using Linux Mint. Other Debian-based distros should work just
+as well, though the directions to parts of the UI will be different.
 
 **This assumes a SINGLE-USER machine with root access.** In a multiuser environment, this setup must be *audited first* to ensure a reasonable level of security!
 
