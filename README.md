@@ -6,8 +6,7 @@ setup instructions.
   table of contents, updated whenever this file changes. Do not edit within
   this section. -->
 
-<!--ts-->
-<!--te-->
+<!--ts--><!--te-->
 
 # Disclaimer
 
