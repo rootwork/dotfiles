@@ -24,7 +24,7 @@
 ### Check web access
 
 * Grab the web address from the console: `hostname -I`
-* Paste in browser.
+* Paste in browser
 
 ### Finish web setup
 
