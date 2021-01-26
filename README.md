@@ -3,6 +3,11 @@
   this section. -->
 
 <!--ts-->
+   * [Troubleshooting failing installations](#troubleshooting-failing-installations)
+   * [Keymapping (keybinding, keyboard shortcuts, etc.)](#keymapping-keybinding-keyboard-shortcuts-etc)
+
+<!-- Added by: runner, at: Tue Jan 26 22:05:54 UTC 2021 -->
+
 <!--te-->
 
 Various dotfiles created/customized by Ivan Boothe. One branch for local

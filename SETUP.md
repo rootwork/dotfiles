@@ -3,6 +3,35 @@
   this section. -->
 
 <!--ts-->
+   * [First-run OS and computer setup](#first-run-os-and-computer-setup)
+   * [Program setup](#program-setup)
+      * [Applets](#applets)
+      * [Manual downloads](#manual-downloads)
+      * [Firefox](#firefox)
+      * [Thunderbird](#thunderbird)
+   * [CLI fun](#cli-fun)
+      * [General installations](#general-installations)
+      * [Setup Zsh/Oh My Zsh/Powerline](#setup-zshoh-my-zshpowerline)
+      * [Setup <a href="https://techviewleo.com/how-to-install-and-use-docker-in-linux-mint/" rel="nofollow">Docker</a> and <a href="https://docs.lando.dev/basics/installation.html#linux" rel="nofollow">Lando</a>](#setup-docker-and-lando)
+      * [Setup <a href="https://github.com/lastpass/lastpass-cli">LastPass CLI</a>](#setup-lastpass-cli)
+      * [Create SSH keys](#create-ssh-keys)
+   * [Online setup](#online-setup)
+      * [GitHub: Add SSH key](#github-add-ssh-key)
+   * [Dotfile time](#dotfile-time)
+      * [Grab private config settings and load them](#grab-private-config-settings-and-load-them)
+      * [Now finish setting up](#now-finish-setting-up)
+   * [Bits and bobs](#bits-and-bobs)
+      * [Autoconnect trusted Bluetooth devices](#autoconnect-trusted-bluetooth-devices)
+      * [Set Sublime Text as editor for sudo commands](#set-sublime-text-as-editor-for-sudo-commands)
+      * [Fix xdg-open error messages from Nemo](#fix-xdg-open-error-messages-from-nemo)
+      * [Install M$ fonts](#install-m-fonts)
+      * [Setup logiops for Logitech devices](#setup-logiops-for-logitech-devices)
+      * [Extras](#extras)
+   * [Startup applications](#startup-applications)
+   * [Backup!](#backup)
+
+<!-- Added by: runner, at: Tue Jan 26 22:05:54 UTC 2021 -->
+
 <!--te-->
 
 This was created using Linux Mint. Other Debian-based distros should work just
