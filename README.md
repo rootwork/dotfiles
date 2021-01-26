@@ -7,6 +7,11 @@ setup instructions.
   this section. -->
 
 <!--ts-->
+   * [Disclaimer](#disclaimer)
+   * [Instructions](#instructions)
+
+<!-- Added by: runner, at: Tue Jan 26 22:00:30 UTC 2021 -->
+
 <!--te-->
 
 # Disclaimer
