@@ -17,10 +17,10 @@ jobs:
         with:
           fetch-depth: 1
       - name: Report broken links
-        uses: urlstechie/urlchecker-action@0.2.1
+        uses: urlstechie/urlchecker-action@0.2.2
         with:
           # A comma-separated list of file types to cover in the URL checks
-          # file_types:
+          file_types: .*
           # The timeout seconds to provide to requests, defaults to 5 seconds
           timeout: 30
           # How many times to retry a failed request (each is logged, defaults to 1)
@@ -28,4 +28,4 @@ jobs:
           # Choose whether to include files with no URLs in the output
           print_all: false
           # A comma separated patterns to exclude during URL checks
-          white_listed_patterns: http://www.w3.org,http://schema.org/,http://purl.org,http://ogp.me,http://rdfs.org,http://xmlns.com
+          exclude_patterns: http://www.w3.org,http://schema.org/,http://purl.org,http://ogp.me,http://rdfs.org,http://xmlns.com
