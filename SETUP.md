@@ -183,6 +183,9 @@ Configuration is located at `~/.logid.cfg` (included here). We're using a
 * `sudo make install`
 * `sudo rm -rf /etc/logid.cfg && sudo ln -s /home/ivan/.logid.cfg /etc/logid.cfg`
 * `sudo systemctl enable --now logid`
+* While the final command _should_ start logid at boot, if it isn't working add
+launch "Startup Applications" and add `sudo systemctl start logid` as a custom
+command.
 
 ## Extras
 * [Install Anbox for running Android apps](https://www.how2shout.com/linux/how-to-install-anbox-on-ubuntu-20-04-lts-focal-fossa/)
