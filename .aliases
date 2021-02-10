@@ -113,6 +113,3 @@ alias os='cat /etc/os-release && zsh --version'
 alias skill="procsearch"
 # kill-kill
 alias kkill="kill -9"
-
-# Fix CRLF across a git repo
-alias fixlines ='git rm --cached -r . && git diff --cached --name-only -z | xargs -0 git add && git commit -m "Fix CRLF"'
