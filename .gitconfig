@@ -10,10 +10,15 @@
   attributesfile = ~/.gitattributes
 
   # Always use Unix-style line endings (LF).
-  # For cross-platform projects, use a project-based .gitconfig with these set
-  # to "true".
+  eol = lf
   autocrlf = false
   safecrlf = false
+
+  # Always use Windows-style line endings (CRLF) and convert when necessary.
+  # Use this in a project-specific .gitconfig for cross-platform compatibility.
+  # eol = crlf
+  # autocrlf = true
+  # safecrlf = true
 
   # Treat spaces before tabs and all kinds of trailing whitespace as an error
   # [default] trailing-space: looks for spaces at the end of a line
