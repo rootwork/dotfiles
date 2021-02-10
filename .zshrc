@@ -130,10 +130,9 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Load bash/zsh autocompletion
-autoload bashcompinit
-bashcompinit
-autoload -U compinit && compinit
+# Load prompt autocompletion
+autoload -U compinit promptinit
+compinit
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
