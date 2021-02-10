@@ -1,15 +1,55 @@
 # Set default behavior to automatically normalize line endings.
 * text=auto
 
-# Force batch scripts to always use CRLF line endings so that if a repo is accessed
-# in Windows via a file share from Linux, the scripts will work.
-*.{cmd,[cC][mM][dD]} text eol=crlf
-*.{bat,[bB][aA][tT]} text eol=crlf
+# Details on line-ending detection and conversion:
+# https://help.github.com/articles/dealing-with-line-endings/
+# https://github.com/Danimoth/gitattributes/blob/master/Web.gitattributes
 
 # Force bash scripts to always use LF line endings so that if a repo is accessed
 # in Unix via a file share from Windows, the scripts will work.
 *.sh text eol=lf
 
+# Set text format
+*.php text
+*.css text
+*.sass text
+*.scss text
+*.js text
+*.json text
+*.ts text
+*.htm text
+*.html text
+*.xml text
+*.txt text
+*.ini text
+*.inc text
+*.pl text
+*.rb text
+*.py text
+*.scm text
+*.sql text
+.htaccess text
+.bashrc text
+.zshrc text
+
 # Denote all files that are truly binary and should not be modified.
 *.png binary
 *.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary
+*.mov binary
+*.mp4 binary
+*.mp3 binary
+*.tar binary
+*.gz binary
+*.zip binary
+*.7z binary
+*.ttf binary
+*.pyc binary
+
+# Force batch scripts to always use CRLF line endings so that if a repo is accessed
+# in Windows via a file share from Linux, the scripts will work.
+*.{cmd,[cC][mM][dD]} text eol=crlf
+*.{bat,[bB][aA][tT]} text eol=crlf
