@@ -79,6 +79,11 @@ HIST_STAMPS="mm/dd/yyyy"
 MAGIC_ENTER_GIT_COMMAND='git status -u .'
 MAGIC_ENTER_OTHER_COMMAND='ls -lh .'
 
+# Lazyload node plugins
+# https://blog.mattclemente.com/2020/06/26/oh-my-zsh-slow-to-load.html
+export NVM_LAZY_LOAD=true
+export NVM_COMPLETION=true
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -95,6 +100,7 @@ plugins=(
   git-auto-status # https://gist.github.com/oshybystyi/475ee7768efc03727f21
   k # https://github.com/supercrabtree/k
   composer # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/composer
+  zsh-nvm # https://github.com/lukechilds/zsh-nvm
   npm # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/npm
   sudo # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo
   urltools # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/urltools
@@ -106,6 +112,7 @@ plugins=(
   send # https://github.com/robertzk/send.zsh
 )
 
+# oh-my-zsh needs to come after all the plugins.
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
