@@ -93,8 +93,8 @@ plugins=(
   git-extras # https://github.com/tj/git-extras/blob/master/Commands.md
   git-auto-status
   k
-  composer
-  npm
+  composer # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/composer
+  npm # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/npm
   sudo # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo
   urltools # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/urltools
   bgnotify # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/bgnotify
