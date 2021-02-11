@@ -3,7 +3,7 @@
 # bash/zsh completion support for core Git.
 #
 # Copyright (C) 2006,2007 Shawn O. Pearce <spearce@spearce.org>
-# Conceptually based on gitcompletion (http://gitweb.hawaga.org.uk/).
+# Conceptually based on gitcompletion (no longer online).
 # Distributed under the GNU General Public License, version 2.0.
 #
 # The contained completion routines provide support for completing:
@@ -90,7 +90,7 @@ __gitcomp_1 ()
 #
 #   The latest version of this software can be obtained here:
 #
-#   http://bash-completion.alioth.debian.org/
+#   https://packages.debian.org/stretch/bash-completion
 #
 #   RELEASE: 2.x
 
