@@ -103,6 +103,7 @@ plugins=(
   command-not-found # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/command-not-found
   history # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/history
   magic-enter # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/magic-enter
+  sublime-merge # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sublime-merge
 )
 
 source $ZSH/oh-my-zsh.sh
