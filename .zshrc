@@ -91,8 +91,6 @@ plugins=(
   git
   gitfast
   git-extras # https://github.com/tj/git-extras/blob/master/Commands.md
-  git-flow
-  git-flow-completion
   git-auto-status
   k
   composer
