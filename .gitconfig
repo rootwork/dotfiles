@@ -74,15 +74,13 @@
 
 [diff]
 
-  tool = sublimerge
+  tool = smerge
   renames = copies
 
   # Include any submodules in diff logs
   submodule = log
 
-[difftool "sublimerge"]
-
-  cmd = subl -n --wait \"$REMOTE\" \"$LOCAL\" --command \"sublimerge_diff_views {\\\"left_read_only\\\": true, \\\"right_read_only\\\": true}\"
+[difftool "smerge"]
 
   # Detect copies as well as renames
   renames = copies
@@ -104,6 +102,15 @@
 
   # Automatically correct and execute mistyped commands
   autocorrect = 1
+
+[merge]
+
+  tool = smerge
+
+[mergetool "smerge"]
+
+  cmd = smerge mergetool \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+  trustExitCode = true
 
 [push]
 
