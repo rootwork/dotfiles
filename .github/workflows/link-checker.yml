@@ -22,7 +22,7 @@ jobs:
         uses: urlstechie/urlchecker-action@0.2.3
         with:
           # A comma-separated list of file types to cover in the URL checks
-          file_types: '.*'
+          file_types: '.\*'
           # The timeout seconds to provide to requests, defaults to 5 seconds
           timeout: 30
           # How many times to retry a failed request (each is logged, defaults to 1)
