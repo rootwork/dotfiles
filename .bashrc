@@ -142,7 +142,7 @@
 # displaying and accessing history of visited directories, up to 10 entries.
 # To use it, uncomment it, source this file and try 'cd --'.
 # acd_func 1.0.5, 10-nov-2004
-# Petar Marinov, http://geocities.com/h2428, this is public domain
+# Petar Marinov, https://web.archive.org/web/20091019103212/http://geocities.com/h2428/, this is public domain
 # cd_func ()
 # {
 #   local x2 the_new_dir adir index
