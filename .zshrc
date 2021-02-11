@@ -74,6 +74,11 @@ HIST_STAMPS="mm/dd/yyyy"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# Magic Enter defaults
+# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/magic-enter
+MAGIC_ENTER_GIT_COMMAND='git status -u .'
+MAGIC_ENTER_OTHER_COMMAND='ls -lh .'
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -97,6 +102,7 @@ plugins=(
   bgnotify # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/bgnotify
   command-not-found # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/command-not-found
   history # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/history
+  magic-enter # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/magic-enter
 )
 
 source $ZSH/oh-my-zsh.sh
