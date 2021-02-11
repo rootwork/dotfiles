@@ -98,7 +98,7 @@ plugins=(
   composer
   npm
   sudo # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo
-  urltools
+  urltools # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/urltools
   bgnotify # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/bgnotify
   command-not-found # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/command-not-found
   history # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/history
