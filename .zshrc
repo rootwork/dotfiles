@@ -91,8 +91,8 @@ plugins=(
   git
   gitfast
   git-extras # https://github.com/tj/git-extras/blob/master/Commands.md
-  git-auto-status
-  k
+  git-auto-status # https://gist.github.com/oshybystyi/475ee7768efc03727f21
+  k # https://github.com/supercrabtree/k
   composer # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/composer
   npm # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/npm
   sudo # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo
