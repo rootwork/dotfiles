@@ -103,6 +103,7 @@ plugins=(
   history # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/history
   magic-enter # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/magic-enter
   sublime-merge # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sublime-merge
+  send # https://github.com/robertzk/send.zsh
 )
 
 source $ZSH/oh-my-zsh.sh
