@@ -90,6 +90,7 @@ plugins=(
   zsh-syntax-highlighting # https://github.com/zsh-users/zsh-syntax-highlighting
   git # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
   gitfast # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gitfast
+  alias-tips # https://github.com/djui/alias-tips
   git-extras # https://github.com/tj/git-extras/blob/master/Commands.md
   git-auto-status # https://gist.github.com/oshybystyi/475ee7768efc03727f21
   k # https://github.com/supercrabtree/k
