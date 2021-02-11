@@ -85,11 +85,11 @@ MAGIC_ENTER_OTHER_COMMAND='ls -lh .'
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  zsh-autosuggestions
-  zsh-completions
-  zsh-syntax-highlighting
-  git
-  gitfast
+  zsh-autosuggestions # https://github.com/zsh-users/zsh-autosuggestions
+  zsh-completions # https://github.com/zsh-users/zsh-completions
+  zsh-syntax-highlighting # https://github.com/zsh-users/zsh-syntax-highlighting
+  git # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
+  gitfast # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gitfast
   git-extras # https://github.com/tj/git-extras/blob/master/Commands.md
   git-auto-status # https://gist.github.com/oshybystyi/475ee7768efc03727f21
   k # https://github.com/supercrabtree/k
