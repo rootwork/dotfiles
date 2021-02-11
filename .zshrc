@@ -96,6 +96,7 @@ plugins=(
   urltools
   bgnotify # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/bgnotify
   command-not-found # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/command-not-found
+  history # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/history
 )
 
 source $ZSH/oh-my-zsh.sh
