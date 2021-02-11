@@ -90,15 +90,10 @@ plugins=(
   git-flow-completion
   git-auto-status
   k
-  battery
   composer
-  jira
   npm
   sudo
   urltools
-  vagrant
-  web-search
-  yarn
 )
 
 source $ZSH/oh-my-zsh.sh
