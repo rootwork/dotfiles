@@ -287,8 +287,11 @@ function minvid {
 }
 
 # Minify images using Trimage
+# Accepts multiple files and wildcards as arguments.
 function minpic {
-	/usr/local/bin/trimage -f "$@"
+	for i in "$@"; do
+		trimage -f "$i"
+	done
 }
 
 # Convert AVI to MP4 using ffmpeg
