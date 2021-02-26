@@ -278,3 +278,15 @@ if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/she
 function procsearch {
    command ps -e | grep "$@"
 }
+
+# Minify videos by re-encoding them
+function minvid {
+	name="${1%.*}"
+	ext="${1##*.}"
+  ffmpeg -i "$1"  -vcodec libx265 -crf 28 "$name"-min."$ext"
+}
+
+# Minify images using Trimage
+function minpic {
+	/usr/local/bin/trimage -f "$@"
+}
