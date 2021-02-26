@@ -83,6 +83,10 @@ alias egrep="egrep --color=auto"
 
 ### ADDITIONS
 
+# Mimic pbcopy/pbpaste
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xsel --clipboard --output'
+
 # Untar to current directory
 alias untar='tar --strip-components=1 -zxvf'
 
@@ -106,7 +110,7 @@ complete -W "NSGlobalDomain" defaults;
 
 # easier to remember alias for viewing OS version, build, kernel etc.
 # appended by ZSH version
-alias os='cat /etc/os-release && zsh --version'
+alias os='cat /etc/os-release|pbcopy && pbpaste && zsh --version'
 
 # Easier-to-remember aliases to kill processes
 # search-kill
@@ -121,5 +125,6 @@ alias reloadz="exec zsh"
 # Copy zsh dotfiles (assuming current directory) and reload
 alias copyz="cp .zshrc $HOME && cp .aliases $HOME && cp .exports $HOME && cp .functions $HOME && exec zsh"
 
-# easier to remember alias for viewing computer information
-alias compinfo='inxi -Fxz'
+# easier to remember alias for viewing computer information; stores info in
+# clipboard
+alias compinfo='inxi -Fxz|pbcopy && pbpaste'
