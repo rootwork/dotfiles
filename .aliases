@@ -120,3 +120,6 @@ alias reloadz="exec zsh"
 
 # Copy zsh dotfiles (assuming current directory) and reload
 alias copyz="cp .zshrc $HOME && cp .aliases $HOME && cp .exports $HOME && cp .functions $HOME && exec zsh"
+
+# easier to remember alias for viewing computer information
+alias compinfo='inxi -Fxz'
