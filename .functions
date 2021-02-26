@@ -279,11 +279,20 @@ function procsearch {
    command ps -e | grep "$@"
 }
 
-# Minify videos by re-encoding them
+# Minify videos by re-encoding them and stripping metadata
 function minvid {
 	name="${1%.*}"
 	ext="${1##*.}"
-  ffmpeg -i "$1" -vcodec libx265 -crf 28 "$name"-min."$ext"
+  ffmpeg -i "$1" -vcodec libx265 -crf 28 -map_metadata -1 -map_chapters -1 -movflags +faststart "$name"-min."$ext"
+}
+
+# Reduce video size even more, with second argument for bitrate in KB.
+function minsmvid {
+	name="${1%.*}"
+	ext="${1##*.}"
+  ffmpeg -y -i "$1" -tune film -preset slower -map_metadata -1 -map_chapters -1 -c:v libx264 -b:v "$2"k -pass 1 -vsync cfr -f null /dev/null && \
+  ffmpeg -i "$1" -c:v libx264 -b:v "$2"k -pass 2 -c:a aac -b:a 128k -movflags +faststart "$name"-minsm."$ext" && \
+  rm ffmpeg2pass-0.log.mbtree && rm ffmpeg2pass-0.log
 }
 
 # Minify images using Trimage
@@ -297,14 +306,14 @@ function minpic {
 # Convert AVI to MP4 using ffmpeg
 function avimp4 {
 	name="${1%.*}"
-	ffmpeg -i "$1" -c:a aac -b:a 128k -c:v libx264 -crf 23 "$name".mp4
+	ffmpeg -i "$1" -c:a aac -b:a 128k -c:v libx265 -crf 23 "$name".mp4
 }
 
 # Trim MP4 videos with ffmpeg based on timecodes
-# Usage: trimvid FILENAME START STOP
+# Usage: trimvid FILENAME START DURATION
 # START and STOP formats are HH:MM:SS
 function trimvid {
 	name="${1%.*}"
 	ext="${1##*.}"
-	ffmpeg -ss "$2" -i "$1" -to "$3" -c copy "$name"-trim."$ext"
+	ffmpeg -ss "$2" -i "$1" -t "$3" -c copy -map_metadata -1 -map_chapters -1 "$name"-trim."$ext"
 }
