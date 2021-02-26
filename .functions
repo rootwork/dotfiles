@@ -283,10 +283,25 @@ function procsearch {
 function minvid {
 	name="${1%.*}"
 	ext="${1##*.}"
-  ffmpeg -i "$1"  -vcodec libx265 -crf 28 "$name"-min."$ext"
+  ffmpeg -i "$1" -vcodec libx265 -crf 28 "$name"-min."$ext"
 }
 
 # Minify images using Trimage
 function minpic {
 	/usr/local/bin/trimage -f "$@"
+}
+
+# Convert AVI to MP4 using ffmpeg
+function avimp4 {
+	name="${1%.*}"
+	ffmpeg -i "$1" -c:a aac -b:a 128k -c:v libx264 -crf 23 "$name".mp4
+}
+
+# Trim MP4 videos with ffmpeg based on timecodes
+# Usage: trimvid FILENAME START STOP
+# START and STOP formats are HH:MM:SS
+function trimvid {
+	name="${1%.*}"
+	ext="${1##*.}"
+	ffmpeg -ss "$2" -i "$1" -to "$3" -c copy "$name"-trim."$ext"
 }
