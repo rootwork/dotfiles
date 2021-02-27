@@ -317,3 +317,17 @@ function trimvid {
 	ext="${1##*.}"
 	ffmpeg -ss "$2" -i "$1" -t "$3" -c copy -map_metadata -1 -map_chapters -1 "$name"-trim."$ext"
 }
+
+# Combine videos using ffmpeg
+function joinvid {
+  echo "Generating list of input videos..."
+	echo "# Videos to merge" > concat.txt
+	for file in "$@"; do
+	  echo "file '$file'" >> concat.txt
+	done
+	echo "Using ffmpeg to merge files..."
+	ffmpeg -f concat -i concat.txt -c copy joined.mp4
+	rm concat.txt
+	echo "Videos merged!"
+}
+
