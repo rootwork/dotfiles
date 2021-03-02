@@ -279,6 +279,23 @@ function procsearch {
    command ps -e | grep "$@"
 }
 
+# Minify images using Trimage
+# Accepts multiple files and wildcards as arguments.
+function minpic {
+	for i in "$@"; do
+		trimage -f "$i"
+	done
+}
+
+# Convert webp images to lossless PNG first, then to JPEG using imagemagick.
+function webpjpg {
+	name="${1%.*}"
+	dwebp $1 -quiet -o $name.png
+	convert $name.png $name.jpg
+  rm $name.png
+  echo "Created $name.jpg"
+}
+
 # Minify videos by re-encoding them and stripping metadata
 function minvid {
 	name="${1%.*}"
@@ -293,14 +310,6 @@ function minsmvid {
   ffmpeg -y -i "$1" -tune film -preset slower -map_metadata -1 -map_chapters -1 -c:v libx264 -b:v "$2"k -pass 1 -vsync cfr -f null /dev/null && \
   ffmpeg -i "$1" -c:v libx264 -b:v "$2"k -pass 2 -c:a aac -b:a 128k -movflags +faststart "$name"-minsm."$ext" && \
   rm ffmpeg2pass-0.log.mbtree && rm ffmpeg2pass-0.log
-}
-
-# Minify images using Trimage
-# Accepts multiple files and wildcards as arguments.
-function minpic {
-	for i in "$@"; do
-		trimage -f "$i"
-	done
 }
 
 # Convert AVI to MP4 using ffmpeg

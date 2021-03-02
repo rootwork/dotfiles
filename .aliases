@@ -128,3 +128,6 @@ alias copyz="cp .zshrc $HOME && cp .aliases $HOME && cp .exports $HOME && cp .fu
 # easier to remember alias for viewing computer information; stores info in
 # clipboard
 alias compinfo='inxi -Fxz|pbcopy && pbpaste'
+
+# remind me what the webp conversion tools are
+alias webp="echo 'Did you mean \"webpjpg\" (convert to JPG), \"dwebp\" (decode) or \"cwebp\" (encode)?'"
