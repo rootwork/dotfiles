@@ -340,3 +340,6 @@ function joinvid {
 	echo "Videos merged!"
 }
 
+# Enable zsh autocompletion for gulp.
+# Source: https://github.com/gulpjs/gulp-cli/tree/master/completion
+eval "$(gulp --completion=zsh)"
