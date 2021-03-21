@@ -93,6 +93,7 @@ alias untar='tar --strip-components=1 -zxvf'
 # git aliases
 alias pushit='git push -u origin $(git symbolic-ref --short -q HEAD)'
 alias pullit='git pull -r origin'
+alias gitit='pullit && pushit'
 alias recent='git branch --sort=-committerdate'
 
 # Platform aliases
