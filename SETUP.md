@@ -93,11 +93,12 @@ sudo fwupdmgr update
 * `sudo add-apt-repository ppa:yubico/stable`
 * `sudo add-apt-repository ppa:font-manager/staging`
 * `sudo add-apt-repository ppa:jonaski/strawberry`
+* `sudo add-apt-repository ppa:costales/folder-color`
 * `wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -`
 * `sudo apt install -y apt-transport-https`
 * `echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list`
 * `sudo apt update`
-* `sudo apt install -y git diff-so-fancy xclip zsh python python3-pip rar guake ulauncher whois dconf-editor arc-theme apache2 mysql-server php libapache2-mod-php php-mysql php7.4-xml libpam-yubico yubikey-manager sublime-text font-manager nemo-font-manager imagemagick webp jpegoptim optipng nemo-image-converter strawberry chromium filezilla gimp skypeforlinux vlc libncurses5-dev poppler-utils trimage dos2unix sublime-merge cockpit xclip xsel`
+* `sudo apt install -y git diff-so-fancy xclip zsh python python3-pip rar guake ulauncher whois dconf-editor arc-theme apache2 mysql-server php libapache2-mod-php php-mysql php7.4-xml libpam-yubico yubikey-manager sublime-text font-manager nemo-font-manager imagemagick webp jpegoptim optipng nemo-image-converter strawberry chromium filezilla gimp skypeforlinux vlc libncurses5-dev poppler-utils trimage dos2unix sublime-merge cockpit xclip xsel nemo-emblems folder-color-nemo nemo-image-converter`
 * `pip3 install pygithub`
 * Right-click the big "U" Ulauncher icon in the system tray and exit
 * Right-click the big "A" autokey icon in the system tray and quit
@@ -227,6 +228,19 @@ Configuration is located at `~/.logid.cfg` (included here). We're using a
 launch "Startup Applications" and add
 `sudo systemctl start logid && sudo systemctl restart logid` (yes, start and
 then restart) as a custom command.
+
+## Add some Nemo actions
+
+Follow the instructions at
+[nemo_actions_and_cinnamon_scripts](https://github.com/smurphos/nemo_actions_and_cinnamon_scripts).
+Currently the following are installed:
+
+* [Close windows](https://github.com/smurphos/nemo_actions_and_cinnamon_scripts#close-windows-actions)
+* [Disk usage](https://github.com/smurphos/nemo_actions_and_cinnamon_scripts#disk-usage-action)
+* [File metadata](https://github.com/smurphos/nemo_actions_and_cinnamon_scripts#file-metadata-action)
+* [Apply custom emblems](https://github.com/smurphos/nemo_actions_and_cinnamon_scripts#apply-custom-emblems)
+* [Apply custom icon](https://github.com/smurphos/nemo_actions_and_cinnamon_scripts#apply-custom-icon)
+* [Media info](https://github.com/smurphos/nemo_actions_and_cinnamon_scripts#media-info)
 
 ## Extras
 * [Install Anbox for running Android apps](https://www.how2shout.com/linux/how-to-install-anbox-on-ubuntu-20-04-lts-focal-fossa/)
