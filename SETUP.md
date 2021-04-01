@@ -26,11 +26,12 @@
       * [Fix xdg-open error messages from Nemo](#fix-xdg-open-error-messages-from-nemo)
       * [Install M$ fonts](#install-m-fonts)
       * [Setup logiops for Logitech devices](#setup-logiops-for-logitech-devices)
+      * [Add some Nemo actions](#add-some-nemo-actions)
       * [Extras](#extras)
    * [Startup applications](#startup-applications)
    * [Backup!](#backup)
 
-<!-- Added by: runner, at: Fri Feb 26 19:58:30 UTC 2021 -->
+<!-- Added by: runner, at: Thu Apr  1 18:34:21 UTC 2021 -->
 
 <!--te-->
 
