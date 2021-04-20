@@ -24,6 +24,7 @@
       * [Autoconnect trusted Bluetooth devices](#autoconnect-trusted-bluetooth-devices)
       * [Set Sublime Text as editor for sudo commands](#set-sublime-text-as-editor-for-sudo-commands)
       * [Fix xdg-open error messages from Nemo](#fix-xdg-open-error-messages-from-nemo)
+      * [Set up Zoom with Firejail](#set-up-zoom-with-firejail)
       * [Install M$ fonts](#install-m-fonts)
       * [Setup logiops for Logitech devices](#setup-logiops-for-logitech-devices)
       * [Add some Nemo actions](#add-some-nemo-actions)
@@ -31,7 +32,7 @@
    * [Startup applications](#startup-applications)
    * [Backup!](#backup)
 
-<!-- Added by: runner, at: Thu Apr  1 18:34:21 UTC 2021 -->
+<!-- Added by: runner, at: Tue Apr 20 21:59:38 UTC 2021 -->
 
 <!--te-->
 
