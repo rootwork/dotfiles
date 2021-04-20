@@ -70,7 +70,6 @@ sudo fwupdmgr update
 ## Manual downloads
 
 * [Autokey](https://github.com/autokey/autokey/wiki/Installing#debian-and-derivatives)
-* [Zoom](https://zoom.us/download#client_4meeting)
 * [Rambox](https://github.com/ramboxapp/community-edition/releases) (get the most recent `-linux-amd64.deb` file)
 * QEMU (`sudo apt install -y qemu qemu-system-x86`) plus [QuickEmu](https://github.com/wmutschl/quickemu), in lieu of VirtualBox, if needed
 
@@ -208,6 +207,26 @@ export VISUAL='/usr/bin/subl -w'
 ## Fix xdg-open error messages from Nemo
 * `sudo mkdir -p /var/lib/samba/usershares/`
 * `sudo chmod go+rwx /var/lib/samba/usershare`
+
+## Set up Zoom with Firejail
+
+Sourced from [Aral Balkan](https://ar.al/2020/06/25/how-to-use-the-zoom-malware-safely-on-linux-if-you-absolutely-have-to/):
+
+1. `sudo apt install firejail firejail-profiles`
+2. `sudo apt install apparmor-utils`
+3. `sudo aa-enforce firejail-default`
+4. `mkdir -p ~/.config/firejail`
+5. `echo "protocol unix,inet,inet6,netlink\nignore seccomp\nseccomp \x21chroot" > ~/.config/firejail/zoom.local`
+6. [Download Zoom](https://zoom.us/download#client_4meeting)
+7. `mkdir -p ~/.zoom`
+8. `firejail --apparmor --private=$HOME/.zoom zoom`
+9. If this works, exit zoom from the menubar icon and proceed.
+10. `sudo rm /usr/bin/zoom`
+11. `sudo me=$HOME bash -c 'echo -e "#!/bin/bash\nfirejail --apparmor --profile=/etc/firejail/zoom.profile --private=$me/.zoom /opt/zoom/ZoomLauncher" > /usr/bin/zoom'`
+12. `sudo chmod a+x /usr/bin/zoom`
+
+This will run Zoom within Firejail anytime you enter `zoom` at the command-line
+or access the shortcut from ULauncher.
 
 ## Install M$ fonts
 * `sudo apt install -y ttf-mscorefonts-installer`
