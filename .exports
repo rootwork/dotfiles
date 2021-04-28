@@ -43,13 +43,12 @@ export MANPAGER="less -X";
 # Composer
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
+# Node
+NODE_OPTIONS=--max_old_space_size=6144
+
 # NVM (Node Version Manager)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-
-# Node path, for linters.
-# See: http://sublimelinter.readthedocs.io/en/latest/troubleshooting.html#finding-a-linter-executable
-export PATH="$NVM_DIR/versions/node/v5.10.0/bin":$PATH
 
 # Git Flow Completion is loaded in .zshrc with plugins(), but sourcing it here
 # adds some useful information to Powerline.
