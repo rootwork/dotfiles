@@ -46,9 +46,9 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 # Node
 NODE_OPTIONS=--max_old_space_size=6144
 
-# NVM (Node Version Manager)
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+# n-install for n (alternative to nvm)
+# See http://git.io/n-install-repo and https://github.com/tj/n
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"
 
 # Git Flow Completion is loaded in .zshrc with plugins(), but sourcing it here
 # adds some useful information to Powerline.
