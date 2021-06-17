@@ -160,6 +160,12 @@ sudo fwupdmgr update
 * `git checkout local-nix`
 * `cp .* ~/`
 
+## Move scripts
+
+* `mkdir ~/bin`
+* `cp ./scripts/* ~/bin`
+* `chmod +x ~/bin/*`
+
 ## Grab private config settings and load them
 
 * `cd ~`
