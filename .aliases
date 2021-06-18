@@ -112,6 +112,10 @@ complete -W "NSGlobalDomain" defaults;
 # easier to remember alias for viewing OS version, build, kernel etc.
 # appended by ZSH version
 alias os='cat /etc/os-release|pbcopy && pbpaste && zsh --version'
+alias osinfo='os'
+# related alias to get system information
+alias sys='inxi -Fxxxrz'
+alias sysinfo='sys'
 
 # Easier-to-remember aliases to kill processes
 # search-kill
