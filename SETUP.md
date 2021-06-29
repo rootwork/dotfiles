@@ -164,7 +164,7 @@ sudo fwupdmgr update
 ## Move scripts
 
 * `mkdir ~/bin`
-* `cp ./scripts/* ~/bin`
+* `cp -r ./scripts/* ~/bin`
 * `chmod +x ~/bin/*`
 
 ## Grab private config settings and load them
