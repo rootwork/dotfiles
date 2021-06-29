@@ -1,9 +1,11 @@
 #!/bin/sh
 #
 # Convert any video files readable by ffmpeg (including but not limited to MP4,
-# MPG, M4V, MOV, WEBM, WMV, AVI, 3GP) into modern H265-encoded MP4 file.
+# MPG, M4V, MOV, WEBM, WMV, AVI, 3GP) into modern H265-encoded MP4 file. This
+# will generally be smaller in file size and more widely playable than other
+# video formats.
 #
-# More information:
+# Background information:
 # https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding
 # https://ffmpeg.org/ffmpeg-formats.html#Demuxers
 # Or run `ffmpeg -formats` at the command prompt to see all valid input formats.
@@ -38,13 +40,15 @@
 # Note that providing '*' as a file format won't work; you'll need to provide
 # file formats one at a time that exist in the current directory.
 #
-# Inspiration:
+# INSPIRATION
+#
 # https://stackoverflow.com/a/33766147
 # https://video.stackexchange.com/a/19862
 # https://linuxconfig.org/how-to-use-ffmpeg-to-convert-multiple-media-files-at-once-on-linux
 #
-# Licensed under GPLv3.
-# See https://raw.githubusercontent.com/rootwork/dotfiles/hosted/LICENSE
+# LICENSE
+#
+# GPLv3: https://raw.githubusercontent.com/rootwork/dotfiles/hosted/LICENSE
 
 input=$1
 
