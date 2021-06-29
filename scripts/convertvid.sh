@@ -58,6 +58,6 @@ if [ -f "${input}" ]; then
 else
   for f in *.$input;
     do ffmpeg -i "$f" -vcodec libx265 -crf 28 "./converted/${f%.*}.mp4";
-    echo "Conversion complete. Converted file(s) can be found in the 'converted' subdirectory.";
   done
+  echo "Conversion complete. Converted file(s) can be found in the 'converted' subdirectory.";
 fi
