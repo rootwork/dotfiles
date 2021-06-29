@@ -139,3 +139,6 @@ alias webp="echo 'Did you mean \"webpjpg\" (convert to JPG), \"dwebp\" (decode) 
 
 # Give shrinkpdf.sh a similar name to image/video minification functions
 alias minpdf="shrinkpdf.sh"
+
+# Give convertvid.sh an alias to save THREE CHARACTERS
+alias convertvid="convertvid.sh"
