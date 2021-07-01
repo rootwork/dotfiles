@@ -334,6 +334,7 @@ function trimvid {
 }
 
 # Combine videos using ffmpeg
+# Usage: joinvid FILENAME1 FILENAME2...
 function joinvid {
   echo "Generating list of input videos..."
 	echo "# Videos to merge" > concat.txt
