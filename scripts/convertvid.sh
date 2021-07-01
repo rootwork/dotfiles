@@ -58,9 +58,12 @@ mkdir -p ./converted;
 if [ -f "${input}" ]; then
   ffmpeg -i "$input" -vcodec libx265 -crf 28 "./converted/${input%.*}.mp4";
   echo "Conversion complete. Converted file can be found in the 'converted' subdirectory.";
-# Input is file extension
+# Input is file extension; check for both upper- and lower-case
 else
-  for f in *.$input;
+  for f in *.${input^^};
+    do ffmpeg -i "$f" -vcodec libx265 -crf 28 "./converted/${f%.*}.mp4";
+  done
+  for f in *.${input,,};
     do ffmpeg -i "$f" -vcodec libx265 -crf 28 "./converted/${f%.*}.mp4";
   done
   echo "Conversion complete. Converted file(s) can be found in the 'converted' subdirectory.";

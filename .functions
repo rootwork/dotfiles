@@ -302,16 +302,24 @@ function copyvid {
   ffmpeg -i "$1" -c:v copy -c:a copy "$name".mp4
 }
 
+# Strip metadata from video
+function stripvid {
+  name="${1%.*}"
+  ext="${1##*.}"
+  ffmpeg -i "$1" -c:v copy -c:a copy -map_metadata -1 -map_chapters -1 -movflags +faststart "$name"-stripped."$ext"
+}
+
 # More thorough conversion of AVI to MP4
 function avimp4 {
   name="${1%.*}"
   ffmpeg -i "$1" -c:a aac -b:a 128k -c:v libx265 -crf 23 "$name".mp4
 }
 
-# Minify videos by re-encoding them and stripping metadata
+# Minify a video by re-encoding it and stripping metadata
+# Usage: minvid FILENAME
 function minvid {
-	name="${1%.*}"
-	ext="${1##*.}"
+  name="${1%.*}"
+  ext="${1##*.}"
   ffmpeg -i "$1" -vcodec libx265 -crf 28 -map_metadata -1 -map_chapters -1 -movflags +faststart "$name"-min."$ext"
 }
 
