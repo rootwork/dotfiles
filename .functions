@@ -296,6 +296,18 @@ function webpjpg {
   echo "Created $name.jpg"
 }
 
+# Quick copy of any file format to MP4
+function copyvid {
+  name="${1%.*}"
+  ffmpeg -i "$1" -c:v copy -c:a copy "$name".mp4
+}
+
+# More thorough conversion of AVI to MP4
+function avimp4 {
+  name="${1%.*}"
+  ffmpeg -i "$1" -c:a aac -b:a 128k -c:v libx265 -crf 23 "$name".mp4
+}
+
 # Minify videos by re-encoding them and stripping metadata
 function minvid {
 	name="${1%.*}"
@@ -310,12 +322,6 @@ function minsmvid {
   ffmpeg -y -i "$1" -tune film -preset slower -map_metadata -1 -map_chapters -1 -c:v libx264 -b:v "$2"k -pass 1 -vsync cfr -f null /dev/null && \
   ffmpeg -i "$1" -c:v libx264 -b:v "$2"k -pass 2 -c:a aac -b:a 128k -movflags +faststart "$name"-minsm."$ext" && \
   rm ffmpeg2pass-0.log.mbtree && rm ffmpeg2pass-0.log
-}
-
-# Convert AVI to MP4 using ffmpeg
-function avimp4 {
-	name="${1%.*}"
-	ffmpeg -i "$1" -c:a aac -b:a 128k -c:v libx265 -crf 23 "$name".mp4
 }
 
 # Trim MP4 videos with ffmpeg based on timecodes
