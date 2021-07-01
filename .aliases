@@ -109,13 +109,15 @@ alias recent='git branch --sort=-committerdate'
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults;
 
-# easier to remember alias for viewing OS version, build, kernel etc.
-# appended by ZSH version
+# easier to remember alias for viewing OS version, build, kernel etc., stored in
+# clipboard. Appended by ZSH version (screen only)
 alias os='cat /etc/os-release|pbcopy && pbpaste && zsh --version'
 alias osinfo='os'
 # related alias to get system information
-alias sys='inxi -Fxxxrz'
+alias sys='inxi -Fxxxrz|pbcopy && pbpaste'
 alias sysinfo='sys'
+# available free space on primary disk
+alias freespace='sysinfo | grep "Partition: ID-1"'
 
 # Easier-to-remember aliases to kill processes
 # search-kill
@@ -129,10 +131,6 @@ alias reloadz="exec zsh"
 
 # Copy zsh dotfiles (assuming current directory) and reload
 alias copyz="cp .zshrc $HOME && cp .aliases $HOME && cp .exports $HOME && cp .functions $HOME && exec zsh"
-
-# easier to remember alias for viewing computer information; stores info in
-# clipboard
-alias compinfo='inxi -Fxz|pbcopy && pbpaste'
 
 # remind me what the webp conversion tools are
 alias webp="echo 'Did you mean \"webpjpg\" (convert to JPG), \"dwebp\" (decode) or \"cwebp\" (encode)?'"
