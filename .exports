@@ -53,3 +53,6 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 # Git Flow Completion is loaded in .zshrc with plugins(), but sourcing it here
 # adds some useful information to Powerline.
 source ~/.oh-my-zsh/custom/plugins/git-flow-completion/git-flow-completion.zsh
+
+# Go
+export PATH="/go/bin:/usr/local/go/bin:$PATH"
