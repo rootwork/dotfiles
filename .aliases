@@ -140,3 +140,6 @@ alias minpdf="shrinkpdf.sh"
 
 # Give convertvid.sh an alias to save THREE CHARACTERS
 alias convertvid="convertvid.sh"
+
+# I can never remember the name of "carbon"; this is more like "screenshot"
+alias scs="carbon-now"
