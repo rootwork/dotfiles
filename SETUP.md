@@ -95,11 +95,12 @@ sudo fwupdmgr update
 * `sudo add-apt-repository ppa:font-manager/staging`
 * `sudo add-apt-repository ppa:jonaski/strawberry`
 * `sudo add-apt-repository ppa:costales/folder-color`
+* `sudo add-apt-repository ppa:peek-developers/stable`
 * `wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -`
 * `sudo apt install -y apt-transport-https`
 * `echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list`
 * `sudo apt update`
-* `sudo apt install -y git flatpak diff-so-fancy xclip zsh python python3-pip rar guake ulauncher whois dconf-editor arc-theme apache2 mysql-server php libapache2-mod-php php-mysql php7.4-xml libpam-yubico yubikey-manager sublime-text font-manager nemo-font-manager imagemagick webp jpegoptim optipng nemo-image-converter strawberry chromium filezilla skypeforlinux vlc libncurses5-dev poppler-utils trimage dos2unix sublime-merge cockpit xclip xsel nemo-emblems folder-color-nemo nemo-image-converter ferdi`
+* `sudo apt install -y git flatpak diff-so-fancy xclip zsh python python3-pip rar guake ulauncher whois dconf-editor arc-theme apache2 mysql-server php libapache2-mod-php php-mysql php7.4-xml libpam-yubico yubikey-manager sublime-text font-manager nemo-font-manager imagemagick webp jpegoptim optipng nemo-image-converter strawberry chromium filezilla skypeforlinux vlc libncurses5-dev poppler-utils trimage dos2unix sublime-merge cockpit xclip xsel nemo-emblems folder-color-nemo nemo-image-converter ferdi peek`
 * `flatpak install -y flathub org.glimpse_editor.Glimpse`
 * `pip3 install pygithub`
 * Right-click the big "U" Ulauncher icon in the system tray and exit
@@ -122,6 +123,7 @@ sudo fwupdmgr update
 * `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k`
 
 ## Setup [Docker](https://techviewleo.com/how-to-install-and-use-docker-in-linux-mint/) and [Lando](https://docs.lando.dev/basics/installation.html#linux)
+
 * Turn off VPNs! Installation may fail with them on, sadly.
 * `sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common`
 * `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
@@ -144,6 +146,12 @@ sudo fwupdmgr update
 * `ssh-keygen -t rsa -b 4096 -C "ivan@rootwork.org"`
 * `eval "$(ssh-agent -s)"`
 * `ssh-add ~/.ssh/id_rsa`
+
+## Setup Node and packages
+
+* [Install necessary Node versions](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions)
+* [Install nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+* `npm i -g carbon-now-cli`
 
 # Online setup
 
@@ -204,6 +212,7 @@ sudo fwupdmgr update
 * Note you'll get a warning about no keyboard on startup if you use a Bluetooth keyboard; no worries, it'll kick in on the login screen
 
 ## Set Sublime Text as editor for `sudo` commands
+
 `sudo`-edit `/etc/environment` and add the following:
 
 ```
@@ -213,6 +222,7 @@ export VISUAL='/usr/bin/subl -w'
 ```
 
 ## Fix xdg-open error messages from Nemo
+
 * `sudo mkdir -p /var/lib/samba/usershares/`
 * `sudo chmod go+rwx /var/lib/samba/usershare`
 
@@ -237,6 +247,7 @@ This will run Zoom within Firejail anytime you enter `zoom` at the command-line
 or access the shortcut from ULauncher.
 
 ## Install M$ fonts
+
 * `sudo apt install -y ttf-mscorefonts-installer`
 
 ## Setup logiops for Logitech devices
@@ -271,6 +282,7 @@ Currently the following are installed:
 * [Media info](https://github.com/smurphos/nemo_actions_and_cinnamon_scripts#media-info)
 
 ## Extras
+
 * [Install Anbox for running Android apps](https://www.how2shout.com/linux/how-to-install-anbox-on-ubuntu-20-04-lts-focal-fossa/)
 * [Install Signal without a smartphone (or Android emulator)](https://ctrl.alt.coop/en/post/signal-without-a-smartphone/)
 
