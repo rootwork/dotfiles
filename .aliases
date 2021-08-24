@@ -143,3 +143,6 @@ alias convertvid="convertvid.sh"
 
 # I can never remember the name of "carbon"; this is more like "screenshot"
 alias scs="carbon-now"
+
+# Same deal with Peek...
+alias gif="peek"
