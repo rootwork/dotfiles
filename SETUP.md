@@ -15,6 +15,7 @@
    * [Setup <a href="https://techviewleo.com/how-to-install-and-use-docker-in-linux-mint/" rel="nofollow">Docker</a> and <a href="https://docs.lando.dev/basics/installation.html#linux" rel="nofollow">Lando</a>](#setup-docker-and-lando)
    * [Setup <a href="https://github.com/lastpass/lastpass-cli">LastPass CLI</a>](#setup-lastpass-cli)
    * [Create SSH keys](#create-ssh-keys)
+   * [Setup Node and packages](#setup-node-and-packages)
 * [Online setup](#online-setup)
    * [GitHub: Add SSH key](#github-add-ssh-key)
 * [Dotfile time](#dotfile-time)
@@ -33,7 +34,7 @@
 * [Startup applications](#startup-applications)
 * [Backup!](#backup)
 
-<!-- Added by: runner, at: Thu Jul  8 00:01:33 UTC 2021 -->
+<!-- Added by: runner, at: Wed Aug 25 20:31:18 UTC 2021 -->
 
 <!--te-->
 
