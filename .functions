@@ -358,3 +358,10 @@ function joinvid {
 # Enable zsh autocompletion for gulp.
 # Source: https://github.com/gulpjs/gulp-cli/tree/master/completion
 eval "$(gulp --completion=zsh)"
+
+# Git commit and sign off with message
+# Patterned after Powershell git aliases:
+# https://github.com/gluons/powershell-git-aliases/blob/master/src/aliases.ps1
+function gcsm {
+  git commit -s -m $args
+}
