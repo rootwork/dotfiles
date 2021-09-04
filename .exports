@@ -56,3 +56,6 @@ source ~/.oh-my-zsh/custom/plugins/git-flow-completion/git-flow-completion.zsh
 
 # Go
 export PATH="/go/bin:/usr/local/go/bin:$PATH"
+
+# Local bin
+export PATH="$HOME/.local/bin:$PATH"
