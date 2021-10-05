@@ -71,7 +71,7 @@ alias map="xargs -n1"
 
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
-	alias "$method"="lwp-request -m '$method'"
+  alias "$method"="lwp-request -m '$method'"
 done
 
 # Make Grunt print stack traces by default
@@ -156,4 +156,4 @@ alias premail="cd ~/Development/premail/premail"
 alias signoff="cd ~/Development/premail/mjml-signoff"
 alias bulletlist="cd ~/Development/premail/mjml-bullet-list"
 alias copysign="rm -rf ./node_modules/mjml-signoff && rsync --recursive --exclude '.git' --exclude 'node_modules' ~/Development/premail/mjml-signoff node_modules"
-alias copylist="rm -rf ./node_modules/mjml-signoff && rsync --recursive --exclude '.git' --exclude 'node_modules' ~/Development/premail/mjml-bullet-list node_modules"
+alias copylist="rm -rf ./node_modules/mjml-bullet-list && rsync --recursive --exclude '.git' --exclude 'node_modules' ~/Development/premail/mjml-bullet-list node_modules"
