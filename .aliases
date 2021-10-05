@@ -11,6 +11,9 @@
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 
+# Dotfiles shortcut
+alias dotfiles="cd ~/Development/personal/dotfiles"
+
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
@@ -130,7 +133,7 @@ alias kkill="kill -9"
 alias reloadz="exec zsh"
 
 # Copy zsh dotfiles (assuming current directory) and reload
-alias copyz="cp .zshrc $HOME && cp .aliases $HOME && cp .exports $HOME && cp .functions $HOME && exec zsh"
+alias copyz="dotfiles && cp .zshrc $HOME && cp .aliases $HOME && cp .exports $HOME && cp .functions $HOME && exec zsh"
 
 # remind me what the webp conversion tools are
 alias webp="echo 'Did you mean \"webpjpg\" (convert to JPG), \"dwebp\" (decode) or \"cwebp\" (encode)?'"
@@ -146,3 +149,11 @@ alias scs="carbon-now"
 
 # Same deal with Peek...
 alias gif="peek"
+
+# Temporary project shortcuts
+alias rootwork="cd ~/Development/personal/rootwork.org"
+alias premail="cd ~/Development/premail/premail"
+alias signoff="cd ~/Development/premail/mjml-signoff"
+alias bulletlist="cd ~/Development/premail/mjml-bullet-list"
+alias copysign="rm -rf ./node_modules/mjml-signoff && rsync --recursive --exclude '.git' --exclude 'node_modules' ~/Development/premail/mjml-signoff node_modules"
+alias copylist="rm -rf ./node_modules/mjml-signoff && rsync --recursive --exclude '.git' --exclude 'node_modules' ~/Development/premail/mjml-bullet-list node_modules"
