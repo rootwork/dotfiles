@@ -144,6 +144,7 @@ alias minpdf="shrinkpdf.sh"
 # Give scripts an alias to save THREE CHARACTERS
 alias convertvid="convertvid.sh"
 alias fadevid="fadevid.sh"
+alias markvid="markvid.sh"
 
 # I can never remember the name of "carbon"; this is more like "screenshot"
 alias scs="carbon-now"
