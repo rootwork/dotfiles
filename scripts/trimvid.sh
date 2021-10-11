@@ -58,7 +58,7 @@ fi
 
 if [ -f "${file}" ]; then # Make sure video file exists
   ffmpeg -ss "$start" -i "$file" -t "$end" -c copy -map_metadata -1 -map_chapters -1 "$name"-trim."$ext"
-  echo "\e[0;92mVideo trimmed. File: \e[0;94m$name"-trim."$ext\e[0m"
+  echo "\e[0;92mVideo trimmed. File: \e[0;94m$name-trim.$ext\e[0m"
 else
   echo "\e[0;91mError. Video file \e[0m'${file}'\e[0;91m not found.\e[0m";
 fi
