@@ -22,7 +22,7 @@ done
 
 echo "\e[0;92mUsing ffmpeg to merge files...\e[0m"
 
-ffmpeg -f concat -i concat.txt -c copy joined.mp4
+ffmpeg -v quiet -stats -f concat -i concat.txt -c copy joined.mp4
 
 rm concat.txt
 echo "\e[0;92mVideos merged! File: \e[0;94mjoined.mp4\e[0m"
