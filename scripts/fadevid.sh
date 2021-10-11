@@ -33,11 +33,15 @@ ext=${ext#.}
 
 vidlength=$(ffprobe -v error -select_streams v:0 -show_entries stream=duration -of default=noprint_wrappers=1:nokey=1 $file)
 
-echo "\e[0;92mVideo length is \e[0;94m$vidlength\e[0;92m seconds. How long do you want each fade to last? (in seconds)\e[0m"
-read duration
+if [ -f "${file}" ]; then # Make sure video file exists
+  echo "\e[0;92mVideo length is \e[0;94m$vidlength\e[0;92m seconds. How long do you want each fade to last? (in seconds)\e[0m"
+  read duration
 
-outpoint=$(echo "$vidlength - $duration" | bc )
+  outpoint=$(echo "$vidlength - $duration" | bc )
 
-ffmpeg -v quiet -stats -i $file -vf fade=t=in:st=0:d=${duration},fade=t=out:st=${outpoint}:d=${duration} -af afade=t=in:st=0:d=${duration},afade=t=out:st=${outpoint}:d=${duration} ${base}-faded.${ext}
+  ffmpeg -v quiet -stats -i $file -vf fade=t=in:st=0:d=${duration},fade=t=out:st=${outpoint}:d=${duration} -af afade=t=in:st=0:d=${duration},afade=t=out:st=${outpoint}:d=${duration} ${base}-faded.${ext}
 
-echo "\e[0;92mDone. Video created at \e[0;94m$base-faded.$ext\e[0m"
+  echo "\e[0;92mDone. Video created at \e[0;94m$base-faded.$ext\e[0m"
+else
+  echo "\e[0;91mError. Video file \e[0m'${file}'\e[0;91m not found.\e[0m";
+fi
