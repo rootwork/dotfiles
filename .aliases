@@ -142,9 +142,19 @@ alias webp="echo 'Did you mean \"webpjpg\" (convert to JPG), \"dwebp\" (decode) 
 alias minpdf="shrinkpdf.sh"
 
 # Give scripts an alias to save THREE CHARACTERS
+alias avimp4="avimp4.sh"
 alias convertvid="convertvid.sh"
+alias copyvid="copyvid.sh"
 alias fadevid="fadevid.sh"
+alias joinvid="joinvid.sh"
 alias markvid="markvid.sh"
+alias minpic="minpic.sh"
+alias minsmvid="minsmvid.sh"
+alias minvid="minvid.sh"
+alias shrinkpdf="shrinkpdf.sh"
+alias stripvid="stripvid.sh"
+alias trimvid="trimvid.sh"
+alias webpjpg="webpjpg.sh"
 
 # I can never remember the name of "carbon"; this is more like "screenshot"
 alias scs="carbon-now"
