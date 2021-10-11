@@ -7,7 +7,7 @@
 #
 # USAGE
 #
-# joinvid FILENAME1 FILENAME2...
+# $ ./joinvid.sh FILENAME1 FILENAME2...
 #
 # LICENSE
 #
