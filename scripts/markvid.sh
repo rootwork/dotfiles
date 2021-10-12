@@ -41,8 +41,8 @@ if [ -f "${file}" ]; then # Make sure video file exists
     ffmpeg -v quiet -stats -i $file -i $wm -filter_complex "overlay=main_w-overlay_w-${dist}:main_h-overlay_h-${dist}" ${base}-marked.${ext}
     echo "\e[0;92mDone. Video created at \e[0;94m${base}-marked.${ext}\e[0m"
   else
-    echo "\e[0;91mError. Watermark file \e[0m'${wm}'\e[0;91m not found.\e[0m";
+    echo "\e[0;91mError. Watermark file \e[0m'${wm}'\e[0;91m not found.\e[0m"
   fi
 else
-  echo "\e[0;91mError. Video file \e[0m'${file}'\e[0;91m not found.\e[0m";
+  echo "\e[0;91mError. Video file \e[0m'${file}'\e[0;91m not found.\e[0m"
 fi

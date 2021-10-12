@@ -26,4 +26,3 @@ if [ -f "${file}" ]; then # Make sure video file exists
 else
   echo "\e[0;91mError. Image file \e[0m'${file}'\e[0;91m not found.\e[0m"
 fi
-

@@ -23,11 +23,11 @@ ext="${1##*.}"
 
 bitrate=$2
 
-if [ $bitrate ]; then # Made sure bitrate is provided
+if [ $bitrate ]; then       # Made sure bitrate is provided
   if [ -f "${file}" ]; then # Make sure video file exists
     echo "\e[0;92mRunning first of two passes.\e[0m"
-    ffmpeg -v quiet -stats -y -i "$file" -tune film -preset slower -map_metadata -1 -map_chapters -1 -c:v libx264 -b:v "$bitrate"k -pass 1 -vsync cfr -f null /dev/null && \
-    echo "\e[0;92mRunning second of two passes.\e[0m"
+    ffmpeg -v quiet -stats -y -i "$file" -tune film -preset slower -map_metadata -1 -map_chapters -1 -c:v libx264 -b:v "$bitrate"k -pass 1 -vsync cfr -f null /dev/null &&
+      echo "\e[0;92mRunning second of two passes.\e[0m"
     ffmpeg -v quiet -stats -i "$file" -c:v libx264 -b:v "$bitrate"k -pass 2 -c:a aac -b:a 128k -movflags +faststart "$name"-minsm."$ext"
     rm ffmpeg2pass-0.log.mbtree && rm ffmpeg2pass-0.log
     echo "\e[0;92mVideo minified. File: \e[0;94m$name-minsm.$ext\e[0m"

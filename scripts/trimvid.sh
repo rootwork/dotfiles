@@ -48,8 +48,8 @@ if [ $end ]; then
   if [ -z "${end##*:*}" ]; then # end is a timecode
     end=$(echo "$end" | awk -F':' '{print $1 * 60 * 60 + $2 * 60 + $3}')
     start=$(echo "$start" | awk -F':' '{print $1 * 60 * 60 + $2 * 60 + $3}')
-    end=$(echo "$end - $start" | bc ) # provide end as duration
-  else # end is a duration
+    end=$(echo "$end - $start" | bc) # provide end as duration
+  else                               # end is a duration
     end=$end
   fi
 else
@@ -60,5 +60,5 @@ if [ -f "${file}" ]; then # Make sure video file exists
   ffmpeg -v quiet -stats -ss "$start" -i "$file" -t "$end" -c copy -map_metadata -1 -map_chapters -1 "$name"-trim."$ext"
   echo "\e[0;92mVideo trimmed. File: \e[0;94m$name-trim.$ext\e[0m"
 else
-  echo "\e[0;91mError. Video file \e[0m'${file}'\e[0;91m not found.\e[0m";
+  echo "\e[0;91mError. Video file \e[0m'${file}'\e[0;91m not found.\e[0m"
 fi

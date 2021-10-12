@@ -14,10 +14,10 @@
 # GPLv3: https://raw.githubusercontent.com/rootwork/dotfiles/hosted/LICENSE
 
 echo "\e[0;92mGenerating list of input videos...\e[0m"
-echo "# Videos to merge" > concat.txt
+echo "# Videos to merge" >concat.txt
 
 for file in "$@"; do
-  echo "file '$file'" >> concat.txt
+  echo "file '$file'" >>concat.txt
 done
 
 echo "\e[0;92mUsing ffmpeg to merge files...\e[0m"

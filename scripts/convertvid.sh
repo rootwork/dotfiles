@@ -52,16 +52,16 @@
 
 input=$1
 
-mkdir -p ./converted;
+mkdir -p ./converted
 
 # Input is a single file
 if [ -f "${input}" ]; then
-  ffmpeg -i "$input" -vcodec libx265 -crf 28 "./converted/${input%.*}.mp4";
-  echo "Conversion complete. Converted file can be found in the 'converted' subdirectory.";
+  ffmpeg -i "$input" -vcodec libx265 -crf 28 "./converted/${input%.*}.mp4"
+  echo "Conversion complete. Converted file can be found in the 'converted' subdirectory."
 # Input is file extension
 else
-  for f in *.${input};
-    do ffmpeg -i "$f" -vcodec libx265 -crf 28 "./converted/${f%.*}.mp4";
+  for f in *.${input}; do
+    ffmpeg -i "$f" -vcodec libx265 -crf 28 "./converted/${f%.*}.mp4"
   done
-  echo "Conversion complete. Converted file(s) can be found in the 'converted' subdirectory.";
+  echo "Conversion complete. Converted file(s) can be found in the 'converted' subdirectory."
 fi
