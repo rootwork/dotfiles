@@ -14,6 +14,9 @@ alias ohmyzsh="subl ~/.oh-my-zsh"
 # Dotfiles shortcut
 alias dotfiles="cd ~/Development/personal/dotfiles"
 
+# Scripts shortcut
+alias scripts="cd ~/Development/personal/bash-scripts"
+
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
@@ -52,7 +55,7 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
 # Canonical hex dump; some systems have this symlinked
-command -v hd > /dev/null || alias hd="hexdump -C"
+command -v hd >/dev/null || alias hd="hexdump -C"
 
 # Trim new lines and copy to clipboard
 alias c="tr -d '\n' | pbcopy"
@@ -62,7 +65,6 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 # URL-encode strings
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
-
 
 # Intuitive map function
 # For example, to list all directories that contain a certain file:
@@ -75,7 +77,7 @@ for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
 done
 
 # Make Grunt print stack traces by default
-command -v grunt > /dev/null && alias grunt="grunt --stack"
+command -v grunt >/dev/null && alias grunt="grunt --stack"
 
 # Move export GREP_OPTIONS="--color=auto" (which is deprecated) from .exports to .alias
 # https://github.com/mathiasbynens/dotfiles/issues/467
@@ -110,7 +112,7 @@ alias recent='git branch --sort=-committerdate'
 
 # Add tab completion for `defaults read|write NSGlobalDomain`
 # You could just use `-g` instead, but I like being explicit
-complete -W "NSGlobalDomain" defaults;
+complete -W "NSGlobalDomain" defaults
 
 # easier to remember alias for viewing OS version, build, kernel etc., stored in
 # clipboard. Appended by ZSH version (screen only)
