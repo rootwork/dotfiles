@@ -163,11 +163,13 @@ sudo fwupdmgr update
 
 # Dotfile time
 
+## Checkout and clone
+
 * `cd ~`
 * `git clone git@github.com:rootwork/dotfiles.git`
 * `cd dotfiles`
 * `git checkout local-nix`
-* `git submodule update --init --recursive` \[this should work as an update command, even if submodules have already been initiated\][ref](https://stackoverflow.com/a/10168693)
+* `git submodule update --init --recursive` (this should work as an update command, even if submodules have already been initiated)\[[ref](https://stackoverflow.com/a/10168693)\]
 * `cp .* ~/`
 
 ## Move scripts
