@@ -5,10 +5,11 @@ Various dotfiles created and/or customized by Ivan Boothe. Building on the shoul
   this section. -->
 
 <!--ts-->
-   * [Disclaimer](#disclaimer)
-   * [Instructions](#instructions)
+* [Dotfiles for a hosted setup](#dotfiles-for-a-hosted-setup)
+* [Disclaimer](#disclaimer)
+* [Instructions](#instructions)
 
-<!-- Added by: runner, at: Tue Jan 26 22:00:30 UTC 2021 -->
+<!-- Added by: runner, at: Sat Oct 16 01:29:04 UTC 2021 -->
 
 <!--te-->
 
