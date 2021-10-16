@@ -170,13 +170,14 @@ sudo fwupdmgr update
 * `git clone git@github.com:rootwork/dotfiles.git`
 * `cd dotfiles`
 * `git checkout local-nix`
-* `git submodule update --init --recursive` (this should work as an update command, even if submodules have already been initiated)\[[ref](https://stackoverflow.com/a/10168693)\]
+* `git submodule update --init --recursive` (this [should](https://stackoverflow.com/a/10168693) work as an update command, even if submodules have already been initiated)
 * `cp .* ~/`
 
 ## Move scripts
 
 * `mkdir -p ~/bin`
-* `cp -r ./scripts/* ~/bin`
+* `cp ./scripts/**/*.sh ~/bin` (zsh-only; bash option [here](https://stackoverflow.com/questions/15617016/copy-all-files-with-a-certain-extension-from-all-subdirectories#comment22152382_15617049))
+* `rm ~/bin/pre-commit.sh`
 * `chmod +x ~/bin/*`
 
 ## Grab private config settings and load them
