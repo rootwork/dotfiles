@@ -1,3 +1,5 @@
+Various dotfiles created and/or customized by Ivan Boothe. Building on the shoulders of giants.
+
 <!-- The following section, from "ts" to "te", is an automatically-generated
   table of contents, updated whenever this file changes. Do not edit within
   this section. -->
@@ -10,19 +12,25 @@
 
 <!--te-->
 
-Various dotfiles created/customized by Ivan Boothe. One branch for local
-terminal, one branch for hosted terminal (e.g. DigitalOcean console), each with
-setup instructions.
+# Dotfiles for a local Linux setup
+
+This is the branch for a local Linux setup. You may also want to see the [hosted](https://github.com/rootwork/dotfiles/tree/hosted), [local Windows](https://github.com/rootwork/dotfiles/tree/local-win), or [local Mac](https://github.com/rootwork/dotfiles/tree/local-mac) branches.
+
+These have been tested on Linux Mint 20+ (Ubuntu/Debian). They may or may not work in other distributions.
+
+# Disclaimer
 
 No guarantees to anyone that these work, are safe, will be maintained, etc.
 
+# Instructions
+
 See [the setup file](SETUP.md) for the good stuff.
 
-# Troubleshooting failing installations
+## Troubleshooting failing installations
 
 By far the most common issue is an installation failing because of a VPN, for instance with Docker and Lando. Annoying, but turn off the VPN for the first install and then proceed.
 
-# Keymapping (keybinding, keyboard shortcuts, etc.)
+## Keymapping (keybinding, keyboard shortcuts, etc.)
 
 Because this comes up a lot, some useful resources:
 
