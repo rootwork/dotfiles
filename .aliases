@@ -135,7 +135,7 @@ alias kkill="kill -9"
 alias reloadz="exec zsh"
 
 # Copy zsh dotfiles (assuming current directory) and reload
-alias copyz="dotfiles && cp .zshrc $HOME && cp .aliases $HOME && cp .exports $HOME && cp .functions $HOME && exec zsh"
+alias copyz="dotfiles && cp .zshrc $HOME && cp .aliases $HOME && cp .exports $HOME && cp .functions && cp ./scripts/**/*.sh $HOME/bin && rm $HOME/bin/pre-commit.sh && exec zsh"
 
 # remind me what the webp conversion tools are
 alias webp="echo 'Did you mean \"webpjpg\" (convert to JPG), \"dwebp\" (decode) or \"cwebp\" (encode)?'"
