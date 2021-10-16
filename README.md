@@ -5,10 +5,13 @@ Various dotfiles created and/or customized by Ivan Boothe. Building on the shoul
   this section. -->
 
 <!--ts-->
-* [Troubleshooting failing installations](#troubleshooting-failing-installations)
-* [Keymapping (keybinding, keyboard shortcuts, etc.)](#keymapping-keybinding-keyboard-shortcuts-etc)
+* [Dotfiles for a local Linux setup](#dotfiles-for-a-local-linux-setup)
+* [Disclaimer](#disclaimer)
+* [Instructions](#instructions)
+   * [Troubleshooting failing installations](#troubleshooting-failing-installations)
+   * [Keymapping (keybinding, keyboard shortcuts, etc.)](#keymapping-keybinding-keyboard-shortcuts-etc)
 
-<!-- Added by: runner, at: Sat Oct 16 01:13:56 UTC 2021 -->
+<!-- Added by: runner, at: Sat Oct 16 01:34:32 UTC 2021 -->
 
 <!--te-->
 
