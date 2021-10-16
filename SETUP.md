@@ -19,6 +19,7 @@
 * [Online setup](#online-setup)
    * [GitHub: Add SSH key](#github-add-ssh-key)
 * [Dotfile time](#dotfile-time)
+   * [Checkout and clone](#checkout-and-clone)
    * [Move scripts](#move-scripts)
    * [Grab private config settings and load them](#grab-private-config-settings-and-load-them)
    * [Now finish setting up](#now-finish-setting-up)
@@ -34,7 +35,7 @@
 * [Startup applications](#startup-applications)
 * [Backup!](#backup)
 
-<!-- Added by: runner, at: Sat Oct 16 01:08:19 UTC 2021 -->
+<!-- Added by: runner, at: Sat Oct 16 01:09:34 UTC 2021 -->
 
 <!--te-->
 
