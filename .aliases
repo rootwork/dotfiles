@@ -138,7 +138,7 @@ alias reloadz="exec zsh"
 alias copyz="dotfiles && cp .zshrc $HOME && cp .aliases $HOME && cp .exports $HOME && cp .functions $HOME && cp ./scripts/**/*.sh $HOME/bin && rm $HOME/bin/pre-commit.sh && reloadz"
 
 # Update scripts
-alias updatescripts="dotfiles && git submodule update --init --recursive && cp ./scripts/**/*.sh $HOME/bin && rm $HOME/bin/pre-commit.sh && reloadz"
+alias updatescripts="dotfiles && git submodule foreach --recursive git pull && git add . && git commit --signoff --message='Updating scripts submodule' && cp ./scripts/**/*.sh $HOME/bin && rm $HOME/bin/pre-commit.sh && reloadz"
 
 # remind me what the webp conversion tools are
 alias webp="echo 'Did you mean \"webpjpg\" (convert to JPG), \"dwebp\" (decode) or \"cwebp\" (encode)?'"
