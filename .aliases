@@ -169,7 +169,7 @@ alias gif="peek"
 
 # Temporary project shortcuts
 alias rootwork="cd ~/Development/personal/rootwork.org"
-alias premail="cd ~/Development/premail/premail"
+alias premaildev="cd ~/Development/premail/premail"
 alias signoff="cd ~/Development/premail/mjml-signoff"
 alias bulletlist="cd ~/Development/premail/mjml-bullet-list"
 alias copysign="rm -rf ./node_modules/mjml-signoff && rsync --recursive --exclude '.git' --exclude 'node_modules' ~/Development/premail/mjml-signoff node_modules"
