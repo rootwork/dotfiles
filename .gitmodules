@@ -1,0 +1,3 @@
+[submodule "scripts/mine"]
+	path = scripts/mine
+	url = https://github.com/rootwork/bash-scripts.git
