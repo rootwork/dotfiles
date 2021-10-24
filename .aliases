@@ -148,6 +148,7 @@ alias minpdf="shrinkpdf.sh"
 
 # Give scripts an alias to save THREE CHARACTERS
 alias avimp4="avimp4.sh"
+alias cap="cap.sh"
 alias convertvid="convertvid.sh"
 alias copyvid="copyvid.sh"
 alias fadevid="fadevid.sh"
