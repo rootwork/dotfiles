@@ -252,9 +252,26 @@ Sourced from [Aral Balkan](https://ar.al/2020/06/25/how-to-use-the-zoom-malware-
 This will run Zoom within Firejail anytime you enter `zoom` at the command-line
 or access the shortcut from ULauncher.
 
-## Install M$ fonts
+## Font management
 
-* `sudo apt install -y ttf-mscorefonts-installer`
+* Remove non-English fonts ([source](https://easylinuxtipsproject.blogspot.com/p/clean-mint.html#ID8)): ` sudo apt remove "fonts-kacst*" "fonts-khmeros*" fonts-lklug-sinhala fonts-guru-extra "fonts-nanum*" fonts-noto-cjk "fonts-takao*" fonts-tibetan-machine fonts-lao fonts-sil-padauk fonts-sil-abyssinica "fonts-tlwg-*" "fonts-lohit-*" fonts-beng-extra fonts-gargi fonts-gubbi fonts-gujr-extra fonts-kalapi "fonts-samyak*" fonts-navilu fonts-nakula fonts-orya-extra fonts-pagul fonts-sarai "fonts-telu*" "fonts-wqy*" "fonts-smc*" fonts-deva-extra fonts-sahadeva && sudo dpkg-reconfigure fontconfig && fc-cache`
+* Add M$ fonts: `sudo apt install -y ttf-mscorefonts-installer`
+
+Font Manager (installed in general installations above) allows for quick Google Fonts installation: Run Font Manager and then click the "G" icon in the top menubar to browse, use "Download Family" button to install.
+
+Sources of open-source fonts:
+
+* [League of Movable Type](https://www.theleagueofmoveabletype.com/) (Open Font License)
+* [Open Foundry](https://open-foundry.com/fonts) (Open Font License)
+* [Font Space, Open Source category](https://www.fontspace.com/category/Open-source) (F/LOSS)
+* [Fontesk, OFL category](https://fontesk.com/license/ofl-gpl/) (Open Font License)
+* [Font Library](https://fontlibrary.org/en/catalogue) (various F/LOSS licenses)
+* [Velvetyne](https://www.velvetyne.fr/) (F/LOSS)
+* [Use & Modify](https://usemodify.com/) (F/LOSS)
+* [Font Squirrel](https://www.fontsquirrel.com/fonts/list/find_fonts) (various free and "free" licenses)
+* [Ralph Levien](https://www.levien.com/type/myfonts/) (Open Font License)
+
+Some programs may not update their font lists until a system restart.
 
 ## Setup logiops for Logitech devices
 
