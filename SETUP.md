@@ -28,14 +28,14 @@
    * [Set Sublime Text as editor for sudo commands](#set-sublime-text-as-editor-for-sudo-commands)
    * [Fix xdg-open error messages from Nemo](#fix-xdg-open-error-messages-from-nemo)
    * [Set up Zoom with Firejail](#set-up-zoom-with-firejail)
-   * [Install M$ fonts](#install-m-fonts)
+   * [Font management](#font-management)
    * [Setup logiops for Logitech devices](#setup-logiops-for-logitech-devices)
    * [Add some Nemo actions](#add-some-nemo-actions)
    * [Extras](#extras)
 * [Startup applications](#startup-applications)
 * [Backup!](#backup)
 
-<!-- Added by: runner, at: Mon Oct 18 21:15:52 UTC 2021 -->
+<!-- Added by: runner, at: Mon Oct 25 22:05:13 UTC 2021 -->
 
 <!--te-->
 
