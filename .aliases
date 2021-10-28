@@ -170,6 +170,7 @@ alias scs="carbon-now"
 alias gif="peek"
 
 # Temporary project shortcuts
+alias zzip="mv ../*.zip . && unzip -o *.zip && rm *.zip"
 alias rootwork="cd ~/Development/personal/rootwork.org"
 alias premaildev="cd ~/Development/premail/premail"
 alias signoff="cd ~/Development/premail/mjml-signoff"
