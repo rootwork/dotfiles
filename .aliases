@@ -162,6 +162,7 @@ alias shrinkpdf="shrinkpdf.sh"
 alias stripvid="stripvid.sh"
 alias trimvid="trimvid.sh"
 alias webpjpg="webpjpg.sh"
+alias vidres="ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0"
 
 # I can never remember the name of "carbon"; this is more like "screenshot"
 alias scs="carbon-now"
@@ -170,7 +171,7 @@ alias scs="carbon-now"
 alias gif="peek"
 
 # Temporary project shortcuts
-alias zzip="mv ../*.zip . && unzip -o *.zip && rm *.zip"
+alias zzip="mv ../*.zip . && for z in *.zip; do unzip $z; done && rm *.zip"
 alias rootwork="cd ~/Development/personal/rootwork.org"
 alias premaildev="cd ~/Development/premail/premail"
 alias signoff="cd ~/Development/premail/mjml-signoff"
