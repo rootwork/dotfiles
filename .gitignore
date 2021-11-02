@@ -25,13 +25,6 @@ Desktop.ini
 Thumbs.db
 ehthumbs.db
 
-# Folder view configuration files
-.DS_Store
-.AppleDouble
-.LSOverride
-Desktop.ini
-.AppleDesktop
-
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
 .fseventsd
@@ -66,24 +59,67 @@ Desktop.ini
 # Compiled Python files
 *.pyc
 
-# Sass caches and maps
+# Dependency subdirectories
+node_modules/
+jspm_packages/
+bower_components/
+
+# Caches
+.cache
+._*
+Thumbs.db
+ehthumbs.db
+.npm
+*.tsbuildinfo
+.eslintcache
 .sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
-
-# JIRA plugin
-atlassian-ide-plugin.xml
-
-# Cache files for Sublime Text
 *.tmlanguage.cache
 *.tmPreferences.cache
 *.stTheme.cache
 
-# Sublime Text Package Control-specific files
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Style maps
+*.css.map
+*.sass.map
+*.scss.map
+
+# Sublime Text Package Control
 Package Control.last-run
 Package Control.ca-list
 Package Control.ca-bundle
+
+# COMPONENT-SPECIFIC
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Output of 'npm pack'
+*.tgz
+
+# Optional REPL history
+.node_repl_history
+
+# Yarn Integrity file
+.yarn-integrity
+
+# TypeScript v1 declaration files
+typings/
+
+# Next.js build output
+.next
+
+# Nuxt.js build output
+.nuxt
+
+# Grunt intermediate storage
+.grunt
 
 # SFTP configuration file
 sftp-config.json
