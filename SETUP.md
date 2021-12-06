@@ -83,9 +83,23 @@ sudo fwupdmgr update
 
 ## Thunderbird
 
+### Installing v91+
+
+Until 91+ is backported to Debian/Ubuntu, we have to remove the bundled version of Thunderbird and add the one from the Mozilla ESR PPA manually. I attempted doing this with Flatpak but had a persistant bug that refused to load Thunderbird's GUI except in safe mode (uninstalling all extensions and themes didn't help). Since the only other options were using Snap or building from source, I chose adding a new PPA as the least-bad option.
+
+```
+sudo apt remove thunderbird
+sudo add-apt-repository ppa:mozillateam/ppa
+sudo apt update
+sudo install thunderbird
+```
+
+Then we can move in the existing profile information:
+
 * Open program, quit wizard, quit program
 * Open `.thunderbird` in home directory
-* Copy over extensions, preferences, etc from previous profile directory into new `*.default-release` directory
+* Copy over contents of previous profile directory into new `*.default[-release]` directory
+* Open program again and make sure everything loads.
 
 # CLI fun
 
