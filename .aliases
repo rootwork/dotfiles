@@ -126,7 +126,7 @@ alias freespace='sysinfo | grep "Partition: ID-1"'
 
 # Easier-to-remember aliases to kill processes
 # search-kill
-alias skill="procsearch"
+alias skill="pgrep"
 # kill-kill
 alias kkill="kill -9"
 
