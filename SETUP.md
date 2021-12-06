@@ -9,6 +9,7 @@
    * [Manual downloads](#manual-downloads)
    * [Firefox](#firefox)
    * [Thunderbird](#thunderbird)
+      * [Installing v91+](#installing-v91)
 * [CLI fun](#cli-fun)
    * [General installations](#general-installations)
    * [Setup Zsh/Oh My Zsh/Powerline](#setup-zshoh-my-zshpowerline)
@@ -35,7 +36,7 @@
 * [Startup applications](#startup-applications)
 * [Backup!](#backup)
 
-<!-- Added by: runner, at: Mon Oct 25 22:05:13 UTC 2021 -->
+<!-- Added by: runner, at: Mon Dec  6 23:56:25 UTC 2021 -->
 
 <!--te-->
 
