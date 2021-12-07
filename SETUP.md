@@ -95,12 +95,19 @@ sudo apt update
 sudo install thunderbird
 ```
 
-Then we can move in the existing profile information:
+### Pointing to an existing Thunderbird preferences and profile directory
 
-* Open program, quit wizard, quit program
-* Open `.thunderbird` in home directory
-* Copy over contents of previous profile directory into new `*.default[-release]` directory
-* Open program again and make sure everything loads.
+1. Open your home directory.
+2. Remove `.thunderbird`.
+3. Create a symlink from `.thunderbird` to the location of this same folder stored on another device.
+4. Open program again and make sure everything loads.
+
+### Restoring a locally-stored profile
+
+1. Open Thunderbird, exit wizard/setup tab, and quit. This will initialize a default profile.
+2. Open your home directory, then open `.thunderbird`.
+3. Copy the _contents_ of previous profile directory into the new `*.default[-release]` directory. Remove the previous profile directory if desired.
+4. Open program again and make sure everything loads.
 
 # CLI fun
 
