@@ -10,6 +10,8 @@
    * [Firefox](#firefox)
    * [Thunderbird](#thunderbird)
       * [Installing v91+](#installing-v91)
+      * [Pointing to an existing Thunderbird preferences and profile directory](#pointing-to-an-existing-thunderbird-preferences-and-profile-directory)
+      * [Restoring a locally-stored profile](#restoring-a-locally-stored-profile)
 * [CLI fun](#cli-fun)
    * [General installations](#general-installations)
    * [Setup Zsh/Oh My Zsh/Powerline](#setup-zshoh-my-zshpowerline)
@@ -36,7 +38,7 @@
 * [Startup applications](#startup-applications)
 * [Backup!](#backup)
 
-<!-- Added by: runner, at: Mon Dec  6 23:56:25 UTC 2021 -->
+<!-- Added by: runner, at: Tue Dec  7 00:03:57 UTC 2021 -->
 
 <!--te-->
 
