@@ -31,4 +31,7 @@ if [[ ! $convert ]]; then
   error_exit "Imagemagick must be installed. Aborting."
 fi
 
-"${convert}" "${file}" -resize "${width}"x "${name}_${width}.${ext}"
+newfile="${name}_${width}.${ext}"
+
+"${convert}" "${file}" -resize "${width}"x "${newfile}"
+echo -e "Done. New file: ${newfile}"
