@@ -143,10 +143,8 @@ alias updatescripts="dotfiles && git submodule foreach --recursive git pull && g
 # remind me what the webp conversion tools are
 alias webp="echo 'Did you mean \"webpjpg\" (convert to JPG), \"dwebp\" (decode) or \"cwebp\" (encode)?'"
 
-# Give shrinkpdf.sh a similar name to image/video minification functions
-alias minpdf="shrinkpdf.sh"
-
 # Give scripts an alias to save THREE CHARACTERS
+alias mergepdf="mergepdf.sh"
 alias avimp4="avimp4.sh"
 alias convertvid="convertvid.sh"
 alias copyvid="copyvid.sh"
@@ -156,7 +154,6 @@ alias markvid="markvid.sh"
 alias minpic="minpic.sh"
 alias minsmvid="minsmvid.sh"
 alias minvid="minvid.sh"
-alias shrinkpdf="shrinkpdf.sh"
 alias stripvid="stripvid.sh"
 alias trimvid="trimvid.sh"
 alias webpjpg="webpjpg.sh"
