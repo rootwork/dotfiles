@@ -126,7 +126,7 @@ sudo install thunderbird
 * `sudo apt install -y apt-transport-https`
 * `echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list`
 * `sudo apt update`
-* `sudo apt install -y git flatpak diff-so-fancy xclip zsh python python3-pip rar guake ulauncher whois dconf-editor arc-theme apache2 mysql-server php libapache2-mod-php php-mysql php7.4-xml libpam-yubico yubikey-manager sublime-text font-manager nemo-font-manager imagemagick webp jpegoptim optipng nemo-image-converter strawberry chromium filezilla skypeforlinux vlc libncurses5-dev poppler-utils trimage dos2unix sublime-merge cockpit xclip xsel nemo-emblems folder-color-nemo nemo-image-converter ferdi peek`
+* `sudo apt install -y git flatpak diff-so-fancy xclip zsh python python3-pip rar guake ulauncher whois dconf-editor arc-theme apache2 mysql-server php libapache2-mod-php php-mysql php7.4-xml libpam-yubico yubikey-manager sublime-text font-manager nemo-font-manager imagemagick webp jpegoptim optipng nemo-image-converter strawberry chromium filezilla skypeforlinux vlc libncurses5-dev poppler-utils trimage dos2unix sublime-merge cockpit xclip xsel nemo-emblems folder-color-nemo nemo-image-converter ferdi peek pavucontrol`
 * `flatpak install -y flathub org.glimpse_editor.Glimpse`
 * `pip3 install pygithub`
 * Right-click the big "U" Ulauncher icon in the system tray and exit
@@ -148,6 +148,28 @@ sudo install thunderbird
 * On the selected profile, under Profiles, check Custom font under Text Appearance and select MesloLGS NF Regular, size 12
 * `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k`
 
+## Create SSH keys
+
+* `ssh-keygen -t rsa -b 4096 -C "ivan@rootwork.org"`
+* `eval "$(ssh-agent -s)"`
+* `ssh-add ~/.ssh/id_rsa`
+
+## Connect phone-Linux-headset via Bluetooth
+
+Follow [this guide](https://ostechnix.com/turn-your-linux-pc-into-bluetooth-speakers-for-your-phone/):
+
+* Start with "Pair the Linux PC with your Mobile Phone" as requirements are included with Linux Mint or installed above.
+* If the computer has a standard high-def audio Intel sound card, follow additional solution 1.
+* Regardless of the sound card, follow additional solution 2.
+* Fully restart the system.
+* Attempt to connect the phone to Linux and the headset to Linux, then test playing media from the phone over the headset.
+
+## Setup Node and packages
+
+* [Install necessary Node versions](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions)
+* [Install nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+* `npm i -g carbon-now-cli`
+
 ## Setup [Docker](https://techviewleo.com/how-to-install-and-use-docker-in-linux-mint/) and [Lando](https://docs.lando.dev/basics/installation.html#linux)
 
 * Turn off VPNs! Installation may fail with them on, sadly.
@@ -159,25 +181,6 @@ sudo install thunderbird
 * `sudo usermod -aG docker $USER`
 * `wget https://files.devwithlando.io/lando-stable.deb`
 * `sudo dpkg -i lando-stable.deb`
-
-## Setup [LastPass CLI](https://github.com/lastpass/lastpass-cli)
-
-* `sudo apt-get --no-install-recommends -yqq install bash-completion build-essential cmake libcurl4 libcurl4-openssl-dev libssl-dev libxml2 libxml2-dev libssl1.1 pkg-config ca-certificates xclip`
-* `git clone git@github.com:lastpass/lastpass-cli.git`
-* `cd lastpass-cli && make`
-* `sudo make install`
-
-## Create SSH keys
-
-* `ssh-keygen -t rsa -b 4096 -C "ivan@rootwork.org"`
-* `eval "$(ssh-agent -s)"`
-* `ssh-add ~/.ssh/id_rsa`
-
-## Setup Node and packages
-
-* [Install necessary Node versions](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions)
-* [Install nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-* `npm i -g carbon-now-cli`
 
 # Online setup
 
