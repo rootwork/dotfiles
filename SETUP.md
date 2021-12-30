@@ -15,10 +15,10 @@
 * [CLI fun](#cli-fun)
    * [General installations](#general-installations)
    * [Setup Zsh/Oh My Zsh/Powerline](#setup-zshoh-my-zshpowerline)
-   * [Setup <a href="https://techviewleo.com/how-to-install-and-use-docker-in-linux-mint/" rel="nofollow">Docker</a> and <a href="https://docs.lando.dev/basics/installation.html#linux" rel="nofollow">Lando</a>](#setup-docker-and-lando)
-   * [Setup <a href="https://github.com/lastpass/lastpass-cli">LastPass CLI</a>](#setup-lastpass-cli)
    * [Create SSH keys](#create-ssh-keys)
+   * [Connect phone-Linux-headset via Bluetooth](#connect-phone-linux-headset-via-bluetooth)
    * [Setup Node and packages](#setup-node-and-packages)
+   * [Setup <a href="https://techviewleo.com/how-to-install-and-use-docker-in-linux-mint/" rel="nofollow">Docker</a> and <a href="https://docs.lando.dev/basics/installation.html#linux" rel="nofollow">Lando</a>](#setup-docker-and-lando)
 * [Online setup](#online-setup)
    * [GitHub: Add SSH key](#github-add-ssh-key)
 * [Dotfile time](#dotfile-time)
@@ -38,7 +38,7 @@
 * [Startup applications](#startup-applications)
 * [Backup!](#backup)
 
-<!-- Added by: runner, at: Tue Dec  7 00:03:57 UTC 2021 -->
+<!-- Added by: runner, at: Thu Dec 30 22:51:57 UTC 2021 -->
 
 <!--te-->
 
