@@ -72,7 +72,8 @@ sudo fwupdmgr update
 ## Applets
 
 * Weather [weather-mockturtl]
-* Color Picker
+* Color Picker [icarter09]
+* Timer with notifications [jake1164]
 
 ## Manual downloads
 
