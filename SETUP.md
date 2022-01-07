@@ -32,13 +32,14 @@
    * [Fix xdg-open error messages from Nemo](#fix-xdg-open-error-messages-from-nemo)
    * [Set up Zoom with Firejail](#set-up-zoom-with-firejail)
    * [Font management](#font-management)
+   * [Replace bundled ImageMagick with a newer version, webp and HEIC support](#replace-bundled-imagemagick-with-a-newer-version-webp-and-heic-support)
    * [Setup logiops for Logitech devices](#setup-logiops-for-logitech-devices)
    * [Add some Nemo actions](#add-some-nemo-actions)
    * [Extras](#extras)
 * [Startup applications](#startup-applications)
 * [Backup!](#backup)
 
-<!-- Added by: runner, at: Thu Dec 30 22:53:54 UTC 2021 -->
+<!-- Added by: runner, at: Fri Jan  7 01:10:09 UTC 2022 -->
 
 <!--te-->
 
