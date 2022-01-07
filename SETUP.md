@@ -16,7 +16,9 @@
    * [General installations](#general-installations)
    * [Setup Zsh/Oh My Zsh/Powerline](#setup-zshoh-my-zshpowerline)
    * [Create SSH keys](#create-ssh-keys)
-   * [Connect phone-Linux-headset via Bluetooth](#connect-phone-linux-headset-via-bluetooth)
+   * [Bluetooth](#bluetooth)
+      * [Autoconnect trusted Bluetooth devices](#autoconnect-trusted-bluetooth-devices)
+      * [Connect phone-Linux-headset via Bluetooth](#connect-phone-linux-headset-via-bluetooth)
    * [Setup Node and packages](#setup-node-and-packages)
    * [Setup <a href="https://techviewleo.com/how-to-install-and-use-docker-in-linux-mint/" rel="nofollow">Docker</a> and <a href="https://docs.lando.dev/basics/installation.html#linux" rel="nofollow">Lando</a>](#setup-docker-and-lando)
 * [Online setup](#online-setup)
@@ -27,7 +29,6 @@
    * [Grab private config settings and load them](#grab-private-config-settings-and-load-them)
    * [Now finish setting up](#now-finish-setting-up)
 * [Bits and bobs](#bits-and-bobs)
-   * [Autoconnect trusted Bluetooth devices](#autoconnect-trusted-bluetooth-devices)
    * [Set Sublime Text as editor for sudo commands](#set-sublime-text-as-editor-for-sudo-commands)
    * [Fix xdg-open error messages from Nemo](#fix-xdg-open-error-messages-from-nemo)
    * [Set up Zoom with Firejail](#set-up-zoom-with-firejail)
@@ -39,7 +40,7 @@
 * [Startup applications](#startup-applications)
 * [Backup!](#backup)
 
-<!-- Added by: runner, at: Fri Jan  7 01:10:09 UTC 2022 -->
+<!-- Added by: runner, at: Fri Jan  7 22:04:53 UTC 2022 -->
 
 <!--te-->
 
