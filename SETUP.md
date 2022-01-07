@@ -156,7 +156,23 @@ sudo install thunderbird
 * `eval "$(ssh-agent -s)"`
 * `ssh-add ~/.ssh/id_rsa`
 
-## Connect phone-Linux-headset via Bluetooth
+## Bluetooth
+
+### Autoconnect trusted Bluetooth devices
+
+* Pair all devices using Bluetooth GUI
+* `sudo bluetoothctl devices`
+* By default paired devices will be trusted
+* `sudo bluetoothctl untrust [device_id]` for each device you do NOT want to autoconnect
+* `git clone https://github.com/jrouleau/bluetooth-autoconnect.git repos/bluetooth-autoconnect`
+* `sudo cp repos/bluetooth-autoconnect/bluetooth-autoconnect.service /etc/systemd/system/`
+* `sudo cp '/home/ivan/repos/bluetooth-autoconnect/bluetooth-autoconnect' /usr/bin/`
+* `sudo systemctl enable bluetooth-autoconnect.service`
+* `sudo systemctl start bluetooth-autoconnect.service`
+* Reboot, making sure any wired mice are not connected (they'll prevent Bluetooth mice from registering clicks)
+* Note you'll get a warning about no keyboard on startup if you use a Bluetooth keyboard; no worries, it'll kick in on the login screen
+
+### Connect phone-Linux-headset via Bluetooth
 
 Follow [this guide](https://ostechnix.com/turn-your-linux-pc-into-bluetooth-speakers-for-your-phone/):
 
@@ -231,20 +247,6 @@ Follow [this guide](https://ostechnix.com/turn-your-linux-pc-into-bluetooth-spea
 * Run Update Manager and install anything new
 
 # Bits and bobs
-
-## Autoconnect trusted Bluetooth devices
-
-* Pair all devices using Bluetooth GUI
-* `bluetoothctl devices`
-* By default paired devices will be trusted
-* `bluetoothctl untrust [device_id]` for each device you do NOT want to autoconnect
-* `git clone https://github.com/jrouleau/bluetooth-autoconnect.git repos/bluetooth-autoconnect`
-* `sudo cp repos/bluetooth-autoconnect/bluetooth-autoconnect.service /etc/systemd/system/`
-* `sudo cp '/home/ivan/repos/bluetooth-autoconnect/bluetooth-autoconnect' /usr/bin/`
-* `sudo systemctl enable bluetooth-autoconnect.service`
-* `sudo systemctl start bluetooth-autoconnect.service`
-* Reboot, making sure any wired mice are not connected (they'll prevent Bluetooth mice from registering clicks)
-* Note you'll get a warning about no keyboard on startup if you use a Bluetooth keyboard; no worries, it'll kick in on the login screen
 
 ## Set Sublime Text as editor for `sudo` commands
 
