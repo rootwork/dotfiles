@@ -301,6 +301,9 @@ Sources of open-source fonts:
 
 Some programs may not update their font lists until a system restart.
 
+## Replace bundled ImageMagick with a newer version, webp and HEIC support
+Follow [this gist](https://gist.github.com/hurricup/e14ae5bc47705fca6b1680e7a1fb6580), replacing `--branch 7.1.0-14` with the latest release of [ImageMagick](https://github.com/ImageMagick/ImageMagick/releases).
+
 ## Setup logiops for Logitech devices
 
 Configuration is located at `~/.logid.cfg` (included here). We're using a
