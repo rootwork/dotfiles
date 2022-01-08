@@ -131,7 +131,7 @@ sudo install thunderbird
 * `sudo apt update`
 * `sudo apt install -y git flatpak diff-so-fancy xclip zsh python python3-pip rar guake ulauncher whois dconf-editor arc-theme apache2 mysql-server php libapache2-mod-php php-mysql php7.4-xml libpam-yubico yubikey-manager sublime-text font-manager nemo-font-manager imagemagick webp jpegoptim optipng nemo-image-converter strawberry chromium filezilla skypeforlinux vlc libncurses5-dev poppler-utils trimage dos2unix sublime-merge cockpit xclip xsel nemo-emblems folder-color-nemo nemo-image-converter ferdi peek pavucontrol`
 * `flatpak install -y flathub org.glimpse_editor.Glimpse`
-* `pip3 install pygithub`
+* `pip3 install pygithub linkchecker`
 * Right-click the big "U" Ulauncher icon in the system tray and exit
 * Right-click the big "A" autokey icon in the system tray and quit
 
