@@ -284,6 +284,10 @@ Sourced from [Aral Balkan](https://ar.al/2020/06/25/how-to-use-the-zoom-malware-
 This will run Zoom within Firejail anytime you enter `zoom` at the command-line
 or access the shortcut from ULauncher.
 
+To upgrade Zoom, download and install the upgrade, then run the last three steps again.
+
+To verify that Zoom is running inside Firejail, a quick method is to log in to Zoom, click your profile icon, and click "My Profile" in the list. A jailed Zoom will show an error that Firefox is unavailable.
+
 ## Font management
 
 * Remove non-English fonts ([source](https://easylinuxtipsproject.blogspot.com/p/clean-mint.html#ID8)): ` sudo apt remove "fonts-kacst*" "fonts-khmeros*" fonts-lklug-sinhala fonts-guru-extra "fonts-nanum*" fonts-noto-cjk "fonts-takao*" fonts-tibetan-machine fonts-lao fonts-sil-padauk fonts-sil-abyssinica "fonts-tlwg-*" "fonts-lohit-*" fonts-beng-extra fonts-gargi fonts-gubbi fonts-gujr-extra fonts-kalapi "fonts-samyak*" fonts-navilu fonts-nakula fonts-orya-extra fonts-pagul fonts-sarai "fonts-telu*" "fonts-wqy*" "fonts-smc*" fonts-deva-extra fonts-sahadeva && sudo dpkg-reconfigure fontconfig && fc-cache`
