@@ -186,6 +186,7 @@ alias gif="peek"
 
 # Temporary project shortcuts
 alias zzip="mv ../*.zip . && for z in *.zip; do unzip $z; done && rm *.zip"
+alias multietch="cd ~/Development/work/multietch"
 alias rootwork="cd ~/Development/personal/rootwork.org"
 alias premaildev="cd ~/Development/premail/premail"
 alias signoff="cd ~/Development/premail/mjml-signoff"
