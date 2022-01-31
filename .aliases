@@ -185,7 +185,7 @@ alias scs="carbon-now"
 alias gif="peek"
 
 # Temporary project shortcuts
-alias zzip='mv ../*.zip . && for z in *.zip; do unzip -o "$z"; done && rm *.zip'
+alias zzip='mv ../*.zip . && for z in *.zip; do unzip -o "$z" && rm "$z"; done'
 alias multietch="cd ~/Development/work/multietch"
 alias rootwork="cd ~/Development/personal/rootwork.org"
 alias premaildev="cd ~/Development/premail/premail"
