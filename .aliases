@@ -101,6 +101,7 @@ alias pullit='git pull -r origin'
 alias gitit='pullit && pushit'
 alias recent='git branch --sort=-committerdate'
 alias gite='git commit -m "This commit intentionally left blank." --allow-empty'
+alias gpum='git pull upstream main'
 
 # Platform aliases
 # alias p='platform'
