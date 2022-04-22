@@ -11,7 +11,8 @@ Various dotfiles created and/or customized by Ivan Boothe. Building on the shoul
    * [Troubleshooting failing installations](#troubleshooting-failing-installations)
    * [Keymapping (keybinding, keyboard shortcuts, etc.)](#keymapping-keybinding-keyboard-shortcuts-etc)
 
-<!-- Added by: runner, at: Wed Jan 19 02:58:29 UTC 2022 -->
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- Added by: runner, at: Fri Apr 22 21:35:48 UTC 2022 -->
 
 <!--te-->
 

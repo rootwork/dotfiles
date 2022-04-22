@@ -5,18 +5,19 @@
 <!--ts-->
 * [First-run OS and computer setup](#first-run-os-and-computer-setup)
 * [Program setup](#program-setup)
-   * [Applets](#applets)
-   * [Manual downloads](#manual-downloads)
-   * [Firefox](#firefox)
-   * [Thunderbird](#thunderbird)
-      * [Installing v91+](#installing-v91)
-      * [Pointing to an existing Thunderbird preferences and profile directory](#pointing-to-an-existing-thunderbird-preferences-and-profile-directory)
-      * [Restoring a locally-stored profile](#restoring-a-locally-stored-profile)
 * [CLI fun](#cli-fun)
    * [General installations](#general-installations)
    * [Setup Zsh/Oh My Zsh/Powerline](#setup-zshoh-my-zshpowerline)
    * [Create SSH keys](#create-ssh-keys)
-   * [Bluetooth](#bluetooth)
+   * [Manual downloads](#manual-downloads)
+      * [Applets](#applets)
+      * [Firefox](#firefox)
+      * [Thunderbird](#thunderbird)
+         * [Installing v91+](#installing-v91)
+         * [Pointing to an existing Thunderbird preferences and profile directory](#pointing-to-an-existing-thunderbird-preferences-and-profile-directory)
+         * [Restoring a locally-stored profile](#restoring-a-locally-stored-profile)
+      * [Other manual installs](#other-manual-installs)
+   * [Bluetooth setup](#bluetooth-setup)
       * [Autoconnect trusted Bluetooth devices](#autoconnect-trusted-bluetooth-devices)
       * [Connect phone-Linux-headset via Bluetooth](#connect-phone-linux-headset-via-bluetooth)
    * [Setup Node and packages](#setup-node-and-packages)
@@ -40,7 +41,8 @@
 * [Startup applications](#startup-applications)
 * [Backup!](#backup)
 
-<!-- Added by: runner, at: Wed Jan 19 02:58:29 UTC 2022 -->
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- Added by: runner, at: Fri Apr 22 21:35:49 UTC 2022 -->
 
 <!--te-->
 
