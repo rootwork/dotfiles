@@ -191,9 +191,19 @@ Follow [this guide](https://ostechnix.com/turn-your-linux-pc-into-bluetooth-spea
 
 ## Setup Node and packages
 
-* [Install necessary Node versions](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions)
-* [Install n](https://github.com/tj/n#installation=)
-* `npm i -g carbon-now-cli`
+[Install n and Node in one go](https://github.com/tj/n#third-party-installers):
+
+`curl -L https://git.io/n-install | bash`
+
+Install Node versions as necessary, e.g.
+
+* `n install lts` (included by default in the previous command)
+* `n install latest`
+* `n install 14`
+
+Install packages:
+
+* `npm i -g alex carbon-now-cli np yarn`
 
 ## Setup [Docker](https://techviewleo.com/how-to-install-and-use-docker-in-linux-mint/) and [Lando](https://docs.lando.dev/basics/installation.html#linux)
 
