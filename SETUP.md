@@ -134,7 +134,7 @@ sudo fwupdmgr update
 * `cd dotfiles`
 * `git checkout local-nix`
 * `git submodule update --init --recursive` (to update the submodule if this is an existing clone, run `git submodule foreach --recursive git pull && git add . && git commit --signoff --message="Updating scripts submodule"`)
-* `cp .* ~/`
+* `cp -r .* ~/`
 
 ## Move scripts
 
