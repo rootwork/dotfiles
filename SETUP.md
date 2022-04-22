@@ -163,6 +163,7 @@ sudo fwupdmgr update
 * `git clone https://github.com/Xfennec/progress.git ~/progress && cd ~/progress && make && sudo make install && cd ~ && rm -rf ~/progress`
 * `source ~/.zshrc`
 * `sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y`
+* Log out and log back in
 
 # Manual downloads
 
@@ -285,12 +286,12 @@ export VISUAL='/usr/bin/subl -w'
 
 Sourced from [Aral Balkan](https://ar.al/2020/06/25/how-to-use-the-zoom-malware-safely-on-linux-if-you-absolutely-have-to/):
 
-1. `sudo apt install firejail firejail-profiles`
-2. `sudo apt install apparmor-utils`
+1. `sudo apt install -y firejail firejail-profiles`
+2. `sudo apt install -y apparmor-utils`
 3. `sudo aa-enforce firejail-default`
 4. `mkdir -p ~/.config/firejail`
 5. `echo "protocol unix,inet,inet6,netlink\nignore seccomp\nseccomp \x21chroot" > ~/.config/firejail/zoom.local`
-6. [Download Zoom](https://zoom.us/download#client_4meeting)
+6. [Download Zoom](https://zoom.us/download#client_4meeting) and install the package.
 7. `mkdir -p ~/.zoom`
 8. `firejail --apparmor --private=$HOME/.zoom zoom`
 9. If this works, exit zoom from the menubar icon and proceed.
