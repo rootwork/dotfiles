@@ -141,7 +141,8 @@ Until 91+ is backported to Debian/Ubuntu, we have to remove the bundled version 
 sudo apt remove thunderbird
 sudo add-apt-repository ppa:mozillateam/ppa
 sudo apt update
-sudo install thunderbird
+sudo apt install thunderbird
+sudo apt upgrade -y
 ```
 
 #### Pointing to an existing Thunderbird preferences and profile directory
