@@ -192,7 +192,7 @@ Follow [this guide](https://ostechnix.com/turn-your-linux-pc-into-bluetooth-spea
 ## Setup Node and packages
 
 * [Install necessary Node versions](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions)
-* [Install nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+* [Install n](https://github.com/tj/n#installation=)
 * `npm i -g carbon-now-cli`
 
 ## Setup [Docker](https://techviewleo.com/how-to-install-and-use-docker-in-linux-mint/) and [Lando](https://docs.lando.dev/basics/installation.html#linux)
