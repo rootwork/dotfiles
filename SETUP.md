@@ -118,105 +118,6 @@ sudo fwupdmgr update
 * `eval "$(ssh-agent -s)"`
 * `ssh-add ~/.ssh/id_rsa`
 
-## Manual downloads
-
-### Applets
-
-* Weather [weather-mockturtl]
-* Color Picker [icarter09]
-* Timer with notifications [jake1164]
-
-### Firefox
-
-* Log in to Firefox Sync
-* Boom! (OK, you'll have to enter the long password manually, but only once. ...And, then, you'll have to customize the toolbar to hide a bunch of extensions. But then! Boom!)
-
-### Thunderbird
-
-#### Installing v91+
-
-Until 91+ is backported to Debian/Ubuntu, we have to remove the bundled version of Thunderbird and add the one from the Mozilla ESR PPA manually. I attempted doing this with Flatpak but had a persistant bug that refused to load Thunderbird's GUI except in safe mode (uninstalling all extensions and themes didn't help). Since the only other options were using Snap or building from source, I chose adding a new PPA as the least-bad option.
-
-```
-sudo apt remove thunderbird
-sudo add-apt-repository ppa:mozillateam/ppa
-sudo apt update
-sudo apt install thunderbird
-sudo apt upgrade -y
-```
-
-#### Pointing to an existing Thunderbird preferences and profile directory
-
-1. Open your home directory.
-2. Remove `.thunderbird`.
-3. Create a symlink from `.thunderbird` to the location of this same folder stored on another device.
-4. Open program again and make sure everything loads.
-
-#### Restoring a locally-stored profile
-
-1. Open Thunderbird, exit wizard/setup tab, and quit. This will initialize a default profile.
-2. Open your home directory, then open `.thunderbird`.
-3. Copy the _contents_ of previous profile directory into the new `*.default[-release]` directory. Remove the previous profile directory if desired.
-4. Open program again and make sure everything loads.
-
-### Other manual installs
-
-* QEMU (`sudo apt install -y qemu qemu-system-x86`) plus [QuickEmu](https://github.com/wmutschl/quickemu), in lieu of VirtualBox, if needed
-
-## Bluetooth setup
-
-### Autoconnect trusted Bluetooth devices
-
-* Pair all devices using Bluetooth GUI
-* `sudo bluetoothctl devices`
-* By default paired devices will be trusted
-* `sudo bluetoothctl untrust [device_id]` for each device you do NOT want to autoconnect
-* `git clone https://github.com/jrouleau/bluetooth-autoconnect.git repos/bluetooth-autoconnect`
-* `sudo cp repos/bluetooth-autoconnect/bluetooth-autoconnect.service /etc/systemd/system/`
-* `sudo cp '/home/ivan/repos/bluetooth-autoconnect/bluetooth-autoconnect' /usr/bin/`
-* `sudo systemctl enable bluetooth-autoconnect.service`
-* `sudo systemctl start bluetooth-autoconnect.service`
-* Reboot, making sure any wired mice are not connected (they'll prevent Bluetooth mice from registering clicks)
-* Note you'll get a warning about no keyboard on startup if you use a Bluetooth keyboard; no worries, it'll kick in on the login screen
-
-### Connect phone-Linux-headset via Bluetooth
-
-Follow [this guide](https://ostechnix.com/turn-your-linux-pc-into-bluetooth-speakers-for-your-phone/):
-
-* Start with "Pair the Linux PC with your Mobile Phone" as requirements are included with Linux Mint or installed above.
-* If the computer has a standard high-def audio Intel sound card, follow additional solution 1.
-* Regardless of the sound card, follow additional solution 2.
-* Fully restart the system.
-* Attempt to connect the phone to Linux and the headset to Linux, then test playing media from the phone over the headset.
-
-## Setup Node and packages
-
-[Install n and Node in one go](https://github.com/tj/n#third-party-installers):
-
-`curl -L https://git.io/n-install | bash`
-
-Install Node versions as necessary, e.g.
-
-* `n install lts` (included by default in the previous command)
-* `n install latest`
-* `n install 14`
-
-Install packages:
-
-* `npm i -g alex carbon-now-cli np yarn`
-
-## Setup [Docker](https://techviewleo.com/how-to-install-and-use-docker-in-linux-mint/) and [Lando](https://docs.lando.dev/basics/installation.html#linux)
-
-* Turn off VPNs! Installation may fail with them on, sadly.
-* `sudo apt-get -y install apt-transport-https ca-certificates curl gnupg-agent software-properties-common`
-* `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
-* `sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(. /etc/os-release; echo "$UBUNTU_CODENAME") stable"`
-* `sudo apt-get update`
-* `sudo apt-get -y install docker-ce`
-* `sudo usermod -aG docker $USER`
-* `wget https://files.devwithlando.io/lando-stable.deb`
-* `sudo dpkg -i lando-stable.deb`
-
 # Online setup
 
 ## GitHub: Add SSH key
@@ -263,7 +164,107 @@ Install packages:
 * `source ~/.zshrc`
 * Run Update Manager and install anything new
 
-# Bits and bobs
+# Manual downloads
+
+## Applets
+
+* Weather [weather-mockturtl]
+* Color Picker [icarter09]
+* Timer with notifications [jake1164]
+
+## Firefox
+
+* Log in to Firefox Sync
+* Boom! (OK, you'll have to enter the long password manually, but only once. ...And, then, you'll have to customize the toolbar to hide a bunch of extensions. But then! Boom!)
+* You'll probably want to log in to Bitwarden.
+
+## Thunderbird
+
+### Installing v91+
+
+Until 91+ is backported to Debian/Ubuntu, we have to remove the bundled version of Thunderbird and add the one from the Mozilla ESR PPA manually. I attempted doing this with Flatpak but had a persistant bug that refused to load Thunderbird's GUI except in safe mode (uninstalling all extensions and themes didn't help). Since the only other options were using Snap or building from source, I chose adding a new PPA as the least-bad option.
+
+```
+sudo apt remove thunderbird
+sudo add-apt-repository ppa:mozillateam/ppa
+sudo apt update
+sudo apt install thunderbird
+sudo apt upgrade -y
+```
+
+### Pointing to an existing Thunderbird preferences and profile directory
+
+1. Open your home directory.
+2. Remove `.thunderbird`.
+3. Create a symlink from `.thunderbird` to the location of this same folder stored on another device.
+4. Open program again and make sure everything loads.
+
+### Restoring a locally-stored profile
+
+1. Open Thunderbird, exit wizard/setup tab, and quit. This will initialize a default profile.
+2. Open your home directory, then open `.thunderbird`.
+3. Copy the _contents_ of previous profile directory into the new `*.default[-release]` directory. Remove the previous profile directory if desired.
+4. Open program again and make sure everything loads.
+
+## Other manual installs
+
+* QEMU (`sudo apt install -y qemu qemu-system-x86`) plus [QuickEmu](https://github.com/wmutschl/quickemu), in lieu of VirtualBox, if needed
+
+# Bluetooth setup
+
+## Autoconnect trusted Bluetooth devices
+
+* Pair all devices using Bluetooth GUI
+* `sudo bluetoothctl devices`
+* By default paired devices will be trusted
+* `sudo bluetoothctl untrust [device_id]` for each device you do NOT want to autoconnect
+* `git clone https://github.com/jrouleau/bluetooth-autoconnect.git repos/bluetooth-autoconnect`
+* `sudo cp repos/bluetooth-autoconnect/bluetooth-autoconnect.service /etc/systemd/system/`
+* `sudo cp '/home/ivan/repos/bluetooth-autoconnect/bluetooth-autoconnect' /usr/bin/`
+* `sudo systemctl enable bluetooth-autoconnect.service`
+* `sudo systemctl start bluetooth-autoconnect.service`
+* Reboot, making sure any wired mice are not connected (they'll prevent Bluetooth mice from registering clicks)
+* Note you'll get a warning about no keyboard on startup if you use a Bluetooth keyboard; no worries, it'll kick in on the login screen
+
+## Connect phone-Linux-headset via Bluetooth
+
+Follow [this guide](https://ostechnix.com/turn-your-linux-pc-into-bluetooth-speakers-for-your-phone/):
+
+* Start with "Pair the Linux PC with your Mobile Phone" as requirements are included with Linux Mint or installed above.
+* If the computer has a standard high-def audio Intel sound card, follow additional solution 1.
+* Regardless of the sound card, follow additional solution 2.
+* Fully restart the system.
+* Attempt to connect the phone to Linux and the headset to Linux, then test playing media from the phone over the headset.
+
+# Setup Node and packages
+
+[Install n and Node in one go](https://github.com/tj/n#third-party-installers):
+
+`curl -L https://git.io/n-install | bash`
+
+Install Node versions as necessary, e.g.
+
+* `n install lts` (included by default in the previous command)
+* `n install latest`
+* `n install 14`
+
+Install packages:
+
+* `npm i -g alex carbon-now-cli np yarn`
+
+# Setup [Docker](https://techviewleo.com/how-to-install-and-use-docker-in-linux-mint/) and [Lando](https://docs.lando.dev/basics/installation.html#linux)
+
+* Turn off VPNs! Installation may fail with them on, sadly.
+* `sudo apt-get -y install apt-transport-https ca-certificates curl gnupg-agent software-properties-common`
+* `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
+* `sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(. /etc/os-release; echo "$UBUNTU_CODENAME") stable"`
+* `sudo apt-get update`
+* `sudo apt-get -y install docker-ce`
+* `sudo usermod -aG docker $USER`
+* `wget https://files.devwithlando.io/lando-stable.deb`
+* `sudo dpkg -i lando-stable.deb`
+
+# Other bits and bobs
 
 ## Set Sublime Text as editor for `sudo` commands
 
