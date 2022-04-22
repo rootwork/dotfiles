@@ -208,7 +208,7 @@ Install packages:
 ## Setup [Docker](https://techviewleo.com/how-to-install-and-use-docker-in-linux-mint/) and [Lando](https://docs.lando.dev/basics/installation.html#linux)
 
 * Turn off VPNs! Installation may fail with them on, sadly.
-* `sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common`
+* `sudo apt-get -y install apt-transport-https ca-certificates curl gnupg-agent software-properties-common`
 * `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
 * `sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(. /etc/os-release; echo "$UBUNTU_CODENAME") stable"`
 * `sudo apt-get update`
