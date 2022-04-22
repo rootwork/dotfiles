@@ -9,19 +9,6 @@
    * [General installations](#general-installations)
    * [Setup Zsh/Oh My Zsh/Powerline](#setup-zshoh-my-zshpowerline)
    * [Create SSH keys](#create-ssh-keys)
-   * [Manual downloads](#manual-downloads)
-      * [Applets](#applets)
-      * [Firefox](#firefox)
-      * [Thunderbird](#thunderbird)
-         * [Installing v91+](#installing-v91)
-         * [Pointing to an existing Thunderbird preferences and profile directory](#pointing-to-an-existing-thunderbird-preferences-and-profile-directory)
-         * [Restoring a locally-stored profile](#restoring-a-locally-stored-profile)
-      * [Other manual installs](#other-manual-installs)
-   * [Bluetooth setup](#bluetooth-setup)
-      * [Autoconnect trusted Bluetooth devices](#autoconnect-trusted-bluetooth-devices)
-      * [Connect phone-Linux-headset via Bluetooth](#connect-phone-linux-headset-via-bluetooth)
-   * [Setup Node and packages](#setup-node-and-packages)
-   * [Setup <a href="https://techviewleo.com/how-to-install-and-use-docker-in-linux-mint/" rel="nofollow">Docker</a> and <a href="https://docs.lando.dev/basics/installation.html#linux" rel="nofollow">Lando</a>](#setup-docker-and-lando)
 * [Online setup](#online-setup)
    * [GitHub: Add SSH key](#github-add-ssh-key)
 * [Dotfile time](#dotfile-time)
@@ -29,7 +16,20 @@
    * [Move scripts](#move-scripts)
    * [Grab private config settings and load them](#grab-private-config-settings-and-load-them)
    * [Now finish setting up](#now-finish-setting-up)
-* [Bits and bobs](#bits-and-bobs)
+* [Manual downloads](#manual-downloads)
+   * [Applets](#applets)
+   * [Firefox](#firefox)
+   * [Thunderbird](#thunderbird)
+      * [Installing v91+](#installing-v91)
+      * [Pointing to an existing Thunderbird preferences and profile directory](#pointing-to-an-existing-thunderbird-preferences-and-profile-directory)
+      * [Restoring a locally-stored profile](#restoring-a-locally-stored-profile)
+   * [Other manual installs](#other-manual-installs)
+* [Bluetooth setup](#bluetooth-setup)
+   * [Autoconnect trusted Bluetooth devices](#autoconnect-trusted-bluetooth-devices)
+   * [Connect phone-Linux-headset via Bluetooth](#connect-phone-linux-headset-via-bluetooth)
+* [Setup Node and packages](#setup-node-and-packages)
+* [Setup <a href="https://techviewleo.com/how-to-install-and-use-docker-in-linux-mint/" rel="nofollow">Docker</a> and <a href="https://docs.lando.dev/basics/installation.html#linux" rel="nofollow">Lando</a>](#setup-docker-and-lando)
+* [Other bits and bobs](#other-bits-and-bobs)
    * [Set Sublime Text as editor for sudo commands](#set-sublime-text-as-editor-for-sudo-commands)
    * [Fix xdg-open error messages from Nemo](#fix-xdg-open-error-messages-from-nemo)
    * [Set up Zoom with Firejail](#set-up-zoom-with-firejail)
@@ -42,7 +42,7 @@
 * [Backup!](#backup)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Fri Apr 22 22:20:34 UTC 2022 -->
+<!-- Added by: runner, at: Fri Apr 22 23:04:05 UTC 2022 -->
 
 <!--te-->
 
