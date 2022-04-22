@@ -162,7 +162,7 @@ sudo fwupdmgr update
 * `git clone https://github.com/supercrabtree/k ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/k`
 * `git clone https://github.com/Xfennec/progress.git ~/progress && cd ~/progress && make && sudo make install && cd ~ && rm -rf ~/progress`
 * `source ~/.zshrc`
-* Run Update Manager and install anything new
+* `sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y`
 
 # Manual downloads
 
