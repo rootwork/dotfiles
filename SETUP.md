@@ -99,7 +99,7 @@ sudo fwupdmgr update
 ## Setup Zsh/Oh My Zsh/Powerline
 
 * `sudo usermod -s $(which zsh) ivan`
-* logout/login
+* Log out, then log back in
 * open Terminal and choose option 2
 * `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 * `cd $HOME/Downloads`
@@ -108,7 +108,7 @@ sudo fwupdmgr update
 * `wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf`
 * `wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf`
 * Navigate to `Downloads` and double-click on each font to install it
-* Right click Terminal window and choose Preferences
+* Open Terminal (not Guake), right-click on the window and choose Preferences
 * On the selected profile, under Profiles, check Custom font under Text Appearance and select MesloLGS NF Regular, size 12
 * `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k`
 
