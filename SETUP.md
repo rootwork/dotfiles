@@ -92,9 +92,9 @@ sudo fwupdmgr update
 * `flatpak install -y flathub org.glimpse_editor.Glimpse`
 * `flatpak install -y flathub com.getferdi.Ferdi`
 * `pip3 install pygithub linkchecker`
-* `sudo apt update && sudo apt upgrade && sudo apt autoremove && sudo apt autoclean`
-* Right-click the big "U" Ulauncher icon in the system tray and exit
-* Right-click the big "A" autokey icon in the system tray and quit
+* `sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y`
+* Right-click the big "A" autokey icon in the system tray and quit.
+* If it exists, right-click the big "U" Ulauncher icon in the system tray and exit.
 
 ## Setup Zsh/Oh My Zsh/Powerline
 
