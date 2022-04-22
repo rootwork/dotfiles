@@ -71,48 +71,6 @@ sudo fwupdmgr update
 
 # Program setup
 
-## Applets
-
-* Weather [weather-mockturtl]
-* Color Picker [icarter09]
-* Timer with notifications [jake1164]
-
-## Manual downloads
-
-* QEMU (`sudo apt install -y qemu qemu-system-x86`) plus [QuickEmu](https://github.com/wmutschl/quickemu), in lieu of VirtualBox, if needed
-
-## Firefox
-
-* Log in to Firefox Sync
-* Boom!
-
-## Thunderbird
-
-### Installing v91+
-
-Until 91+ is backported to Debian/Ubuntu, we have to remove the bundled version of Thunderbird and add the one from the Mozilla ESR PPA manually. I attempted doing this with Flatpak but had a persistant bug that refused to load Thunderbird's GUI except in safe mode (uninstalling all extensions and themes didn't help). Since the only other options were using Snap or building from source, I chose adding a new PPA as the least-bad option.
-
-```
-sudo apt remove thunderbird
-sudo add-apt-repository ppa:mozillateam/ppa
-sudo apt update
-sudo install thunderbird
-```
-
-### Pointing to an existing Thunderbird preferences and profile directory
-
-1. Open your home directory.
-2. Remove `.thunderbird`.
-3. Create a symlink from `.thunderbird` to the location of this same folder stored on another device.
-4. Open program again and make sure everything loads.
-
-### Restoring a locally-stored profile
-
-1. Open Thunderbird, exit wizard/setup tab, and quit. This will initialize a default profile.
-2. Open your home directory, then open `.thunderbird`.
-3. Copy the _contents_ of previous profile directory into the new `*.default[-release]` directory. Remove the previous profile directory if desired.
-4. Open program again and make sure everything loads.
-
 # CLI fun
 
 ## General installations
@@ -156,7 +114,51 @@ sudo install thunderbird
 * `eval "$(ssh-agent -s)"`
 * `ssh-add ~/.ssh/id_rsa`
 
-## Bluetooth
+## Manual downloads
+
+### Applets
+
+* Weather [weather-mockturtl]
+* Color Picker [icarter09]
+* Timer with notifications [jake1164]
+
+### Firefox
+
+* Log in to Firefox Sync
+* Boom!
+
+### Thunderbird
+
+#### Installing v91+
+
+Until 91+ is backported to Debian/Ubuntu, we have to remove the bundled version of Thunderbird and add the one from the Mozilla ESR PPA manually. I attempted doing this with Flatpak but had a persistant bug that refused to load Thunderbird's GUI except in safe mode (uninstalling all extensions and themes didn't help). Since the only other options were using Snap or building from source, I chose adding a new PPA as the least-bad option.
+
+```
+sudo apt remove thunderbird
+sudo add-apt-repository ppa:mozillateam/ppa
+sudo apt update
+sudo install thunderbird
+```
+
+#### Pointing to an existing Thunderbird preferences and profile directory
+
+1. Open your home directory.
+2. Remove `.thunderbird`.
+3. Create a symlink from `.thunderbird` to the location of this same folder stored on another device.
+4. Open program again and make sure everything loads.
+
+#### Restoring a locally-stored profile
+
+1. Open Thunderbird, exit wizard/setup tab, and quit. This will initialize a default profile.
+2. Open your home directory, then open `.thunderbird`.
+3. Copy the _contents_ of previous profile directory into the new `*.default[-release]` directory. Remove the previous profile directory if desired.
+4. Open program again and make sure everything loads.
+
+### Other manual installs
+
+* QEMU (`sudo apt install -y qemu qemu-system-x86`) plus [QuickEmu](https://github.com/wmutschl/quickemu), in lieu of VirtualBox, if needed
+
+## Bluetooth setup
 
 ### Autoconnect trusted Bluetooth devices
 
