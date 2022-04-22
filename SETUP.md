@@ -250,7 +250,7 @@ Install Node versions as necessary, e.g.
 
 Install packages:
 
-* `npm i -g alex carbon-now-cli np yarn`
+* `npm i -g alex carbon-now-cli gulp-cli np yarn`
 
 # Setup [Docker](https://techviewleo.com/how-to-install-and-use-docker-in-linux-mint/) and [Lando](https://docs.lando.dev/basics/installation.html#linux)
 
