@@ -193,6 +193,8 @@ sudo apt install thunderbird
 sudo apt upgrade -y
 ```
 
+The Run **System Reports**, because you may need to install a language pack.
+
 ### Pointing to an existing Thunderbird preferences and profile directory
 
 1. Open your home directory.
