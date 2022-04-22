@@ -147,7 +147,7 @@ sudo fwupdmgr update
 
 * `cd ~`
 * `git clone git@github.com:rootwork/config-repo.git repos/config-repo`
-* `sudo cp -rf config-repo/* ~/.config`
+* `cp -rf repos/config-repo/* ~/.config`
 * `dconf load / < ~/.config/config.conf`
 * `rm ~/.config/README.md`
 
