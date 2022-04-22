@@ -92,6 +92,7 @@ sudo fwupdmgr update
 * `flatpak install -y flathub org.glimpse_editor.Glimpse`
 * `flatpak install -y flathub com.getferdi.Ferdi`
 * `pip3 install pygithub linkchecker`
+* `sudo apt update`
 * Right-click the big "U" Ulauncher icon in the system tray and exit
 * Right-click the big "A" autokey icon in the system tray and quit
 
