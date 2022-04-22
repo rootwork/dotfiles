@@ -129,7 +129,7 @@ sudo fwupdmgr update
 ### Firefox
 
 * Log in to Firefox Sync
-* Boom!
+* Boom! (OK, you'll have to enter the long password manually, but only once. ...And, then, you'll have to customize the toolbar to hide a bunch of extensions. But then! Boom!)
 
 ### Thunderbird
 
