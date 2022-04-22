@@ -279,7 +279,7 @@ export VISUAL='/usr/bin/subl -w'
 ## Fix xdg-open error messages from Nemo
 
 * `sudo mkdir -p /var/lib/samba/usershares/`
-* `sudo chmod go+rwx /var/lib/samba/usershare`
+* `sudo chmod go+rwx /var/lib/samba/usershares/`
 
 ## Set up Zoom with Firejail
 
