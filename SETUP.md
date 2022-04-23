@@ -178,11 +178,9 @@ sudo fwupdmgr update
 
 * Remove non-English fonts ([source](https://easylinuxtipsproject.blogspot.com/p/clean-mint.html#ID8)): ` sudo apt remove "fonts-kacst*" "fonts-khmeros*" fonts-lklug-sinhala fonts-guru-extra "fonts-nanum*" fonts-noto-cjk "fonts-takao*" fonts-tibetan-machine fonts-lao fonts-sil-padauk fonts-sil-abyssinica "fonts-tlwg-*" "fonts-lohit-*" fonts-beng-extra fonts-gargi fonts-gubbi fonts-gujr-extra fonts-kalapi "fonts-samyak*" fonts-navilu fonts-nakula fonts-orya-extra fonts-pagul fonts-sarai "fonts-telu*" "fonts-wqy*" "fonts-smc*" fonts-deva-extra fonts-sahadeva && sudo dpkg-reconfigure fontconfig && fc-cache`
 * Add M$ fonts: `sudo apt install -y ttf-mscorefonts-installer`
-* Install Google fonts: `sudo apt install -y fonts-roboto fonts-noto`
+* Install Google fonts: Font Manager (installed in general installations above) has this built-in. Run Font Manager and then click the "G" icon in the top menubar to browse, use "Download Family" button to install.
 
-Font Manager (installed in general installations above) allows for quick Google Fonts installation: Run Font Manager and then click the "G" icon in the top menubar to browse, use "Download Family" button to install.
-
-Sources of open-source fonts:
+#### Sources for open-source fonts
 
 * [League of Movable Type](https://www.theleagueofmoveabletype.com/) (Open Font License)
 * [Open Foundry](https://open-foundry.com/fonts) (Open Font License)
