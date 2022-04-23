@@ -15,7 +15,10 @@
    * [Checkout and clone](#checkout-and-clone)
    * [Move scripts](#move-scripts)
    * [Grab private config settings and load them](#grab-private-config-settings-and-load-them)
-   * [Now finish setting up](#now-finish-setting-up)
+   * [Finish zsh setup](#finish-zsh-setup)
+   * [Theme setup](#theme-setup)
+      * [Fonts](#fonts)
+   * [Finish setup](#finish-setup)
 * [Manual downloads](#manual-downloads)
    * [Applets](#applets)
    * [Firefox](#firefox)
@@ -33,17 +36,15 @@
    * [Set Sublime Text as editor for sudo commands](#set-sublime-text-as-editor-for-sudo-commands)
    * [Fix xdg-open error messages from Nemo](#fix-xdg-open-error-messages-from-nemo)
    * [Set up Zoom with Firejail](#set-up-zoom-with-firejail)
-   * [Font management](#font-management)
    * [Replace bundled ImageMagick with a newer version, webp and HEIC support](#replace-bundled-imagemagick-with-a-newer-version-webp-and-heic-support)
    * [Setup logiops for Logitech devices](#setup-logiops-for-logitech-devices)
-   * [Mint theme updates](#mint-theme-updates)
    * [Add some Nemo actions](#add-some-nemo-actions)
    * [Extras](#extras)
 * [Startup Applications](#startup-applications)
 * [Backup!](#backup)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Sat Apr 23 00:36:16 UTC 2022 -->
+<!-- Added by: runner, at: Sat Apr 23 01:07:38 UTC 2022 -->
 
 <!--te-->
 
