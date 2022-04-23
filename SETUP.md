@@ -178,7 +178,7 @@ sudo fwupdmgr update
 
 * Log in to Firefox Sync
 * Boom! (OK, you'll have to enter the long password manually, but only once. ...And, then, you'll have to customize the toolbar to hide a bunch of extensions. But then! Boom!)
-* You'll probably want to log in to Bitwarden.
+* You'll probably want to log in to Bitwarden. Then set its preferences to log out (not just lock) on exit.
 
 ## Thunderbird
 
@@ -388,9 +388,9 @@ Go to Nemo (Files) > Edit > Preferences > Plugins. It's usually easier to just d
 * [Install Anbox for running Android apps](https://www.how2shout.com/linux/how-to-install-anbox-on-ubuntu-20-04-lts-focal-fossa/)
 * [Install Signal without a smartphone (or Android emulator)](https://ctrl.alt.coop/en/post/signal-without-a-smartphone/)
 
-# Startup applications
+# Startup Applications
 
-* Confirm the following are listed: Guake, Ulauncher, Autokey, Ferdi, Mullvad (if used)
+* In this screen, confirm the following are listed: Guake, Ulauncher, Autokey, Ferdi, Mullvad (if used)
 * Log out, then log back in
 
 # Backup!
