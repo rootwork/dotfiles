@@ -390,7 +390,7 @@ Go to Nemo (Files) > Edit > Preferences > Plugins. It's usually easier to just d
 
 # Startup applications
 
-* Confirm the following are listed: Guake, Ulauncher, Autokey, Rambox, Mullvad (if used)
+* Confirm the following are listed: Guake, Ulauncher, Autokey, Ferdi, Mullvad (if used)
 * Log out, then log back in
 
 # Backup!
