@@ -397,6 +397,12 @@ Go to Nemo (Files) > Edit > Preferences > Plugins. It's usually easier to just d
 * [Install Anbox for running Android apps](https://www.how2shout.com/linux/how-to-install-anbox-on-ubuntu-20-04-lts-focal-fossa/)
 * [Install Signal without a smartphone (or Android emulator)](https://ctrl.alt.coop/en/post/signal-without-a-smartphone/)
 
-# Backup!
+# Back up!
 
-* Timeshift > Create
+* Timeshift
+* Choose RSYNC
+* Click Settings and Schedule; choose all but hourly (default numbers are fine).
+* Location depends on available disks.
+* Create! As this is the first, it'll take awhile.
+
+Generally Timeshift is good for system backups (all the work we just did), so user directories are excluded by default. For user backups, use Back In Time. (This is probably also a good place to inspect your `crontab`.)
