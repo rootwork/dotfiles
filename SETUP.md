@@ -353,18 +353,34 @@ launch "Startup Applications" and add
 `sudo systemctl start logid && sudo systemctl restart logid` (yes, start and
 then restart) as a custom command.
 
+## Mint theme updates
+
+For some reason not all theme settings are exported to config items.
+
+* Run **Themes**, go to the "Settings" tab, under "Scrollbar behavior" uncheck the first item, check the next two, and set scrollbar width to 12px.
+* Run and add programs to the quick launch bar, such as Nemo, Sublime Text, Firefox, Thunderbird, Ferdi.
+
 ## Add some Nemo actions
 
 Follow the instructions at
 [nemo_actions_and_cinnamon_scripts](https://github.com/smurphos/nemo_actions_and_cinnamon_scripts).
-Currently the following are installed:
 
-* [Close windows](https://github.com/smurphos/nemo_actions_and_cinnamon_scripts#close-windows-actions)
-* [Disk usage](https://github.com/smurphos/nemo_actions_and_cinnamon_scripts#disk-usage-action)
-* [File metadata](https://github.com/smurphos/nemo_actions_and_cinnamon_scripts#file-metadata-action)
-* [Apply custom emblems](https://github.com/smurphos/nemo_actions_and_cinnamon_scripts#apply-custom-emblems)
-* [Apply custom icon](https://github.com/smurphos/nemo_actions_and_cinnamon_scripts#apply-custom-icon)
-* [Media info](https://github.com/smurphos/nemo_actions_and_cinnamon_scripts#media-info)
+Go to Nemo (Files) > Edit > Preferences > Plugins. It's usually easier to just disable all of the actions and then enable the ones you want selectively. Currently the following are enabled:
+
+* Format
+* Make bootable USB stick
+* Set as Wallpaper...
+* Change Desktop Background
+* Mount archive
+* Lock session now
+* Bulk Rename
+* [Disk Usage](https://github.com/smurphos/nemo_actions_and_cinnamon_scripts#disk-usage-action)
+* [Apply Custom Emblem](https://github.com/smurphos/nemo_actions_and_cinnamon_scripts#apply-custom-emblems)
+* Logout Now
+* [Media Properties](https://github.com/smurphos/nemo_actions_and_cinnamon_scripts#media-info)
+* [Close All Windows](https://github.com/smurphos/nemo_actions_and_cinnamon_scripts#close-windows-actions)
+* [Show Metadata](https://github.com/smurphos/nemo_actions_and_cinnamon_scripts#file-metadata-action)
+* [Apply Custom Icon](https://github.com/smurphos/nemo_actions_and_cinnamon_scripts#apply-custom-icon)
 
 ## Extras
 
