@@ -36,13 +36,14 @@
    * [Font management](#font-management)
    * [Replace bundled ImageMagick with a newer version, webp and HEIC support](#replace-bundled-imagemagick-with-a-newer-version-webp-and-heic-support)
    * [Setup logiops for Logitech devices](#setup-logiops-for-logitech-devices)
+   * [Mint theme updates](#mint-theme-updates)
    * [Add some Nemo actions](#add-some-nemo-actions)
    * [Extras](#extras)
 * [Startup applications](#startup-applications)
 * [Backup!](#backup)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Sat Apr 23 00:13:05 UTC 2022 -->
+<!-- Added by: runner, at: Sat Apr 23 00:31:12 UTC 2022 -->
 
 <!--te-->
 
