@@ -152,7 +152,7 @@ sudo fwupdmgr update
 * `dconf load / < ~/.config/config.conf`
 * `rm ~/.config/README.md`
 
-## Now finish setting up
+## Finish zsh setup
 
 * `cd ~`
 * `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
@@ -163,6 +163,40 @@ sudo fwupdmgr update
 * `git clone https://github.com/supercrabtree/k ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/k`
 * `git clone https://github.com/Xfennec/progress.git ~/progress && cd ~/progress && make && sudo make install && cd ~ && rm -rf ~/progress`
 * `source ~/.zshrc`
+
+## Theme setup
+
+* `cd ~/repos`
+* `git clone https://github.com/vinceliuice/Canta-theme.git`
+* `./Canta-theme/install.sh`
+* `sudo add-apt-repository ppa:tista/adapta`
+* `sudo apt-get update`
+* `sudo apt install -y adapta-gtk-theme`
+* Run **Themes**, go to the "Settings" tab, under "Scrollbar behavior" uncheck the first item, check the next two, and set scrollbar width to 12px.
+* Run and add programs to the quick launch bar, such as Nemo, Sublime Text, Firefox, Thunderbird, Ferdi.
+
+### Fonts
+
+* Remove non-English fonts ([source](https://easylinuxtipsproject.blogspot.com/p/clean-mint.html#ID8)): ` sudo apt remove "fonts-kacst*" "fonts-khmeros*" fonts-lklug-sinhala fonts-guru-extra "fonts-nanum*" fonts-noto-cjk "fonts-takao*" fonts-tibetan-machine fonts-lao fonts-sil-padauk fonts-sil-abyssinica "fonts-tlwg-*" "fonts-lohit-*" fonts-beng-extra fonts-gargi fonts-gubbi fonts-gujr-extra fonts-kalapi "fonts-samyak*" fonts-navilu fonts-nakula fonts-orya-extra fonts-pagul fonts-sarai "fonts-telu*" "fonts-wqy*" "fonts-smc*" fonts-deva-extra fonts-sahadeva && sudo dpkg-reconfigure fontconfig && fc-cache`
+* Add M$ fonts: `sudo apt install -y ttf-mscorefonts-installer`
+* Install Google fonts: `sudo apt install -y fonts-roboto fonts-noto`
+
+Font Manager (installed in general installations above) allows for quick Google Fonts installation: Run Font Manager and then click the "G" icon in the top menubar to browse, use "Download Family" button to install.
+
+Sources of open-source fonts:
+
+* [League of Movable Type](https://www.theleagueofmoveabletype.com/) (Open Font License)
+* [Open Foundry](https://open-foundry.com/fonts) (Open Font License)
+* [Font Space, Open Source category](https://www.fontspace.com/category/Open-source) (F/LOSS)
+* [Fontesk, OFL category](https://fontesk.com/license/ofl-gpl/) (Open Font License)
+* [Font Library](https://fontlibrary.org/en/catalogue) (various F/LOSS licenses)
+* [Velvetyne](https://www.velvetyne.fr/) (F/LOSS)
+* [Use & Modify](https://usemodify.com/) (F/LOSS)
+* [Font Squirrel](https://www.fontsquirrel.com/fonts/list/find_fonts) (various free and "free" licenses)
+* [Ralph Levien](https://www.levien.com/type/myfonts/) (Open Font License)
+
+## Finish setup
+
 * `sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y`
 * Log out and log back in
 
@@ -309,27 +343,6 @@ To upgrade Zoom, download and install the upgrade, then run the last three steps
 
 To verify that Zoom is running inside Firejail, a quick method is to log in to Zoom, click your profile icon, and click "My Profile" in the list. A jailed Zoom will show an error that Firefox is unavailable.
 
-## Font management
-
-* Remove non-English fonts ([source](https://easylinuxtipsproject.blogspot.com/p/clean-mint.html#ID8)): ` sudo apt remove "fonts-kacst*" "fonts-khmeros*" fonts-lklug-sinhala fonts-guru-extra "fonts-nanum*" fonts-noto-cjk "fonts-takao*" fonts-tibetan-machine fonts-lao fonts-sil-padauk fonts-sil-abyssinica "fonts-tlwg-*" "fonts-lohit-*" fonts-beng-extra fonts-gargi fonts-gubbi fonts-gujr-extra fonts-kalapi "fonts-samyak*" fonts-navilu fonts-nakula fonts-orya-extra fonts-pagul fonts-sarai "fonts-telu*" "fonts-wqy*" "fonts-smc*" fonts-deva-extra fonts-sahadeva && sudo dpkg-reconfigure fontconfig && fc-cache`
-* Add M$ fonts: `sudo apt install -y ttf-mscorefonts-installer`
-
-Font Manager (installed in general installations above) allows for quick Google Fonts installation: Run Font Manager and then click the "G" icon in the top menubar to browse, use "Download Family" button to install.
-
-Sources of open-source fonts:
-
-* [League of Movable Type](https://www.theleagueofmoveabletype.com/) (Open Font License)
-* [Open Foundry](https://open-foundry.com/fonts) (Open Font License)
-* [Font Space, Open Source category](https://www.fontspace.com/category/Open-source) (F/LOSS)
-* [Fontesk, OFL category](https://fontesk.com/license/ofl-gpl/) (Open Font License)
-* [Font Library](https://fontlibrary.org/en/catalogue) (various F/LOSS licenses)
-* [Velvetyne](https://www.velvetyne.fr/) (F/LOSS)
-* [Use & Modify](https://usemodify.com/) (F/LOSS)
-* [Font Squirrel](https://www.fontsquirrel.com/fonts/list/find_fonts) (various free and "free" licenses)
-* [Ralph Levien](https://www.levien.com/type/myfonts/) (Open Font License)
-
-Some programs may not update their font lists until a system restart.
-
 ## Replace bundled ImageMagick with a newer version, webp and HEIC support
 
 Follow [this gist](https://gist.github.com/hurricup/e14ae5bc47705fca6b1680e7a1fb6580), replacing `--branch 7.1.0-14` with the latest release of [ImageMagick](https://github.com/ImageMagick/ImageMagick/releases).
@@ -353,13 +366,6 @@ Configuration is located at `~/.logid.cfg` (included here). We're using a
 launch "Startup Applications" and add
 `sudo systemctl start logid && sudo systemctl restart logid` (yes, start and
 then restart) as a custom command.
-
-## Mint theme updates
-
-For some reason not all theme settings are exported to config items.
-
-* Run **Themes**, go to the "Settings" tab, under "Scrollbar behavior" uncheck the first item, check the next two, and set scrollbar width to 12px.
-* Run and add programs to the quick launch bar, such as Nemo, Sublime Text, Firefox, Thunderbird, Ferdi.
 
 ## Add some Nemo actions
 
