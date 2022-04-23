@@ -41,10 +41,10 @@
    * [Setup logiops for Logitech devices](#setup-logiops-for-logitech-devices)
    * [Add some Nemo actions](#add-some-nemo-actions)
    * [Extras](#extras)
-* [Backup!](#backup)
+* [Back up!](#back-up)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Sat Apr 23 01:21:11 UTC 2022 -->
+<!-- Added by: runner, at: Sat Apr 23 01:27:07 UTC 2022 -->
 
 <!--te-->
 
