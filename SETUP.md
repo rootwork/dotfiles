@@ -39,11 +39,11 @@
    * [Mint theme updates](#mint-theme-updates)
    * [Add some Nemo actions](#add-some-nemo-actions)
    * [Extras](#extras)
-* [Startup applications](#startup-applications)
+* [Startup Applications](#startup-applications)
 * [Backup!](#backup)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Sat Apr 23 00:31:44 UTC 2022 -->
+<!-- Added by: runner, at: Sat Apr 23 00:36:16 UTC 2022 -->
 
 <!--te-->
 
