@@ -176,7 +176,8 @@ sudo fwupdmgr update
 Some theme settings are for some reason not exported to config items:
 
 * Run **Themes**, go to the "Settings" tab, under "Scrollbar behavior" uncheck the first item, check the next two, and set scrollbar width to 12px.
-* Right-click the time in the upper-right corner and set it to a custom value such as `%a, %b %e %l:%M %p`
+* Right-click the time in the upper-right corner and set it to a custom value such as `%A, %B %e %l:%M %p`
+* Run **Screensaver**, go to the "Customize" tab, check "Use a custom date and time format" and enter the same values.
 * Run and add programs to the quick launch bar, such as Nemo, Sublime Text, Firefox, Thunderbird, Ferdi.
 
 ### Fonts
@@ -200,6 +201,7 @@ Some theme settings are for some reason not exported to config items:
 ## Finish setup
 
 * `sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y`
+* Run **Startup Applications** and confirm the following are listed: Guake, Ulauncher, Autokey, Ferdi, Mullvad (if used)
 * Log out and log back in
 
 # Manual downloads
@@ -395,11 +397,6 @@ Go to Nemo (Files) > Edit > Preferences > Plugins. It's usually easier to just d
 
 * [Install Anbox for running Android apps](https://www.how2shout.com/linux/how-to-install-anbox-on-ubuntu-20-04-lts-focal-fossa/)
 * [Install Signal without a smartphone (or Android emulator)](https://ctrl.alt.coop/en/post/signal-without-a-smartphone/)
-
-# Startup Applications
-
-* In this screen, confirm the following are listed: Guake, Ulauncher, Autokey, Ferdi, Mullvad (if used)
-* Log out, then log back in
 
 # Backup!
 
