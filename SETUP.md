@@ -330,7 +330,10 @@ Sources of open-source fonts:
 Some programs may not update their font lists until a system restart.
 
 ## Replace bundled ImageMagick with a newer version, webp and HEIC support
+
 Follow [this gist](https://gist.github.com/hurricup/e14ae5bc47705fca6b1680e7a1fb6580), replacing `--branch 7.1.0-14` with the latest release of [ImageMagick](https://github.com/ImageMagick/ImageMagick/releases).
+
+If `identify --version` at the end of the instructions still returns an old version, try running `magick --version`. If you get the updated version for the latter, then older commands in `/usr/bin` are probably overriding the newer ones in `/usr/bin/local`. Check the order of your `$PATH`, and/or `sudo rm` the versions in `/usr/bin`.
 
 ## Setup logiops for Logitech devices
 
