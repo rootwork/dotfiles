@@ -170,8 +170,6 @@ sudo fwupdmgr update
 * `cd ~/repos`
 * `git clone https://github.com/vinceliuice/Canta-theme.git`
 * `./Canta-theme/install.sh`
-* `sudo add-apt-repository ppa:tista/adapta`
-* `sudo apt-get update`
 * `sudo apt install -y adapta-gtk-theme`
 * Run **Themes**, go to the "Settings" tab, under "Scrollbar behavior" uncheck the first item, check the next two, and set scrollbar width to 12px.
 * Run and add programs to the quick launch bar, such as Nemo, Sublime Text, Firefox, Thunderbird, Ferdi.
