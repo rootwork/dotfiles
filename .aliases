@@ -51,8 +51,7 @@ alias week='date +%V'
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
 # IP addresses
-# alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+alias ips="nmcli -p device show | grep --color=never 'IP4|IP6'"
 
 # Canonical hex dump; some systems have this symlinked
 command -v hd >/dev/null || alias hd="hexdump -C"
@@ -79,12 +78,8 @@ done
 # Make Grunt print stack traces by default
 command -v grunt >/dev/null && alias grunt="grunt --stack"
 
-# Move export GREP_OPTIONS="--color=auto" (which is deprecated) from .exports to .alias
-# https://github.com/mathiasbynens/dotfiles/issues/467
-# Always enable colored `grep` output`
-alias grep="grep --color=auto"
-alias fgrep="fgrep --color=auto"
-alias egrep="egrep --color=auto"
+# Alias grep to ripgrep
+alias grep="rg"
 
 ### ADDITIONS
 
