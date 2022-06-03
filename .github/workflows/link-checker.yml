@@ -19,7 +19,7 @@ jobs:
         with:
           fetch-depth: 1
       - name: Report broken links
-        uses: urlstechie/urlchecker-action@0.2.2
+        uses: urlstechie/urlchecker-action@0.0.27
         with:
           # A comma-separated list of file types to cover in the URL checks
           # file_types:
