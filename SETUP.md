@@ -19,7 +19,6 @@
    * [Theme setup](#theme-setup)
       * [Fonts](#fonts)
          * [Sources for open-source fonts](#sources-for-open-source-fonts)
-   * [Finish setup](#finish-setup)
 * [Manual downloads](#manual-downloads)
    * [Applets](#applets)
    * [Firefox](#firefox)
@@ -27,7 +26,9 @@
       * [Installing v91+](#installing-v91)
       * [Pointing to an existing Thunderbird preferences and profile directory](#pointing-to-an-existing-thunderbird-preferences-and-profile-directory)
       * [Restoring a locally-stored profile](#restoring-a-locally-stored-profile)
+   * [Ferdium](#ferdium)
    * [Other manual installs](#other-manual-installs)
+* [Finish setup](#finish-setup)
 * [Bluetooth setup](#bluetooth-setup)
    * [Autoconnect trusted Bluetooth devices](#autoconnect-trusted-bluetooth-devices)
    * [Connect phone-Linux-headset via Bluetooth](#connect-phone-linux-headset-via-bluetooth)
@@ -44,7 +45,7 @@
 * [Back up!](#back-up)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Thu May 12 22:03:44 UTC 2022 -->
+<!-- Added by: runner, at: Thu Jun 23 22:50:10 UTC 2022 -->
 
 <!--te-->
 
