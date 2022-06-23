@@ -92,7 +92,6 @@ sudo fwupdmgr update
 * `sudo apt update`
 * `sudo apt install -y git flatpak diff-so-fancy xclip zsh python python3-pip rar guake ulauncher autokey-gtk whois dconf-editor arc-theme apache2 mysql-server php libapache2-mod-php php-mysql php7.4-xml libpam-yubico yubikey-manager sublime-text font-manager nemo-font-manager imagemagick webp jpegoptim optipng nemo-image-converter strawberry chromium filezilla skypeforlinux vlc libncurses5-dev poppler-utils trimage dos2unix sublime-merge cockpit xclip xsel nemo-emblems folder-color-nemo nemo-image-converter peek pavucontrol ripgrep`
 * `flatpak install -y flathub org.glimpse_editor.Glimpse`
-* `flatpak install -y flathub com.getferdi.Ferdi`
 * `pip3 install pygithub linkchecker`
 * `sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y`
 * Right-click the big "A" autokey icon in the system tray and quit.
@@ -177,7 +176,7 @@ Some theme settings are for some reason not exported to config items:
 * Run **Themes**, go to the "Settings" tab, under "Scrollbar behavior" uncheck the first item, check the next two, and set scrollbar width to 12px.
 * Right-click the time in the upper-right corner and set it to a custom value such as `%A, %B %e %l:%M %p`
 * Run **Screensaver**, go to the "Customize" tab, check "Use a custom date and time format" and enter the same values.
-* Run and add programs to the quick launch bar, such as Nemo, Sublime Text, Firefox, Thunderbird, Ferdi.
+* Run and add programs to the quick launch bar, such as Nemo, Sublime Text, Firefox, Thunderbird, Ferdium.
 
 ### Fonts
 
@@ -196,12 +195,6 @@ Some theme settings are for some reason not exported to config items:
 * [Use & Modify](https://usemodify.com/) (F/LOSS)
 * [Font Squirrel](https://www.fontsquirrel.com/fonts/list/find_fonts) (various free and "free" licenses)
 * [Ralph Levien](https://www.levien.com/type/myfonts/) (Open Font License)
-
-## Finish setup
-
-* `sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y`
-* Run **Startup Applications** and confirm the following are listed: Guake, Ulauncher, Autokey, Ferdi, Mullvad (if used)
-* Log out and log back in
 
 # Manual downloads
 
@@ -247,9 +240,20 @@ The Run **System Reports**, because you may need to install a language pack.
 3. Copy the _contents_ of previous profile directory into the new `*.default[-release]` directory. Remove the previous profile directory if desired.
 4. Open program again and make sure everything loads.
 
+## Ferdium
+
+As of this writing (June 2022), the process is to [download the latest nightly](https://github.com/ferdium/ferdium-app/releases) (`amd64.deb`) and install.
+
 ## Other manual installs
 
 * QEMU (`sudo apt install -y qemu qemu-system-x86`) plus [QuickEmu](https://github.com/wmutschl/quickemu), in lieu of VirtualBox, if needed
+
+# Finish setup
+
+* `sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y`
+* You may want to selectively re-copy [config settings](#grab-private-config-settings-and-load-them) for the programs you just manually installed, if any of them overwrote it in the process.
+* Run **Startup Applications** and confirm the following are listed: Guake, Ulauncher, Autokey, Ferdium, Mullvad (if used)
+* Log out and log back in
 
 # Bluetooth setup
 
