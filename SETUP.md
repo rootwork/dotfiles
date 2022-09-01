@@ -91,7 +91,7 @@ sudo fwupdmgr update
 * `sudo apt install -y apt-transport-https`
 * `echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list`
 * `sudo apt update`
-* `sudo apt install -y git flatpak diff-so-fancy xclip zsh python python3-pip rar guake ulauncher autokey-gtk whois dconf-editor arc-theme apache2 mysql-server php libapache2-mod-php php-mysql php7.4-xml libpam-yubico yubikey-manager sublime-text font-manager nemo-font-manager imagemagick webp jpegoptim optipng nemo-image-converter strawberry chromium filezilla skypeforlinux vlc libncurses5-dev poppler-utils trimage dos2unix sublime-merge cockpit xclip xsel nemo-emblems folder-color-nemo nemo-image-converter peek pavucontrol ripgrep`
+* `sudo apt install -y git flatpak diff-so-fancy xclip zsh python python3-pip rar guake ulauncher autokey-gtk whois dconf-editor arc-theme apache2 mysql-server php libapache2-mod-php php-mysql php7.4-xml libpam-yubico yubikey-manager sublime-text font-manager nemo-font-manager imagemagick webp jpegoptim optipng nemo-image-converter strawberry chromium filezilla skypeforlinux vlc libncurses5-dev poppler-utils transmission trimage dos2unix sublime-merge cockpit xclip xsel nemo-emblems folder-color-nemo nemo-image-converter peek pavucontrol ripgrep`
 * `flatpak install -y flathub org.glimpse_editor.Glimpse`
 * `pip3 install pygithub linkchecker`
 * `sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y`
@@ -241,19 +241,20 @@ The Run **System Reports**, because you may need to install a language pack.
 3. Copy the _contents_ of previous profile directory into the new `*.default[-release]` directory. Remove the previous profile directory if desired.
 4. Open program again and make sure everything loads.
 
-## Ferdium
-
-As of this writing (June 2022), the process is to [download the latest nightly](https://github.com/ferdium/ferdium-app/releases) (`amd64.deb`) and install.
-
 ## Other manual installs
 
-* QEMU (`sudo apt install -y qemu qemu-system-x86`) plus [QuickEmu](https://github.com/wmutschl/quickemu), in lieu of VirtualBox, if needed
+* [Ferdium](https://ferdium.org/): [Download the latest nightly](https://github.com/ferdium/ferdium-app/releases/latest) (`...amd64.deb`) and install.
+* [LibreOffice](https://www.libreoffice.org/): [Download the latest Debian release](https://www.libreoffice.org/download/download-libreoffice/?type=deb-x86_64&lang=en-US) and install.
+* [Mullvad](https://mullvad.net/en/): [Download the latest Debian release](https://mullvad.net/en/download/linux/) and install.
+* [Flameshot](https://flameshot.org/): [Download the latest stable release](https://github.com/flameshot-org/flameshot/releases/latest) (`...amd64.deb`) and install.
+* [Handbrake](https://handbrake.fr) is now Flatpak-only. Install from Software Manager.
+* [QEMU](https://www.qemu.org/) (`sudo apt install -y qemu qemu-system-x86`) plus [QuickEmu](https://github.com/wmutschl/quickemu), in lieu of VirtualBox, if needed.
 
 # Finish setup
 
 * `sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y`
 * You may want to selectively re-copy [config settings](#grab-private-config-settings-and-load-them) for the programs you just manually installed, if any of them overwrote it in the process.
-* Run **Startup Applications** and confirm the following are listed: Guake, Ulauncher, Autokey, Ferdium, Mullvad (if used)
+* Run **Startup Applications** and confirm the following are listed: Guake, Ulauncher, Autokey, Ferdium, Mullvad.
 * Log out and log back in
 
 # Bluetooth setup
